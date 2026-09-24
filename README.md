@@ -6,9 +6,9 @@
 
 Building modern, scalable and user-friendly web applications with React, Next.js, Node.js and PostgreSQL.
 
-[🌐 Live Demo](https://your-portfolio.vercel.app) •
-[💻 GitHub](https://github.com/yourusername) •
-[🔗 LinkedIn](https://linkedin.com/in/yourprofile)
+[🌐 Live Demo](https://kawsar9990.netlify.app) •
+[💻 GitHub](https://github.com/kawsar9990) •
+[🔗 LinkedIn](https://www.linkedin.com/in/kawsar-ahmed-2a466441b)
 
 </div>
 
@@ -74,7 +74,7 @@ src
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/kawsar9990/My-Portfolio
 ```
 
 ### Install Dependencies
@@ -117,13 +117,13 @@ I am a passionate Full Stack Web Developer focused on building modern web experi
 
 ## 📬 Contact
 
-📧 Email: your-email@example.com
+📧 Email: kawsar158464@gmail.com
 
-💻 GitHub: https://github.com/yourusername
+💻 GitHub: https://github.com/kawsar9990
 
-🔗 LinkedIn: https://linkedin.com/in/yourprofile
+🔗 LinkedIn: https://www.linkedin.com/in/kawsar-ahmed-2a466441b
 
-🌍 Portfolio: https://your-portfolio.vercel.app
+🌍 Portfolio: https://kawsar9990.netlify.app
 
 ---
 

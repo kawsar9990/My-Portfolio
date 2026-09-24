@@ -239,13 +239,19 @@ export default function ResponsiveHeader() {
 </nav>
 
               <div className="mt-3 pt-1">
-                <Button
+                 <a 
+                  href="/kawsar-cv.pdf"
+                  download="Kawsar_Ahmed_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <Button
                   size="lg"
                   className="w-full cursor-pointer gap-2 rounded-xl bg-[#8b5cf6] py-4 text-sm font-medium text-white shadow-lg hover:bg-[#7c3aed]"
                 >
                   Download CV
                   <ChevronRight className="h-4 w-4" />
                 </Button>
+                </a>
               </div>
             </div>
           </motion.div>

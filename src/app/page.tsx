@@ -29,7 +29,7 @@ return (
      <About />
 </section>
 
-<section id="skill">
+<section id="skills">
      <TechnicalExpertise />
 </section>
 
@@ -49,7 +49,7 @@ return (
     <Education />
 </div>
 
-<div>
+<div id="blogs">
      <BlogSection />
 </div>
 
@@ -61,7 +61,7 @@ return (
      <ContactPAge />
 </section>
 
-<section id="contact">
+<section>
      <GoogleMap />
 </section>
 </main>

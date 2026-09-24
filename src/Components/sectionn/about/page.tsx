@@ -52,7 +52,7 @@ export default function About() {
 
             <div className="pt-2">
               <a
-                href="#home"
+                href="#contact"
                 className="inline-flex items-center justify-center bg-[#9333ea] hover:bg-[#7e22ce] text-white font-semibold text-base px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 ease-in-out transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 cursor-pointer"
               >
                 Contact Me

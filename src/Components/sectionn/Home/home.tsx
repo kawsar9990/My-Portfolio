@@ -197,13 +197,13 @@ export default function HeroSection() {
 
   return (
     <div
-      className={`relative flex xl:min-h-screen w-full flex-col items-center justify-center overflow-hidden px-4 pt-10 pb-5 font-sans transition-colors duration-500 xl:pt-20 ${
+      className={`relative flex lg:h-[720px] xl:min-h-screen w-full flex-col items-center justify-center overflow-hidden px-4 pt-10 pb-5 font-sans transition-colors duration-500 xl:pt-20 ${
         isDarkMode
           ? "bg-gradient-to-b from-slate-950 via-[#111827] to-[#141C2B] selection:bg-purple-900"
           : "bg-gradient-to-b from-slate-50 via-[#E9EFFE] to-white selection:bg-purple-200"
       }`}
     >
-      {/* Floating animation */}
+   
       <style>{`
         @keyframes floatGroup {
           0%, 100% {
@@ -220,7 +220,7 @@ export default function HeroSection() {
         }
       `}</style>
 
-      {/* ================= LEFT TECH STACK ================= */}
+     
       <div className="absolute left-4 top-1/2 z-20 hidden flex-col gap-4 animate-float-group md:flex lg:left-8 lg:gap-5 xl:left-12">
         {leftIcons.map((tech) => (
           <div key={tech.id} className="group relative">
@@ -256,7 +256,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* ================= RIGHT TECH STACK ================= */}
+
       <div className="absolute right-4 top-1/2 z-20 hidden flex-col gap-4 animate-float-group md:flex lg:right-8 lg:gap-5 xl:right-12">
         {rightIcons.map((tech) => (
           <div key={tech.id} className="group relative">
@@ -293,10 +293,10 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* ================= HERO CONTENT ================= */}
+      
       <main className="z-10 mx-auto flex w-full max-w-3xl flex-1 flex-col items-center justify-center pt-20 text-center md:py-25 lg:py-0">
 
-        {/* Badge */}
+      
         <div
           className={`mb-6 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-semibold shadow-sm backdrop-blur-sm sm:text-sm ${
             isDarkMode
@@ -308,12 +308,12 @@ export default function HeroSection() {
           Full Stack Developer
         </div>
 
-        {/* Name */}
+       
         <h1 className="mb-6 text-3xl font-bold leading-none tracking-tight text-purple-600 drop-shadow-sm sm:text-6xl md:text-6xl lg:text-8xl">
           Kawsar Ahmed
         </h1>
 
-        {/* Description */}
+       
         <p
           className={`mb-8 max-w-xl text-[13px] font-medium leading-relaxed sm:text-xl ${
             isDarkMode ? "text-slate-300" : "text-slate-600"
@@ -326,7 +326,7 @@ export default function HeroSection() {
           with modern web technologies
         </p>
 
-        {/* Feature Pills */}
+       
         <div className="mb-10 flex flex-wrap items-center justify-center gap-3">
 
           <div
@@ -377,15 +377,15 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Buttons */}
+       
         <div className="flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row">
 
-          <button className="flex w-60 cursor-pointer items-center justify-center gap-2 rounded-full bg-purple-600 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-purple-500/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-purple-700 hover:shadow-purple-500/50 active:translate-y-0 sm:w-auto sm:text-base">
+          <a href="#projects" className="flex w-60 cursor-pointer items-center justify-center gap-2 rounded-full bg-purple-600 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-purple-500/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-purple-700 hover:shadow-purple-500/50 active:translate-y-0 sm:w-auto sm:text-base">
             <span>View Projects</span>
             <span>→</span>
-          </button>
+          </a>
 
-          <button
+          <a href="#contact"
             className={`flex w-60 cursor-pointer items-center justify-center gap-2 rounded-full border-2 px-8 py-3.5 text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 sm:w-auto sm:text-base ${
               isDarkMode
                 ? "border-purple-500 bg-slate-900 text-purple-400 hover:bg-purple-950/50"
@@ -394,10 +394,10 @@ export default function HeroSection() {
           >
             <span>Get In Touch</span>
             <span className="text-xs">↗</span>
-          </button>
+          </a>
         </div>
 
-        {/* Mobile Tech Stack */}
+      
         <div
           className={`mt-12 block w-full border-t pt-6 md:hidden ${
             isDarkMode
@@ -438,7 +438,7 @@ export default function HeroSection() {
         </div>
       </main>
 
-      {/* ================= FOOTER SCROLL INDICATOR ================= */}
+     
       <footer className="z-10 flex flex-col items-center pt-4 pb-2 lg:pt-0 lg:pb-0">
         <div
           className={`flex h-10 w-6 justify-center rounded-full border-2 p-1.5 opacity-70 transition-opacity hover:opacity-100 ${

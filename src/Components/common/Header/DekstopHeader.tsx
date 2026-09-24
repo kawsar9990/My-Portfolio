@@ -125,13 +125,19 @@ return (
             )}
           </Button>
 
-          <Button
+          <a 
+          href="/kawsar-cv.pdf"
+          download="Kawsar_Ahmed_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+            <Button
             size="sm"
             className="gap-2 cursor-pointer rounded-full bg-purple-600 px-5 py-5 text-sm font-medium text-white shadow-md hover:bg-purple-700"
           >
             Download CV
             <ChevronRight className="h-4 w-4" />
           </Button>
+          </a>
         </div>
       </div>
     </header>

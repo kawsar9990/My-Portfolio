@@ -9,14 +9,7 @@ import ClientLayout from "@/Components/layout/ClientLayout";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: [
-    "300",
-    "400",
-    "500",
-    "600",
-    "700",
-    "800",
-  ],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -45,17 +38,12 @@ keywords: [
   "Next.js Developer",
   "TypeScript Developer",
   "JavaScript Developer",
-  "Software Engineer",
   "Node.js Developer",
   "Portfolio",
   "Web Development",
 ],
 
-authors: [
-  {
-    name: "Kawsar Ahmed",
-  },
-],
+authors: [{ name: "Kawsar Ahmed" }],
 
 creator: "Kawsar Ahmed",
 publisher: "Kawsar Ahmed",
@@ -67,7 +55,6 @@ category: "technology",
 robots: {
   index: true,
   follow: true,
-
   googleBot: {
     index: true,
     follow: true,
@@ -80,14 +67,10 @@ robots: {
 openGraph: {
   type: "website",
   locale: "en_US",
-
   siteName: "Engineer MD.Kawsar Ahmed",
-
   title: "Kawsar Ahmed | Software Engineer",
-
   description:
   "Software Engineer passionate about crafting modern digital experiences through innovative technologies, clean architecture, and scalable solutions.",
-  
   images: [
     {
       url: "/og-image.png",
@@ -100,19 +83,16 @@ openGraph: {
 
 twitter: {
   card: "summary_large_image",
-
   title: "Kawsar Ahmed | Software Engineer",
-
   description:
     "Software Engineer crafting modern digital experiences with modern web technologies.",
-
   images: ["/og-image.png"],
 },
-
 icons: {
   icon: "/favicon.ico",
   apple: "/apple-touch-icon.png",
-}
+},
+
 };
 
 export const viewport: Viewport = {
@@ -125,6 +105,18 @@ export const viewport: Viewport = {
   ],
 };
 
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Kawsar Ahmed",
+  jobTitle: "Software Engineer",
+  url: "https://kawsar9990.netlify.app",
+  sameAs: [
+    "https://github.com/kawsar9990",
+    "https://www.linkedin.com/in/kawsar-ahmed-2a466441b",
+  ],
+};
 
 
 export default function RootLayout({
@@ -140,7 +132,13 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-background font-sans text-foreground"
       suppressHydrationWarning>
-         <ThemeProvider>
+
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
+        <ThemeProvider>
         <ClientLayout>
           {children}
         </ClientLayout>
