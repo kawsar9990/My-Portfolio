@@ -56,5 +56,13 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790185154/PasswordGenerator_Showcase_kckwew.png",
     technologies: ["React", "Javascript", "Tailwind CSS"],
     projectLink: "/project/project-7",
+  },
+  {
+    id: 8,
+    title: "Oggy Ai | Kawsar Smart AI Assistant",
+    description: "Oggy AI is a powerful AI chatbot that helps you answer questions, generate content, solve problems, and boost productivity with intelligent conversations.",
+    image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790479644/AskForOGGY_Showcase_hfghre.png",
+    technologies: ["React", "Next.Js", "Javascript", "Tailwind CSS"],
+    projectLink: "/project/project-8"
   }
 ];
