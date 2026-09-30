@@ -20,7 +20,7 @@ export default function About() {
           <div className="lg:col-span-5 md:col-span-5 flex justify-center w-full">
             <div className="relative w-full h-full min-h-[350px] lg:min-h-full rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-black group">
               <Image
-                src="/IMG_8948.JPG.jpeg"
+                src="/Ks.png"
                 alt="Kawsar Ahmed - Web Developer and SEO Specialist"
                 fill
                 priority
