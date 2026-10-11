@@ -6,7 +6,7 @@ export const goKawsarData: ProjectDetails = {
   description:
     "GoKawsar is a full-stack online ticketing platform for booking bus, train, launch, and event tickets with real-time seat selection and instant SMS ticketing.",
   images: [
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790187756/Screenshot_2026-09-23_171516_sz2kqw.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791689717/17c8d321-a01a-4b7e-b70c-89b4ddec1a8d.png",
     "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790187761/Screenshot_2026-09-23_171323_gnz1tb.png",
     "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790187756/Screenshot_2026-09-23_171405_z8ay2q.png",
     "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790187755/Screenshot_2026-09-24_002113_kicqix.png",

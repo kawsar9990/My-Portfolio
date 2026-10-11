@@ -19,20 +19,23 @@ export default function ProjectsSection() {
             {projectsData.map((project) => (
               <div
                 key={project.id}
-                className="bg-white dark:bg-[#121624] border border-slate-200 dark:border-[#1e2338] rounded-xl overflow-hidden shadow-md dark:shadow-lg flex flex-col justify-between hover:border-purple-500/50 dark:hover:border-[#a855f7]/50 transition-all duration-300 group"
+                className="bg-white dark:bg-[#121624] border border-slate-200 dark:border-[#1e2338] rounded-xl overflow-hidden shadow-md dark:shadow-lg flex flex-col justify-between hover:border-purple-500/50 dark:hover:border-[#a855f7]/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
               >
                 <div>
-                  <div className="relative w-full aspect-[16/10] bg-slate-100 dark:bg-[#1a1f33] overflow-hidden">
+            
+                  <div className="relative w-full aspect-[16/9] overflow-hidden bg-slate-900">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover cursor-pointer object-top transition-all duration-1000 ease-in-out group-hover:object-bottom"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-fill cursor-pointer transition-transform duration-500 ease-out group-hover:scale-105"
                     />
                   </div>
+     
 
                   <div className="p-5">
-                    <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white line-clamp-1">
+                    <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white line-clamp-1 group-hover:text-purple-600 dark:group-hover:text-[#a855f7] transition-colors duration-200">
                       {project.title}
                     </h3>
                     <p className="text-slate-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 leading-relaxed">
@@ -57,9 +60,9 @@ export default function ProjectsSection() {
                     href={project.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 dark:bg-[#a855f7] dark:hover:bg-[#9333ea] text-white font-medium text-sm rounded-lg transition-colors duration-200 gap-2 shadow-sm hover:shadow-md"
+                    className="inline-flex items-center justify-center w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 dark:bg-[#a855f7] dark:hover:bg-[#9333ea] text-white font-medium text-sm rounded-lg transition-all duration-200 gap-2 shadow-sm hover:shadow-md active:scale-95"
                   >
-                    View Project <span className="text-base">→</span>
+                    View Project <span className="text-base transition-transform duration-200 group-hover:translate-x-1">→</span>
                   </Link>
                 </div>
               </div>

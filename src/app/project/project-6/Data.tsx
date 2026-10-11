@@ -22,7 +22,7 @@ export const kawsarRentalsData: ProjectDetails = {
   duration: "15 days",
   team: "Solo Project",
   role: "Mern Stack Developer",
-  liveDemoLink: "https://github.com/kawsar9990/car-rental-project",
+  liveDemoLink: "https://kawsar-car-rental.netlify.app",
   frontendCodeLink: "https://github.com/kawsar9990/car-rental-project",
   backendCodeLink: "https://github.com/kawsar9990/car-rental-project",
   overview:

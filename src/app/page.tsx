@@ -3,13 +3,12 @@ import type { Metadata } from "next";
 import HeroSection from "@/Components/sectionn/Home/home";
 import About from "@/Components/sectionn/about/page";
 import TechnicalExpertise from "@/Components/sectionn/skill/page";
-import Experience from "@/Components/sectionn/Experience/page";
 import ProjectsSection from "@/Components/sectionn/Project/page";
 import ServicesSection from "@/Components/sectionn/services/page";
-import Education from "@/Components/sectionn/Education/page";
 import PersonalBrandCard from "@/Components/sectionn/OthersWebLink/page";
 import ContactPAge from "@/Components/sectionn/contact/page";
 import GoogleMap from "@/Components/sectionn/Map/page";
+import ResumeSection from "@/Components/sectionn/MyResume/page";
 import BlogSection from "@/Components/sectionn/Blog/page";
 
 
@@ -33,21 +32,18 @@ return (
      <TechnicalExpertise />
 </section>
 
-<div>
-     <Experience />
-</div>
-
 <div id="projects">
      <ProjectsSection />
+</div>
+
+<div>
+     <ResumeSection />
 </div>
 
 <section>
      <ServicesSection />
 </section>
 
-<div>
-    <Education />
-</div>
 
 <div id="blogs">
      <BlogSection />

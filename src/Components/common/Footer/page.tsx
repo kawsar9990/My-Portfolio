@@ -20,7 +20,7 @@ export default function Footer() {
     {
       id: 4,
       icon: <FaFacebookF className="text-lg text-white" />,
-      url: "https://www.facebook.com/profile.php?id=61594494171535", 
+      url: "https://www.facebook.com/profile.php?id=61595245975203", 
       label: "Facebook",
     },
   ];

@@ -2,14 +2,14 @@ import { ProjectDetails } from "@/types/ProjectDetails";
 
 export const kawsarLiveStreamData: ProjectDetails = {
   id: "kawsar-livestream",
-  title: "KawsarStream+ | Live TV & Sports Hub",
+  title: "KMStreamX | Online IPTV Platfrom",
   description:
-    "Kawsar LiveStream + is a full-stack OTT streaming web application for watching live sports, cricket matches, news, and TV channels with adaptive HLS video playback.",
+    "KMStreamX is a full-stack OTT streaming web application for watching live sports, cricket matches, news, and TV channels with adaptive HLS video playback.",
   images: [
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188188/Screenshot_2026-09-23_231100_sfz7ko.png",
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188187/Screenshot_2026-09-23_231030_aad3ek.png",
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188188/Screenshot_2026-09-23_231100_sfz7ko.png",
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188188/Screenshot_2026-09-23_231016_ffcthd.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791689969/1a91bbd9-a7b2-45e9-a578-8fad72e9d613.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690063/2cb67678-3edd-48c4-8fb4-876dd6ebc6c5.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690008/2b4070dc-28a2-4feb-a251-2bd0918c2869.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690039/aaa817a2-3658-4c78-b19b-89b8305bf573.png",
   ],
   technologies: [
     "Next.js",
@@ -21,14 +21,14 @@ export const kawsarLiveStreamData: ProjectDetails = {
     "Docker",
     "Tailwind CSS",
   ],
-  duration: "15 days",
+  duration: "10 days",
   team: "Solo Project",
   role: "Full Stack Developer",
-  liveDemoLink: "https://github.com/kawsar9990/kawsar-livestream-project-frontend",
-  frontendCodeLink: "https://github.com/kawsar9990/kawsar-livestream-project-frontend",
-  backendCodeLink: "https://github.com/kawsar9990/kawsar-livestream-project-backend",
+  liveDemoLink: "https://kmstreamx.netlify.app",
+  frontendCodeLink: "https://github.com/kawsar9990/KMStreamX-frontend",
+  backendCodeLink: "https://github.com/kawsar9990/KMStreamX-backend",
   overview:
-    "Kawsar LiveStream + provides high-quality, low-latency live streaming for sports enthusiasts and TV viewers. Users can watch live cricket & football matches, access 24/7 news channels, view real-time match scores, and interact in live community match chats.",
+    "KMStreamX provides high-quality, low-latency live streaming for sports enthusiasts and TV viewers. Users can watch live cricket & football matches, access 24/7 news channels, view real-time match scores, and interact in live community match chats.",
   keyFeatures: [
     "Adaptive HLS video player with quality switching (1080p, 720p, 480p, Auto)",
     "Live sports score integration with real-time ball-by-ball updates",

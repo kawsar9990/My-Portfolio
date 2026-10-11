@@ -6,10 +6,10 @@ export const artAiData: ProjectDetails = {
   description:
     "art.ai is a full-stack e-commerce and AI creation platform where users can generate custom AI artwork, buy high-end commercial printers, and order custom canvas prints.",
   images: [
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188653/Screenshot_2026-09-23_170433_w1xmp9.png",
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188654/Screenshot_2026-09-23_170448_bqt4ju.png",
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188653/Screenshot_2026-09-23_170433_w1xmp9.png",
-    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1790188653/Screenshot_2026-09-23_170508_ciemcd.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690497/e0bcfb58-efc8-4950-a1af-10122a52c78a.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690484/cc2145c2-4b7d-436d-9219-e11a500c8eff.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690410/c11f2a52-4349-4c18-a31f-34cabf3e7a16.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690400/788bfd08-c73a-4d82-aca2-add39f40f338.png",
   ],
   technologies: [
     "Next.js",
