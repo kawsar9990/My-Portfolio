@@ -116,7 +116,7 @@ export default function ContactSection() {
     >
       <div className="max-w-6xl mx-auto">
 
-      <div className="flex flex-col items-center text-center mb-12 md:mb-16">
+      <div className="flex flex-col items-center text-center mb-7">
         <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#9333ea] dark:text-purple-400 uppercase bg-purple-100 dark:bg-purple-950/60 px-4 py-1.5 rounded-full mb-3 border border-purple-200 dark:border-purple-800">
           Get In Touch
         </span>

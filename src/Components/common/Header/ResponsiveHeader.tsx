@@ -11,6 +11,7 @@ import {
   ArrowDownToLine,
   Menu,
   X,
+  ChevronRight
 } from "lucide-react"
 
 const navItems = [
@@ -224,7 +225,7 @@ export default function ResponsiveHeader() {
         }`}
       >
         <span>{item.name}</span>
-        <ArrowDownToLine
+        <ChevronRight
           className={`h-4 w-4 ${
             isActive
               ? "text-[#8b5cf6]"

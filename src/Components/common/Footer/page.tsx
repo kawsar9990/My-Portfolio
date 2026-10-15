@@ -128,14 +128,14 @@ return (
 <div className="lg:col-span-3 space-y-3">
 <h4 className="text-[12px] font-semibold text-slate-900 dark:text-white tracking-wide uppercase">Get In Touch</h4>
 <div className="space-y-3">
-  <a href="mailto:najamrazzaq7861@gmail.com" className="flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-colors">
+  <a href="mailto:kawsar158464@gmail.com" className="flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-colors">
     <FaEnvelope className="h-3.5 w-3.5 text-[#C050FF] flex-shrink-0" />
     <span className="text-[12px]">kawsar158464@gmail.com</span>
   </a>
 
-<a href="tel:+923278737313" className="flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-colors">
+<a href="tel:+8801611236444" className="flex items-center gap-2.5 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-colors">
   <FaPhoneAlt className="h-3.5 w-3.5 text-[#C050FF] flex-shrink-0" />
-  <span className="text-[12px]">+880 1602 084 187</span>
+  <span className="text-[12px]">+880 1611 236 444</span>
 </a>
 
 <div className="flex gap-2 pt-1">
