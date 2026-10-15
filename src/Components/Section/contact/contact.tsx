@@ -62,7 +62,7 @@ export default function ContactSection() {
     return (
       <section
         className={`py-12 px-4 flex flex-col items-center justify-center min-h-[300px] transition-colors duration-300 ${
-          isDarkMode ? "bg-[#141C2B] text-white" : "bg-[#FFFFFF] text-gray-900"
+          isDarkMode ? "bg-[#141C2B] text-white" : "bg-slate-50 text-gray-900"
         }`}
       >
         <div className="text-center">
@@ -111,16 +111,20 @@ export default function ContactSection() {
   return (
     <section
       className={`py-8 transition-colors duration-300 ${
-        isDarkMode ? "bg-[#141C2B]" : "bg-[#FFFFFF]"
+        isDarkMode ? "bg-[#141C2B]" : "bg-slate-50"
       }`}
     >
       <div className="max-w-6xl mx-auto">
 
-        <div className="text-center mb-10 md:mb-16">
-       <h2 className="text-3xl sm:text-4xl font-extrabold text-[#9333ea] tracking-tight">
-          Contact Me
+      <div className="flex flex-col items-center text-center mb-12 md:mb-16">
+        <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#9333ea] dark:text-purple-400 uppercase bg-purple-100 dark:bg-purple-950/60 px-4 py-1.5 rounded-full mb-3 border border-purple-200 dark:border-purple-800">
+          Get In Touch
+        </span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
+          Contact <span className="text-[#9333ea] dark:text-purple-400">Me</span>
         </h2>
-        </div>
+        <div className="w-12 h-1 bg-[#9333ea] dark:bg-purple-500 rounded-full mt-3" />
+      </div>
        
 
         <div className="grid lg:grid-cols-[280px_1fr] gap-4 px-5">

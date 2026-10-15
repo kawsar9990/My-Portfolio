@@ -27,15 +27,20 @@ export default function ServicesSection() {
 
 return (
     <div >
-      <section className="py-16 px-4 bg-[#FFFFFF] dark:bg-[#141C2B] transition-colors duration-300 flex flex-col justify-center items-center relative">
+      <section className="py-16 px-4 bg-slate-50 dark:bg-[#141C2B] transition-colors duration-300 flex flex-col justify-center items-center relative">
         
 
         <div className="max-w-6xl mx-auto text-center">
       
-           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#9333ea] tracking-tight">
-             Services Offered
-            </h2>
-
+<div className="flex flex-col items-center text-center mb-12 md:mb-16">
+  <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#9333ea] dark:text-purple-400 uppercase bg-purple-100 dark:bg-purple-950/60 px-4 py-1.5 rounded-full mb-3 border border-purple-200 dark:border-purple-800">
+    What I Do
+  </span>
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
+    Services <span className="text-[#9333ea] dark:text-purple-400">Offered</span>
+  </h2>
+  <div className="w-12 h-1 bg-[#9333ea] dark:bg-purple-500 rounded-full mt-3" />
+</div>
      
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (

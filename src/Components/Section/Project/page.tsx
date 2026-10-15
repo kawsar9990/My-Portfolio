@@ -16,14 +16,18 @@ const filteredProjects =
       : projectsData.filter((project) => project.category === activeTab);
 
 return (
-    <div>
-      <section className="bg-[#FFFFFF] dark:bg-[#141C2B] text-slate-800 dark:text-white py-12 px-4 sm:px-6 lg:px-8 min-h-screen transition-colors duration-300">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#9333ea] tracking-tight">
-              My Projects
-            </h2>
-          </div>
+<div>
+<section className="bg-slate-50 dark:bg-[#141C2B] text-slate-800 dark:text-white py-12 px-4 sm:px-6 lg:px-8 min-h-screen transition-colors duration-300">
+<div className="max-w-6xl mx-auto">
+<div className="flex flex-col items-center text-center mb-12 md:mb-16">
+  <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#9333ea] dark:text-purple-400 uppercase bg-purple-100 dark:bg-purple-950/60 px-4 py-1.5 rounded-full mb-3 border border-purple-200 dark:border-purple-800">
+    My Recent Work
+  </span>
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
+    My <span className="text-[#9333ea] dark:text-purple-400">Projects</span>
+  </h2>
+  <div className="w-12 h-1 bg-[#9333ea] dark:bg-purple-500 rounded-full mt-3" />
+</div>
 
        <ProjectTabs activeTab={activeTab} setActiveTab={setActiveTab} />   
 

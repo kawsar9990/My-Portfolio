@@ -174,7 +174,7 @@ const { isDarkMode } = useMountedTheme()
   className={`relative flex w-full items-center justify-center overflow-hidden px-4 pt-24 pb-8 sm:px-8 sm:pt-28 sm:pb-10 lg:px-12 lg:pt-28 lg:pb-12 font-sans transition-colors duration-500 ${
     isDarkMode
       ? "bg-gradient-to-b from-slate-950 via-[#111827] to-[#141C2B] selection:bg-purple-900"
-      : "bg-gradient-to-b from-slate-50 via-[#E9EFFE] to-white selection:bg-purple-200"
+      : "bg-gradient-to-b from-[#F1ECFC] via-[#E9EFFE] to-slate-50 selection:bg-purple-200"
   }`}
 >
       <style>{`
