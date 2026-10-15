@@ -7,6 +7,7 @@ export const projectsData: Project[] = [
     description: "KawsarShop is an end-to-end full-stack e-commerce web application featuring real-time inventory management, seamless checkout, and admin analytics.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791688547/kawsarshop-thumbnail_jgwswu.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    category: "professional",
     projectLink: "/project/project-1",
   },
   {
@@ -15,6 +16,7 @@ export const projectsData: Project[] = [
     description: "Kawsar.Restaurant is a full-stack food delivery, table reservation, and online menu management web application built for seamless dining experiences.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791689290/kawsar-restaurant-thumbnail_xufarq.png",
     technologies: ["React", "Tailwind CSS", "Javascript", "Redux Toolkit"],
+    category: "professional",
     projectLink: "/project/project-2",
   },
   {
@@ -23,6 +25,7 @@ export const projectsData: Project[] = [
     description: "GoKawsar is a full-stack online ticketing platform for booking bus, train, launch, and event tickets with real-time seat selection and instant SMS ticketing.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791689770/gokawsar-thumbnail_tki6yl.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "Redis", "Socket.io"],
+    category: "professional",
     projectLink: "/project/project-3",
   },
   {
@@ -31,6 +34,7 @@ export const projectsData: Project[] = [
     description: "Watch live TV channels, sports events, and premium entertainment all in one place. KawsarStream+ delivers a seamless streaming experience with high-quality content anytime, anywhere.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690223/kmstreamx-thumbnail_n5d8vx.png",
     technologies: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Redis", "Fastify", "Socket.io"],
+    category: "professional",
     projectLink: "/project/project-4",
   },
   {
@@ -39,6 +43,7 @@ export const projectsData: Project[] = [
     description: "art.ai is a full-stack e-commerce and AI creation platform where users can generate custom AI artwork, buy high-end commercial printers, and order custom canvas prints.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690568/art-ai-thumbnail_kkhjxf.png",
     technologies: ["Next.js", "React", "Redux Toolkit", "Bootstrap 5", "Javascript"],
+    category: "professional",
     projectLink: "/project/project-5",
   },
   {
@@ -47,6 +52,7 @@ export const projectsData: Project[] = [
     description: "A modern car rental platform that allows users to browse, compare, and book vehicles effortlessly. Featuring real-time availability, secure reservations, flexible rental options, and a seamless user experience.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791691282/car-rental-thumbnail_ahm0um.png",
     technologies: ["React", "Taliwind CSS", "Redux Toolkit", "Javascript", "React Router"],
+    category: "personal",
     projectLink: "/project/project-6",
   },
   {
@@ -55,6 +61,7 @@ export const projectsData: Project[] = [
     description: "A modern password generator that helps users create strong, secure, and customizable passwords instantly. Features include adjustable password length, character selection, and one-click copy functionality for enhanced security and convenience.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791691493/password-generator-v4-terminal_u4lv3r.png",
     technologies: ["React", "Javascript", "Tailwind CSS"],
+    category: "personal",
     projectLink: "/project/project-7",
   },
   {
@@ -63,6 +70,7 @@ export const projectsData: Project[] = [
     description: "Oggy AI is a powerful AI chatbot that helps you answer questions, generate content, solve problems, and boost productivity with intelligent conversations.",
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791691680/oggy-thumbnail_hdjdsq.png",
     technologies: ["React", "Next.Js", "Javascript", "Tailwind CSS"],
+    category: "personal",
     projectLink: "/project/project-8"
   }
 ];

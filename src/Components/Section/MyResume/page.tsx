@@ -41,7 +41,7 @@ return (
     <section className="bg-white dark:bg-[#141C2B] text-gray-900 dark:text-white min-h-screen py-16 px-6 md:px-16 lg:px-24 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-cyan-600 dark:text-[#00f2fe] mb-16 tracking-wide">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center text-[#9333ea] dark:text-[#9333ea] mb-16 tracking-wide">
           My Resume
         </h2>
 
@@ -51,14 +51,14 @@ return (
 
           <div>
             <div className="flex items-center gap-3 mb-10">
-              <span className="text-cyan-600 dark:text-[#00f2fe]">
+              <span className="text-[#9333ea] dark:text-[#9333ea]">
      
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15l-3.5 2 1-4-3-2.5 4-.5L12 7l1.5 3 4 .5-3 2.5 1 4L12 15z" />
                   <circle cx="12" cy="12" r="9" strokeWidth={2} />
                 </svg>
               </span>
-              <h3 className="text-2xl font-bold text-cyan-600 dark:text-[#00f2fe]">Experience</h3>
+              <h3 className="text-2xl font-bold text-[#9333ea] dark:text-[#9333ea]">Experience</h3>
             </div>
 
             <div className="space-y-10">
@@ -67,7 +67,7 @@ return (
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white">{item.title}</h4>
                   <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 font-medium">
                     <span>{item.organization}</span>
-                    <span>{item.period}</span>
+                    <span className="text-[10px] sm:text-[13px]">{item.period}</span>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{item.description}</p>
                 </div>
@@ -78,7 +78,7 @@ return (
 
           <div>
             <div className="flex items-center gap-3 mb-10">
-              <span className="text-cyan-600 dark:text-[#00f2fe]">
+              <span className="text-[#9333ea] dark:text-[#9333ea]">
      
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -86,7 +86,7 @@ return (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14v7" />
                 </svg>
               </span>
-              <h3 className="text-2xl font-bold text-cyan-600 dark:text-[#00f2fe]">Education</h3>
+              <h3 className="text-2xl font-bold text-[#9333ea] dark:text-[#9333ea]">Education</h3>
             </div>
 
             <div className="space-y-10">
@@ -95,7 +95,7 @@ return (
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white">{item.title}</h4>
                   <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 font-medium">
                     <span>{item.organization}</span>
-                    <span>{item.period}</span>
+                    <span className="text-[10px] sm:text-[13px]">{item.period}</span>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">{item.description}</p>
                 </div>

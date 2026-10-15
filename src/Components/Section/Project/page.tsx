@@ -1,11 +1,21 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import { projectsData } from "@/Data/ProjectData";
+import { ProjectTabs } from "./ProjectTabs";
+import { ProjectCategory } from "@/types/Project";
 
 export default function ProjectsSection() {
-  return (
+const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
+
+const filteredProjects =
+    activeTab === "all"
+      ? projectsData
+      : projectsData.filter((project) => project.category === activeTab);
+
+return (
     <div>
       <section className="bg-[#FFFFFF] dark:bg-[#141C2B] text-slate-800 dark:text-white py-12 px-4 sm:px-6 lg:px-8 min-h-screen transition-colors duration-300">
         <div className="max-w-6xl mx-auto">
@@ -15,8 +25,10 @@ export default function ProjectsSection() {
             </h2>
           </div>
 
+       <ProjectTabs activeTab={activeTab} setActiveTab={setActiveTab} />   
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projectsData.map((project) => (
+            {filteredProjects.map((project) => (
               <div
                 key={project.id}
                 className="bg-white dark:bg-[#121624] border border-slate-200 dark:border-[#1e2338] rounded-xl overflow-hidden shadow-md dark:shadow-lg flex flex-col justify-between hover:border-purple-500/50 dark:hover:border-[#a855f7]/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"

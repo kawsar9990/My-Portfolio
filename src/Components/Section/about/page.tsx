@@ -11,26 +11,26 @@ export default function About() {
       
         <div className="text-center mb-10 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#9333ea] tracking-tight">
-            About me
+            About Me
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-12 gap-8 md:gap-8 lg:gap-12 items-stretch">
        
           <div className="lg:col-span-5 md:col-span-5 flex justify-center w-full">
-            <div className="relative w-full h-full min-h-[350px] lg:min-h-full rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-black group">
+            <div className="relative w-full max-w-[350px] sm:max-w-none h-full min-h-[350px] lg:min-h-full rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-black">
               <Image
                 src="https://res.cloudinary.com/dkmzakgx2/image/upload/v1791688271/28491541824_rgb5ve.jpg"
                 alt="Kawsar Ahmed - Web Developer and SEO Specialist"
                 fill
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                className="object-cover sm:object-cover rounded-2xl transition-transform duration-500"
               />
             </div>
           </div>
 
-          <div className="lg:col-span-7 md:col-span-5 flex flex-col justify-between space-y-3 text-gray-700 dark:text-white text-base md:text-lg leading-relaxed">
+          <div className="lg:col-span-7 md:col-span-5 flex flex-col justify-between px-5 xm:px-0 space-y-3 text-gray-700 dark:text-white text-base md:text-lg leading-relaxed">
             
             <p className="text-[15px]">
               I&apos;m <strong className="text-gray-900 font-bold dark:text-white">Kawsar Ahmed</strong>, a{' '}

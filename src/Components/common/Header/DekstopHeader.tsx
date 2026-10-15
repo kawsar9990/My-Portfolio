@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/Components/ui/button"
-import { Sun, Moon, ChevronRight } from "lucide-react"
+import { Sun, Moon, ArrowDownToLine } from "lucide-react"
 import { useMountedTheme } from "@/hook/useMountedTheme"
 
 
@@ -34,6 +34,29 @@ export default function Dekstop() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+
+
+useEffect(() => {
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY + window.innerHeight / 3
+
+    navItems.forEach((item) => {
+      const section = document.querySelector<HTMLElement>(item.href)
+      if (section) {
+        const top = section.offsetTop
+        const height = section.offsetHeight
+        if (scrollPosition >= top && scrollPosition < top + height) {
+          setActiveTab(item.name)
+        }
+      }
+    })
+  }
+
+  window.addEventListener("scroll", handleScroll)
+  handleScroll()
+  return () => window.removeEventListener("scroll", handleScroll)
+}, [])
 
 return (
     <header
@@ -134,8 +157,8 @@ return (
             size="sm"
             className="gap-2 cursor-pointer rounded-full bg-purple-600 px-5 py-5 text-sm font-medium text-white shadow-md hover:bg-purple-700"
           >
-            Download CV
-            <ChevronRight className="h-4 w-4" />
+            Resume
+            <ArrowDownToLine strokeWidth={3} />
           </Button>
           </a>
         </div>

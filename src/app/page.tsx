@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 
-import HeroSection from "@/Components/sectionn/Home/home";
-import About from "@/Components/sectionn/about/page";
-import TechnicalExpertise from "@/Components/sectionn/skill/page";
-import ProjectsSection from "@/Components/sectionn/Project/page";
-import ServicesSection from "@/Components/sectionn/services/page";
-import PersonalBrandCard from "@/Components/sectionn/OthersWebLink/page";
-import ContactPAge from "@/Components/sectionn/contact/page";
-import GoogleMap from "@/Components/sectionn/Map/page";
-import ResumeSection from "@/Components/sectionn/MyResume/page";
-import BlogSection from "@/Components/sectionn/Blog/page";
+import HeroSection from "@/Components/Section/Home/home";
+import About from "@/Components/Section/about/page";
+import TechnicalExpertise from "@/Components/Section/skill/page";
+import ProjectsSection from "@/Components/Section/Project/page";
+import ServicesSection from "@/Components/Section/services/page";
+import ContactPAge from "@/Components/Section/contact/page";
+import GoogleMap from "@/Components/Section/Map/page";
+import ResumeSection from "@/Components/Section/MyResume/page";
+import BlogSection from "@/Components/Section/Blog/page";
 
 
 export const metadata: Metadata = {
@@ -40,17 +39,13 @@ return (
      <ResumeSection />
 </div>
 
-<section>
+<section id="services">
      <ServicesSection />
 </section>
 
 
 <div id="blogs">
      <BlogSection />
-</div>
-
-<div>
-     <PersonalBrandCard />
 </div>
 
 <section id="contact">

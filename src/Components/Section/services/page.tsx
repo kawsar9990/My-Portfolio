@@ -32,12 +32,9 @@ return (
 
         <div className="max-w-6xl mx-auto text-center">
       
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#A020F0] dark:text-[#C050FF] tracking-tight">
-            Services Offered
-          </h2>
-          <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-            I provide tailored technical, creative, and research-focused solutions to help build, organize, and grow modern digital products.
-          </p>
+           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#9333ea] tracking-tight">
+             Services Offered
+            </h2>
 
      
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">

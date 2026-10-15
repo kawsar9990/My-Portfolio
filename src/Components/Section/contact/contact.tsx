@@ -117,7 +117,7 @@ export default function ContactSection() {
       <div className="max-w-6xl mx-auto">
 
         <div className="text-center mb-10 md:mb-16">
-       <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#9333ea] tracking-tight">
+       <h2 className="text-3xl sm:text-4xl font-extrabold text-[#9333ea] tracking-tight">
           Contact Me
         </h2>
         </div>
@@ -162,7 +162,7 @@ export default function ContactSection() {
                 }`}
               >
                 <FaClock className="shrink-0" />
-                <span>Sat - Fri, 9:00 AM - 6:00 PM (GMT +6)</span>
+                <span>Sat - Fri, 9:00 AM - 11:00 PM (GMT +6)</span>
               </div>
             </div>
 

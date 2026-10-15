@@ -21,8 +21,8 @@ return (
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#A020F0] dark:text-[#C050FF] tracking-tight">
             Technical Expertise
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base md:text-lg font-normal leading-relaxed">
-            Modern frameworks, robust databases, and DevOps tools I utilize to build scalable web software.
+          <p className="text-slate-600 capitalize dark:text-slate-400 text-[10px] md:text-[13px] font-normal leading-relaxed">
+            Architecting scalable software with modern frameworks and robust tools.
           </p>
         </div>
 

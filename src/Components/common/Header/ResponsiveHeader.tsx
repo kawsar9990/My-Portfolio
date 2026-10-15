@@ -8,7 +8,7 @@ import { Button } from "@/Components/ui/button"
 import {
   Sun,
   Moon,
-  ChevronRight,
+  ArrowDownToLine,
   Menu,
   X,
 } from "lucide-react"
@@ -224,7 +224,7 @@ export default function ResponsiveHeader() {
         }`}
       >
         <span>{item.name}</span>
-        <ChevronRight
+        <ArrowDownToLine
           className={`h-4 w-4 ${
             isActive
               ? "text-[#8b5cf6]"
@@ -238,25 +238,25 @@ export default function ResponsiveHeader() {
   })}
 </nav>
 
-              <div className="mt-3 pt-1">
-                 <a 
-                  href="/kawsar-cv.pdf"
-                  download="Kawsar_Ahmed_CV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <Button
-                  size="lg"
-                  className="w-full cursor-pointer gap-2 rounded-xl bg-[#8b5cf6] py-4 text-sm font-medium text-white shadow-lg hover:bg-[#7c3aed]"
-                >
-                  Download CV
-                  <ChevronRight className="h-4 w-4" />
-                </Button>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
+    <div className="mt-3 pt-1">
+       <a 
+        href="/kawsar-cv.pdf"
+        download="Kawsar_Ahmed_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        <Button
+        size="lg"
+        className="w-full cursor-pointer gap-2 rounded-xl bg-[#8b5cf6] py-4 text-sm font-medium text-white shadow-lg hover:bg-[#7c3aed]"
+      >
+        Resume
+       <ArrowDownToLine strokeWidth={3} />
+      </Button>
+      </a>
+    </div>
+  </div>
+</motion.div>
+)}
+</AnimatePresence>
+</header>
   )
 }

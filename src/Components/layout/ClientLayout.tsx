@@ -4,6 +4,8 @@ import type { ReactNode } from "react";
 
 import Header from "../common/Header/Header";
 import Footer from "../common/Footer/page";
+import SmoothScroll from "../Scroll/SmoothScroll";
+import WhatsAppButton from "../Button/WhatsAppButton";
 import { NotFoundProvider, useNotFound } from "@/context/NotFoundContext";
 
 interface ClientLayoutProps {
@@ -17,17 +19,22 @@ function LayoutContent({ children }: ClientLayoutProps) {
   
 return(
 <>
+<SmoothScroll>
 {!shouldHideHeader && <Header />}
 <main>{children}</main>
 {!shouldHideFooter && <Footer />}
+<WhatsAppButton />
+</SmoothScroll>
 </>
 );
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
   return (
+    <SmoothScroll>
     <NotFoundProvider>
       <LayoutContent>{children}</LayoutContent>
     </NotFoundProvider>
+    </SmoothScroll>
   );
 }
