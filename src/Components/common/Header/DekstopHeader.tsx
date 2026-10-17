@@ -19,7 +19,7 @@ const navItems = [
 
 export default function Dekstop() {
   const [activeTab, setActiveTab] = useState("Home")
-  const { isDarkMode, toggleTheme } = useMountedTheme()
+  const { isDarkMode, toggleTheme } = useMountedTheme();
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -60,93 +60,77 @@ useEffect(() => {
 
 return (
     <header
-      className={`fixed top-0 left-0 right-0 z-999 w-full transition-all duration-300 ${
-        isDarkMode
-          ? isScrolled
-            ? "border-b border-slate-800 bg-[#0e131d] shadow-lg"
-            : "border-b border-transparent bg-[#0e131d] shadow-none"
-          : isScrolled
-            ? "border-b border-slate-200 bg-[#F9FAFC] shadow-lg"
-            : "border-b border-transparent bg-[#F7F5FC] shadow-none"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+       isScrolled
+    ? "border-b border-slate-200 bg-[#F9FAFC] shadow-lg dark:border-slate-800 dark:bg-[#0e131d]"
+    : "border-b border-transparent bg-slate-50 shadow-none dark:bg-[#0e131d]"
+}`}
     >
-      <div className="px-10 flex items-center justify-between py-4">
+<div className="px-10 flex items-center justify-between py-4">
    
-        <Link href="/" className="flex items-center gap-3 group">
-          <div 
-          className={`flex h-11 w-11 items-center justify-center rounded-xl font-bold text-xl shadow-md transition-transform group-hover:scale-105 ${
-              isDarkMode
-                ? "bg-white text-black"
-                : "bg-slate-900 text-white"
-            }`}
-          >
-            K
-          </div>
+<Link href="/" className="flex items-center gap-3 group">
+  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-900 text-white dark:bg-white dark:text-black font-bold text-xl shadow-md transition-transform group-hover:scale-105">
+    K
+  </div>
 
-          <div className="flex flex-col">
-            <span className={`text-lg font-bold leading-tight tracking-tight ${
-                isDarkMode ? "text-white" : "text-slate-900"
-              }`}>
-              Kawsar Ahmed
-            </span>
-            <span className="text-xs font-medium text-purple-600 dark:text-purple-400">
-              Full Stack Developer
-            </span>
-          </div>
-        </Link>
+  <div className="flex flex-col">
+    <span className="text-lg font-bold leading-tight tracking-tight text-slate-900 dark:text-white">
+      Kawsar Ahmed
+    </span>
+
+    <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
+      Full Stack Developer
+    </span>
+  </div>
+</Link>
 
 
-        <nav className="hidden items-center gap-1 md:flex">
-          {navItems.map((item) => {
-            const isActive = activeTab === item.name
-            return (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={() => setActiveTab(item.name)}
-                className={`relative px-3 py-1.5 text-sm font-medium transition-colors ${
-                  isActive
-                    ? "text-purple-600"
-                    : isDarkMode
-                      ? "text-slate-300 hover:text-white"
-                      : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                {item.name}
-                {isActive && (
-                  <motion.div
-                    layoutId="activeTab"
-                    className={`absolute inset-0 -z-10 rounded-lg ${
-                      isDarkMode
-                        ? "bg-purple-950/40"
-                        : "bg-purple-50"
-                    }`}
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  />
-                )}
-              </Link>
-            )
-          })}
-        </nav>
+<nav className="hidden items-center gap-1 md:flex">
+  {navItems.map((item) => {
+    const isActive = activeTab === item.name
+    return (
+      <Link
+        key={item.name}
+        href={item.href}
+        onClick={() => setActiveTab(item.name)}
+        className={`relative px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
+          isActive
+            ? "text-indigo-700 dark:text-indigo-300"
+            : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+        }`}
+      >
+        {item.name}
+        {isActive && (
+          <motion.span
+            layoutId="activeUnderlineLine"
+            className="absolute bottom-0 left-2 right-2 h-[3px] rounded-full bg-gradient-to-r from-indigo-600 to-indigo-500 shadow-[0_0_10px_rgba(147,51,234,0.6)]"
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 30,
+              mass: 0.8
+            }}
+          />
+        )}
+      </Link>
+    )
+  })}
+</nav>
 
 
-        <div className="hidden items-center gap-3 md:flex">
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={toggleTheme}
-            className={`h-10 w-10 cursor-pointer rounded-full shadow-sm transition-all ${
-              isDarkMode
-                ? "border-slate-700 bg-slate-900 hover:bg-slate-800"
-                : "border-slate-200 bg-white hover:bg-slate-100"
-            }`}
-          >
-            {isDarkMode ? (
-              <Sun className="h-4 w-4 text-amber-500" />
-            ) : (
-              <Moon className="h-4 w-4 text-slate-700" />
-            )}
-          </Button>
+<div className="hidden items-center gap-3 md:flex">
+  <Button
+    variant="outline"
+    size="icon"
+    onClick={toggleTheme}
+    className="h-10 w-10 cursor-pointer rounded-full border-slate-200 bg-white shadow-sm transition-all hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-slate-800"
+  >
+    {isDarkMode ? (
+      <Moon className="h-4 w-4 text-[#50A2FF]" />
+    ) : (
+      <Sun className="h-4 w-4 text-amber-500" />
+    )}
+  </Button>
 
           <a 
           href="/kawsar-cv.pdf"
@@ -155,10 +139,10 @@ return (
           rel="noopener noreferrer">
             <Button
             size="sm"
-            className="gap-2 cursor-pointer rounded-full bg-purple-600 px-5 py-5 text-sm font-medium text-white shadow-md hover:bg-purple-700"
+            className="gap-2 cursor-pointer rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 px-5 py-5 text-sm font-medium text-white shadow-md transition-all"
           >
             Resume
-            <ArrowDownToLine strokeWidth={3} />
+            <ArrowDownToLine strokeWidth={2.5} />
           </Button>
           </a>
         </div>

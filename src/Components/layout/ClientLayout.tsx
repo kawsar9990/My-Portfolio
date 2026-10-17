@@ -19,12 +19,10 @@ function LayoutContent({ children }: ClientLayoutProps) {
   
 return(
 <>
-<SmoothScroll>
 {!shouldHideHeader && <Header />}
 <main>{children}</main>
 {!shouldHideFooter && <Footer />}
 <WhatsAppButton />
-</SmoothScroll>
 </>
 );
 }

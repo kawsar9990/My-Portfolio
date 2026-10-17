@@ -1,73 +1,83 @@
 "use client";
 
-import { FileSpreadsheet, Code2, BrainCircuit, Sun, Moon } from 'lucide-react';
+import { FileSpreadsheet, Code2, BrainCircuit } from 'lucide-react';
 
 export default function ServicesSection() {
 
   const services = [
     {
       title: 'OFFICE & GRAPHIC SUPPORT',
-      icon: <FileSpreadsheet className="w-12 h-12 text-purple-600 dark:text-purple-400" />,
+      icon: <FileSpreadsheet className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />,
       description:
         'Professional data management using MS Office, Basic SEO, combined with quick visual content creation, photo editing, and social media banners using Canva and Photoshop.',
     },
     {
       title: 'FULL STACK DEVELOPMENT',
-      icon: <Code2 className="w-12 h-12 text-purple-600 dark:text-purple-400" />,
+      icon: <Code2 className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />,
       description:
         'Services covering front-end, back-end, databases, and APIs — specializing in MERN, MEVN, and PERN stacks for fast, scalable, modern web solutions.',
     },
     {
       title: 'DATA ANALYTICS & RESEARCH',
-      icon: <BrainCircuit className="w-12 h-12 text-purple-600 dark:text-purple-400" />,
+      icon: <BrainCircuit className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />,
       description:
         'Exploring data processing, Basic Python, Dev Ops, basic Linux workflows, and research-driven tasks related to Machine Learning and core data analysis.',
     },
   ];
 
-return (
-<div>
-<section className="py-16 px-4 bg-slate-50 dark:bg-[#141C2B] transition-colors duration-300 flex flex-col justify-center items-center relative">
-        
-<div className="max-w-6xl mx-auto text-center">
+  return (
+    <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
       
-<div className="flex flex-col items-center text-center mb-7">
-  <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#9333ea] dark:text-purple-400 uppercase bg-purple-100 dark:bg-purple-950/60 px-4 py-1.5 rounded-full mb-3 border border-purple-200 dark:border-purple-800">
-    What I Do
-  </span>
-  <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
-    Services <span className="text-[#9333ea] dark:text-purple-400">Offered</span>
-  </h2>
-  <div className="w-12 h-1 bg-[#9333ea] dark:bg-purple-500 rounded-full mt-3" />
-</div>
-     
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white cursor-pointer dark:bg-gray-800 rounded-lg p-8 border border-gray-100 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between"
-              >
-                <div className="flex flex-col items-center">
-          
-                  <div className="mb-6 p-4 bg-purple-50 dark:bg-purple-950/50 rounded-full">
-                    {service.icon}
-                  </div>
+   
+      <div className="absolute top-1/3 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
 
-         
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-4">
-                    {service.title}
-                  </h3>
-
+      <div className="max-w-6xl mx-auto relative z-10">
         
-                  <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+     
+        <div className="flex flex-col items-center text-center mb-10 md:mb-14">
+          <span className="text-xs sm:text-sm font-semibold tracking-widest text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-950/60 px-4 py-1.5 rounded-full mb-3 border border-indigo-200 dark:border-indigo-800">
+            What I Do
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+            Services <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-500 dark:from-indigo-400 dark:to-violet-400">Offered</span>
+          </h2>
+          <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full mt-3" />
         </div>
-      </section>
-    </div>
+
+  
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="group relative bg-white/80 dark:bg-slate-900/70 backdrop-blur-md cursor-pointer rounded-2xl p-6 sm:p-8 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl hover:shadow-indigo-500/15 hover:border-indigo-300 dark:hover:border-indigo-500/50 hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col items-center text-center justify-between overflow-hidden"
+            >
+       
+              <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+
+              <div className="flex flex-col items-center w-full relative z-10">
+                
+  
+                <div className="mb-6 p-4 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl transition-all duration-300 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:border-indigo-300 dark:group-hover:border-indigo-600 group-hover:shadow-md group-hover:shadow-indigo-500/20">
+                  {service.icon}
+                </div>
+
+          
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white uppercase tracking-wide mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-all duration-300 transform group-hover:-translate-y-0.5">
+                  {service.title}
+                </h3>
+
+           
+                <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+                  {service.description}
+                </p>
+
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
   );
 }

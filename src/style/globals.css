@@ -8,7 +8,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 15px !important;
+  width: 10px !important;
   height: 20px !important;
 }
 
@@ -18,21 +18,27 @@ html {
 
 
 ::-webkit-scrollbar-thumb {
-  background-color: #9810FA;
+  background-color: #6C5DFF;
   border-radius: 10px; 
   cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(169, 64, 245); 
+  background-color: #2411cf; 
 }
 
 @supports (-moz-appearance: none) {
   html {
-    scrollbar-color: #9810FA transparent;
+    scrollbar-color: #6C5DFF transparent;
     scrollbar-width: auto;
   }
 }
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float-card { animation: floatCard 4s ease-in-out infinite; }
 
 @custom-variant dark (&:is(.dark *));
 

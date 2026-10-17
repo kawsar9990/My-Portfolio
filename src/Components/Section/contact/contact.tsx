@@ -11,10 +11,8 @@ import {
   FaFacebookF,
   FaCheckSquare,
 } from "react-icons/fa";
-import { useMountedTheme } from "@/hook/useMountedTheme";
 
 export default function ContactSection() {
-  const { isDarkMode } = useMountedTheme();
   const formRef = useRef<HTMLFormElement>(null);
   const phoneInputRef = useRef<HTMLInputElement>(null);
   const [submitted, setSubmitted] = useState(false);
@@ -60,29 +58,24 @@ export default function ContactSection() {
 
   if (submitted) {
     return (
-      <section
-        className={`py-12 px-4 flex flex-col items-center justify-center min-h-[300px] transition-colors duration-300 ${
-          isDarkMode ? "bg-[#141C2B] text-white" : "bg-slate-50 text-gray-900"
-        }`}
-      >
-        <div className="text-center">
-          <div className="inline-flex items-center justify-center gap-2 mb-2">
-            <FaCheckSquare className="text-2xl text-green-500" />
-            <h2 className="text-2xl font-bold text-green-500">
+      <section className="relative w-full py-16 md:py-20 px-4 flex flex-col items-center justify-center min-h-[350px] transition-colors duration-500 bg-slate-50 text-slate-900 dark:bg-[#141C2B] dark:text-white overflow-hidden">
+        <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="relative z-10 text-center p-8 bg-white/80 dark:bg-slate-900/70 backdrop-blur-md rounded-2xl border border-indigo-200/80 dark:border-indigo-900/40 shadow-xl max-w-md w-full">
+          <div className="inline-flex items-center justify-center gap-2 mb-3">
+            <FaCheckSquare className="text-3xl text-emerald-500" />
+            <h2 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
               Message sent successfully!
             </h2>
           </div>
-          <p
-            className={`text-sm ${
-              isDarkMode ? "text-gray-300" : "text-gray-600"
-            }`}
-          >
+          <p className="text-sm text-slate-600 dark:text-slate-300">
             Thanks for reaching out. I&apos;ll get back to you soon.
           </p>
 
           <button
             onClick={() => setSubmitted(false)}
-            className="mt-4 text-violet-500 cursor-pointer underline text-xs font-medium hover:text-violet-400 transition block mx-auto"
+            className="mt-6 text-indigo-600 dark:text-indigo-400 cursor-pointer underline text-xs font-semibold hover:text-violet-500 transition block mx-auto"
           >
             Send another message
           </button>
@@ -91,90 +84,75 @@ export default function ContactSection() {
     );
   }
 
+  const cardBgClass =
+    "bg-white/80 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm";
 
-  const cardBgClass = isDarkMode
-    ? "bg-[#111827] border border-gray-800 text-gray-100"
-    : "bg-white border border-gray-100 text-gray-900";
+  const inputClass =
+    "w-full px-3.5 text-xs sm:text-sm rounded-xl outline-none transition-all duration-300 bg-slate-100/80 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20";
 
-  const inputClass = `w-full px-3 text-xs rounded-md outline-none transition-colors focus:border-2 focus:border-violet-600 ${
-    isDarkMode
-      ? "bg-[#1F2937] border border-gray-700 text-white placeholder-gray-400"
-      : "bg-gray-100 border border-gray-200 text-gray-900 placeholder-gray-500"
-  }`;
-
-  const socialIconClass = `w-8 h-8 flex items-center justify-center rounded-full transition text-xs ${
-    isDarkMode
-      ? "bg-gray-800 text-violet-400 hover:bg-violet-600 hover:text-white"
-      : "bg-gray-100 text-violet-600 hover:bg-violet-600 hover:text-white"
-  }`;
+  const socialIconClass =
+    "w-9 h-9 flex items-center justify-center rounded-xl transition-all duration-300 text-xs bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/70 dark:border-indigo-800/50 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-violet-600 hover:text-white hover:border-transparent hover:scale-105 shadow-sm";
 
   return (
-    <section
-      className={`py-8 transition-colors duration-300 ${
-        isDarkMode ? "bg-[#141C2B]" : "bg-slate-50"
-      }`}
-    >
-      <div className="max-w-6xl mx-auto">
+    <section className="relative w-full py-16 md:py-10 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
+      
+    
+      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="flex flex-col items-center text-center mb-7">
-        <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#9333ea] dark:text-purple-400 uppercase bg-purple-100 dark:bg-purple-950/60 px-4 py-1.5 rounded-full mb-3 border border-purple-200 dark:border-purple-800">
-          Get In Touch
-        </span>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
-          Contact <span className="text-[#9333ea] dark:text-purple-400">Me</span>
-        </h2>
-        <div className="w-12 h-1 bg-[#9333ea] dark:bg-purple-500 rounded-full mt-3" />
-      </div>
-       
+      <div className="max-w-6xl mx-auto relative z-10">
 
-        <div className="grid lg:grid-cols-[280px_1fr] gap-4 px-5">
+        <div className="flex flex-col items-center text-center mb-10 md:mb-14">
+          <span className="text-xs sm:text-sm font-semibold tracking-widest text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-950/60 px-4 py-1.5 rounded-full mb-3 border border-indigo-200 dark:border-indigo-800">
+            Get In Touch
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+            Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-500 dark:from-indigo-400 dark:to-violet-400">Me</span>
+          </h2>
+          <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full mt-3" />
+        </div>
 
-          <div className="space-y-3">
-            <div className={`rounded-lg shadow-sm p-4 ${cardBgClass}`}>
-              <h3 className="text-base font-bold text-violet-600 mb-2">
+        <div className="grid lg:grid-cols-[300px_1fr] gap-6">
+
+          <div className="space-y-4">
+            <div className={`p-5 ${cardBgClass}`}>
+              <h3 className="text-sm font-bold text-indigo-600 dark:text-indigo-400 mb-2 uppercase tracking-wide">
                 Quick Response
               </h3>
-              <p
-                className={`text-xs mb-3 ${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
+              <p className="text-xs mb-3 text-slate-600 dark:text-slate-300 leading-relaxed">
                 I typically respond within 24 hours during business days.
               </p>
-              <div className="space-y-1.5 text-xs">
-                <div className="flex items-center gap-2 text-violet-500">
-                  <FaEnvelope className="shrink-0" />
-                  <span className="truncate">kawsar158464@gmail.com</span>
+              <div className="space-y-2 text-xs">
+                <div className="flex items-center gap-2.5 text-slate-700 dark:text-slate-300">
+                  <FaEnvelope className="shrink-0 text-indigo-600 dark:text-indigo-400" />
+                  <span className="truncate font-medium">kawsar158464@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-2 text-violet-500">
-                  <FaWhatsapp className="shrink-0" />
-                  <span>+880 1602084187</span>
+                <div className="flex items-center gap-2.5 text-slate-700 dark:text-slate-300">
+                  <FaWhatsapp className="shrink-0 text-emerald-500" />
+                  <span className="font-medium">+880 1602084187</span>
                 </div>
               </div>
             </div>
 
-            <div className={`rounded-lg shadow-sm p-4 ${cardBgClass}`}>
-              <h3 className="text-base font-bold text-violet-600 mb-2">
+            <div className={`p-5 ${cardBgClass}`}>
+              <h3 className="text-sm font-bold text-indigo-600 dark:text-indigo-400 mb-2 uppercase tracking-wide">
                 Availability
               </h3>
-              <p className="text-green-500 font-medium text-xs mb-1.5">
-                ● Available
+              <p className="text-emerald-600 dark:text-emerald-400 font-semibold text-xs mb-2 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                Available
               </p>
-              <div
-                className={`flex items-center gap-2 text-xs ${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
-                <FaClock className="shrink-0" />
+              <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-300">
+                <FaClock className="shrink-0 text-indigo-600 dark:text-indigo-400" />
                 <span>Sat - Fri, 9:00 AM - 11:00 PM (GMT +6)</span>
               </div>
             </div>
 
-            <div className={`rounded-lg shadow-sm p-4 ${cardBgClass}`}>
-              <h3 className="text-base font-bold text-violet-600 mb-3">
+            <div className={`p-5 ${cardBgClass}`}>
+              <h3 className="text-sm font-bold text-indigo-600 dark:text-indigo-400 mb-3 uppercase tracking-wide">
                 Follow Me
               </h3>
-              <div className="flex gap-2">
+              <div className="flex gap-2.5">
                 <a
                   href="https://www.linkedin.com/in/kawsar-ahmed-2a466441b"
                   target="_blank"
@@ -203,12 +181,11 @@ export default function ContactSection() {
             </div>
           </div>
 
-   
-          <div className={`rounded-lg shadow-sm p-5 ${cardBgClass}`}>
-            <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
-              <div className="grid sm:grid-cols-2 gap-3">
+          <div className={`p-6 sm:p-8 ${cardBgClass}`}>
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block mb-1 text-xs font-medium">
+                  <label className="block mb-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300">
                     Your Name
                   </label>
                   <input
@@ -216,12 +193,12 @@ export default function ContactSection() {
                     name="name"
                     required
                     placeholder="Enter your name"
-                    className={`h-9 ${inputClass}`}
+                    className={`h-10 ${inputClass}`}
                   />
                 </div>
 
                 <div>
-                  <label className="block mb-1 text-xs font-medium">
+                  <label className="block mb-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300">
                     Email Address
                   </label>
                   <input
@@ -230,14 +207,14 @@ export default function ContactSection() {
                     required
                     onKeyDown={handleEmailKeyDown}
                     placeholder="Enter your email"
-                    className={`h-9 ${inputClass}`}
+                    className={`h-10 ${inputClass}`}
                   />
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-3">
+              <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block mb-1 text-xs font-medium">
+                  <label className="block mb-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300">
                     Phone Number
                   </label>
                   <input
@@ -245,12 +222,12 @@ export default function ContactSection() {
                     type="tel"
                     name="phone"
                     placeholder="Enter your phone number"
-                    className={`h-9 ${inputClass}`}
+                    className={`h-10 ${inputClass}`}
                   />
                 </div>
 
                 <div>
-                  <label className="block mb-1 text-xs font-medium">
+                  <label className="block mb-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300">
                     Subject
                   </label>
                   <input
@@ -258,32 +235,32 @@ export default function ContactSection() {
                     name="subject"
                     required
                     placeholder="What's this about?"
-                    className={`h-9 ${inputClass}`}
+                    className={`h-10 ${inputClass}`}
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block mb-1 text-xs font-medium">
+                <label className="block mb-1.5 text-xs font-semibold text-slate-700 dark:text-slate-300">
                   Message
                 </label>
                 <textarea
                   name="message"
                   required
-                  rows={6}
+                  rows={5}
                   placeholder="Write your message..."
-                  className={`py-2 ${inputClass}`}
+                  className={`py-3 ${inputClass}`}
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={isSending}
-                className="w-full h-9 cursor-pointer rounded-md bg-gradient-to-r from-violet-700 to-fuchsia-600 text-white font-semibold text-xs hover:opacity-90 transition disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full h-11 cursor-pointer rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-semibold text-xs sm:text-sm shadow-md shadow-indigo-500/20 active:scale-[0.99] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isSending ? (
                   <>
-                    <span className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                    <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
                     Sending...
                   </>
                 ) : (
@@ -292,12 +269,13 @@ export default function ContactSection() {
               </button>
 
               {errorMessage && (
-                <p className="text-red-500 text-xs text-center mt-2">
+                <p className="text-red-500 text-xs text-center mt-2 font-medium">
                   {errorMessage}
                 </p>
               )}
             </form>
           </div>
+
         </div>
       </div>
     </section>
