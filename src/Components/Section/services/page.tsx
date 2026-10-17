@@ -26,15 +26,10 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
-      
-   
-      <div className="absolute top-1/3 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden">
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
-     
+
         <div className="flex flex-col items-center text-center mb-10 md:mb-14">
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-950/60 px-4 py-1.5 rounded-full mb-3 border border-indigo-200 dark:border-indigo-800">
             What I Do
@@ -45,29 +40,22 @@ export default function ServicesSection() {
           <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full mt-3" />
         </div>
 
-  
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative bg-white/80 dark:bg-slate-900/70 backdrop-blur-md cursor-pointer rounded-2xl p-6 sm:p-8 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl hover:shadow-indigo-500/15 hover:border-indigo-300 dark:hover:border-indigo-500/50 hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col items-center text-center justify-between overflow-hidden"
+              className="relative bg-white/80 dark:bg-slate-900/70 rounded-2xl p-6 sm:p-8 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col items-center text-center justify-between overflow-hidden"
             >
-       
-              <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-
               <div className="flex flex-col items-center w-full relative z-10">
-                
-  
-                <div className="mb-6 p-4 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl transition-all duration-300 ease-out group-hover:scale-110 group-hover:rotate-3 group-hover:border-indigo-300 dark:group-hover:border-indigo-600 group-hover:shadow-md group-hover:shadow-indigo-500/20">
+
+                <div className="mb-6 p-4 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl">
                   {service.icon}
                 </div>
 
-          
-                <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white uppercase tracking-wide mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-all duration-300 transform group-hover:-translate-y-0.5">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white uppercase tracking-wide mb-3">
                   {service.title}
                 </h3>
 
-           
                 <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
                   {service.description}
                 </p>

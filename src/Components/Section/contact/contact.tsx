@@ -58,11 +58,9 @@ export default function ContactSection() {
 
   if (submitted) {
     return (
-      <section className="relative w-full py-16 md:py-20 px-4 flex flex-col items-center justify-center min-h-[350px] transition-colors duration-500 bg-slate-50 text-slate-900 dark:bg-[#141C2B] dark:text-white overflow-hidden">
-        <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
+      <section className="relative w-full py-16 md:py-20 px-4 flex flex-col items-center justify-center min-h-[350px] bg-slate-50 text-slate-900 dark:bg-[#141C2B] dark:text-white overflow-hidden">
 
-        <div className="relative z-10 text-center p-8 bg-white/80 dark:bg-slate-900/70 backdrop-blur-md rounded-2xl border border-indigo-200/80 dark:border-indigo-900/40 shadow-xl max-w-md w-full">
+        <div className="relative z-10 text-center p-8 bg-white/80 dark:bg-slate-900/70 rounded-2xl border border-indigo-200/80 dark:border-indigo-900/40 shadow-xl max-w-md w-full">
           <div className="inline-flex items-center justify-center gap-2 mb-3">
             <FaCheckSquare className="text-3xl text-emerald-500" />
             <h2 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
@@ -85,7 +83,7 @@ export default function ContactSection() {
   }
 
   const cardBgClass =
-    "bg-white/80 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm";
+    "bg-white/80 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800/80 text-slate-900 dark:text-slate-100 rounded-2xl shadow-sm";
 
   const inputClass =
     "w-full px-3.5 text-xs sm:text-sm rounded-xl outline-none transition-all duration-300 bg-slate-100/80 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-indigo-500 dark:focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20";
@@ -94,11 +92,7 @@ export default function ContactSection() {
     "w-9 h-9 flex items-center justify-center rounded-xl transition-all duration-300 text-xs bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/70 dark:border-indigo-800/50 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-violet-600 hover:text-white hover:border-transparent hover:scale-105 shadow-sm";
 
   return (
-    <section className="relative w-full py-16 md:py-10 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
-      
-    
-      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative w-full py-16 md:py-10 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden">
 
       <div className="max-w-6xl mx-auto relative z-10">
 

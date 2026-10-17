@@ -53,15 +53,10 @@ export const blogPostsData: BlogPost[] = [
 
 export default function BlogSection() {
   return (
-    <section className="relative w-full bg-slate-50 dark:bg-[#141C2B] py-16 md:py-20 px-4 sm:px-6 lg:px-8 font-sans antialiased transition-colors duration-500 overflow-hidden">
-      
-      
-      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative w-full bg-slate-50 dark:bg-[#141C2B] py-16 md:py-20 px-4 sm:px-6 lg:px-8 font-sans antialiased overflow-hidden">
 
       <div className="max-w-6xl mx-auto relative z-10">
 
-       
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold tracking-widest text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-950/60 px-4 py-1.5 rounded-full mb-3 border border-indigo-200 dark:border-indigo-800">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,15 +76,14 @@ export default function BlogSection() {
           </p>
         </div>
 
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {blogPostsData.map((post) => (
             <article
               key={post.id}
-              className="group relative bg-white/80 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+              className="group relative bg-white/80 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                
+
                 <div className="relative h-48 w-full overflow-hidden bg-slate-900">
                   {post.imageUrl ? (
                     <Image
@@ -105,22 +99,18 @@ export default function BlogSection() {
                     </div>
                   )}
 
-                 
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity" />
 
-                  
                   <div className="absolute top-3 left-3">
-                    <span className="inline-flex items-center gap-1.5 bg-slate-900/80 backdrop-blur-md text-indigo-300 text-[10px] font-semibold uppercase tracking-wider px-3 py-1 rounded-md border border-indigo-500/30">
+                    <span className="inline-flex items-center gap-1.5 bg-slate-900/80 text-indigo-300 text-[10px] font-semibold uppercase tracking-wider px-3 py-1 rounded-md border border-indigo-500/30">
                       <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
                       {post.category}
                     </span>
                   </div>
                 </div>
 
-              
                 <div className="p-5 flex flex-col flex-1">
-                  
-                
+
                   <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-2.5">
                     <Clock className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
                     <span>{post.readTime}</span>
@@ -128,19 +118,16 @@ export default function BlogSection() {
                     <span>{post.date}</span>
                   </div>
 
-
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white line-clamp-2 leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                     <Link href={post.slug}>{post.title}</Link>
                   </h3>
 
-               
                   <p className="mt-2.5 text-slate-600 dark:text-slate-300 text-xs sm:text-sm line-clamp-3 leading-relaxed">
                     {post.description}
                   </p>
                 </div>
               </div>
 
-             
               <div className="px-5 pb-5 pt-0 mt-auto">
                 <Link
                   href={post.slug}

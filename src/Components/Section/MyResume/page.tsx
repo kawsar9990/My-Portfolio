@@ -43,15 +43,8 @@ const educationData: ResumeItem[] = [
 
 export default function ResumeSection() {
   return (
-    <section className="relative w-full bg-slate-50 dark:bg-[#141C2B] py-10 md:py-10 px-4 sm:px-6 lg:px-8 text-slate-800 dark:text-slate-100 font-sans antialiased transition-colors duration-500 overflow-hidden">
-      
-     
-      <div className="absolute top-1/3 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
-
+    <section className="relative w-full bg-slate-50 dark:bg-[#141C2B] py-10 md:py-10 px-4 sm:px-6 lg:px-8 text-slate-800 dark:text-slate-100 font-sans antialiased overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
-        
-       
         <div className="flex flex-col items-center text-center mb-10 md:mb-14">
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-950/60 px-4 py-1.5 rounded-full mb-3 border border-indigo-200 dark:border-indigo-800">
             Qualification & History
@@ -62,10 +55,7 @@ export default function ResumeSection() {
           <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full mt-3" />
         </div>
 
-       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-stretch">
-          
-        
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-indigo-600 dark:text-indigo-400">
@@ -94,10 +84,10 @@ export default function ResumeSection() {
               {experienceData.map((item, index) => (
                 <div
                   key={index}
-                  className="group p-5 sm:p-6 bg-white/80 dark:bg-slate-900/70 backdrop-blur-md rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+                  className="group p-5 sm:p-6 bg-white/80 dark:bg-slate-900/70 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between"
                 >
                   <div className="space-y-2.5">
-                    <h4 className="text-[15px] sm:text-lg font-bold text-slate-900 dark:text-white leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                    <h4 className="text-[15px] sm:text-lg font-bold text-slate-900 dark:text-white leading-snug">
                       {item.title}
                     </h4>
 
@@ -119,7 +109,6 @@ export default function ResumeSection() {
             </div>
           </div>
 
-       
           <div className="flex flex-col">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-indigo-600 dark:text-indigo-400">
@@ -159,10 +148,10 @@ export default function ResumeSection() {
               {educationData.map((item, index) => (
                 <div
                   key={index}
-                  className="group p-5 sm:p-6 bg-white/80 dark:bg-slate-900/70 backdrop-blur-md rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+                  className="group p-5 sm:p-6 bg-white/80 dark:bg-slate-900/70 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between"
                 >
                   <div className="space-y-2.5">
-                    <h4 className="text-[15px] sm:text-lg font-bold text-slate-900 dark:text-white leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                    <h4 className="text-[15px] sm:text-lg font-bold text-slate-900 dark:text-white leading-snug">
                       {item.title}
                     </h4>
 
@@ -183,9 +172,7 @@ export default function ResumeSection() {
               ))}
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );
