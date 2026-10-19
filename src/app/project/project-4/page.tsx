@@ -9,10 +9,6 @@ import {
   FiArrowLeft,
   FiExternalLink,
   FiGithub,
-  FiServer,
-  FiCalendar,
-  FiUsers,
-  FiCode,
   FiCheckCircle,
 } from "react-icons/fi";
 
@@ -43,7 +39,6 @@ export default function ProjectDetailsPage() {
 
        
         <div className="flex flex-col sm:flex-row gap-4 items-start">
-          
           <div className="w-full sm:w-4/5 bg-white dark:bg-[#121624] border border-slate-200 dark:border-[#1e2a4a] rounded-xl p-1.5 shadow-md">
             <div className="relative w-full h-[200px] sm:h-[280px] md:h-[320px] rounded-lg overflow-hidden bg-slate-100 dark:bg-[#1a2138]">
               <Image
@@ -81,7 +76,7 @@ export default function ProjectDetailsPage() {
         </div>
 
 
-        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-6">
+        <div className="bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-6">
           <div>
             <h1 className="text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-3 tracking-tight">
               {kawsarLiveStreamData.title}
@@ -103,33 +98,6 @@ export default function ProjectDetailsPage() {
             ))}
           </div>
 
-          
-          <div className="grid grid-cols-3 gap-2 pt-2 border-t border-slate-100 dark:border-[#1e2a4a]">
-            <div className="flex items-center gap-2">
-              <FiCalendar className="text-indigo-600 dark:text-[#a855f7] text-sm sm:text-base flex-shrink-0" />
-              <div>
-                <p className="text-[10px] text-slate-400 dark:text-gray-400">Duration</p>
-                <p className="font-semibold text-[8px] sm:text-xs text-slate-800 dark:text-white">{kawsarLiveStreamData.duration}</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <FiUsers className="text-indigo-600 dark:text-[#a855f7] text-sm sm:text-base flex-shrink-0" />
-              <div>
-                <p className="text-[10px] text-slate-400 dark:text-gray-400">Team</p>
-                <p className="font-semibold text-[8px] sm:text-xs text-slate-800 dark:text-white">{kawsarLiveStreamData.team}</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <FiCode className="text-indigo-600 dark:text-[#a855f7] text-sm sm:text-base flex-shrink-0" />
-              <div>
-                <p className="text-[10px] text-slate-400 dark:text-gray-400">Role</p>
-                <p className="font-semibold text-[8px] sm:text-xs text-slate-800 dark:text-white">{kawsarLiveStreamData.role}</p>
-              </div>
-            </div>
-          </div>
-
        
           <div className="flex flex-wrap gap-2.5 pt-2">
             <Link
@@ -143,7 +111,7 @@ export default function ProjectDetailsPage() {
             </Link>
 
             <Link
-              href={kawsarLiveStreamData.frontendCodeLink}
+              href={kawsarLiveStreamData.ProjectRepo}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-indigo-200 font-semibold text-xs sm:text-sm rounded-xl transition-all border border-slate-200 dark:border-slate-700"
@@ -151,21 +119,11 @@ export default function ProjectDetailsPage() {
               <FiGithub className="text-sm" />
               <span>View Code</span>
             </Link>
-
-            <Link
-              href={kawsarLiveStreamData.backendCodeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-indigo-200 font-semibold text-xs sm:text-sm rounded-xl transition-all border border-slate-200 dark:border-slate-700"
-            >
-              <FiServer className="text-sm" />
-              <span>Backend Code</span>
-            </Link>
           </div>
         </div>
 
        
-        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-3">
+        <div className="bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-3">
           <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <span className="w-2 h-6 bg-indigo-600 rounded-full"></span>
             Project Overview
@@ -176,7 +134,7 @@ export default function ProjectDetailsPage() {
         </div>
 
    
-        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-4">
+        <div className="bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-4">
           <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <span className="w-2 h-6 bg-indigo-600 rounded-full"></span>
             Key Features
@@ -194,7 +152,7 @@ export default function ProjectDetailsPage() {
         </div>
 
         
-        <div className="bg-white dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-3">
+        <div className="bg-white dark:bg-slate-900/80 border border-slate-200/80 dark:border-indigo-950/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-slate-200/50 dark:shadow-none space-y-3">
           <h2 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
             <span className="w-2 h-6 bg-indigo-600 rounded-full"></span>
             Challenges & Solutions

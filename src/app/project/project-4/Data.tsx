@@ -21,12 +21,8 @@ export const kawsarLiveStreamData: ProjectDetails = {
     "Docker",
     "Tailwind CSS",
   ],
-  duration: "10 days",
-  team: "Solo Project",
-  role: "Full Stack Developer",
   liveDemoLink: "https://kmstreamx.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/KMStreamX-frontend",
-  backendCodeLink: "https://github.com/kawsar9990/KMStreamX-backend",
+  ProjectRepo: "https://github.com/kawsar9990/KMStreamX-frontend",
   overview:
     "KMStreamX provides high-quality, low-latency live streaming for sports enthusiasts and TV viewers. Users can watch live cricket & football matches, access 24/7 news channels, view real-time match scores, and interact in live community match chats.",
   keyFeatures: [

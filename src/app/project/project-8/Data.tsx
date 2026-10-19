@@ -19,12 +19,8 @@ export const OggyAiData: ProjectDetails = {
     "Framer Motion",
     "Lucide React",
   ],
-  duration: "1 days",
-  team: "Solo Project",
-  role: "Frontend Developer",
   liveDemoLink: "https://oggy-ai.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/Oggy-Ai",
-  backendCodeLink: "https://github.com/kawsar9990/Oggy-Ai",
+  ProjectRepo: "https://github.com/kawsar9990/Oggy-Ai",
   overview:
     "Oggy AI is a modern frontend-driven personal assistant interface that directly integrates client-side AI APIs. Built entirely as a single-page frontend application, it provides real-time streaming responses, markdown rendering, chat history management, and custom persona options with zero backend reliance.",
   keyFeatures: [

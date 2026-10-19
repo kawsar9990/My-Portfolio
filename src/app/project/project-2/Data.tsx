@@ -19,12 +19,8 @@ export const kawsarRestaurantData: ProjectDetails = {
     "React Router",
     "Framer Motion",
   ],
-  duration: "20 days",
-  team: "Solo Project",
-  role: "Front End Developer",
   liveDemoLink: "https://kawsar-restaurent-project.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/restaurant-project",
-  backendCodeLink: "https://github.com/kawsar9990/restaurant-project",
+  ProjectRepo: "https://github.com/kawsar9990/restaurant-project",
   overview:
     "Kawsar.Restaurant simplifies online food ordering and table bookings. Customers can browse food categories, customize meal options, book tables with real-time slot selection, and track live order progress.",
   keyFeatures: [

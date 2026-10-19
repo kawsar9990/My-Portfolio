@@ -19,12 +19,8 @@ export const kawsarRentalsData: ProjectDetails = {
     "React Router",
     "Framer Motion",
   ],
-  duration: "15 days",
-  team: "Solo Project",
-  role: "Mern Stack Developer",
   liveDemoLink: "https://kawsar-car-rental.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/car-rental-project",
-  backendCodeLink: "https://github.com/kawsar9990/car-rental-project",
+  ProjectRepo: "https://github.com/kawsar9990/car-rental-project",
   overview:
     "Kawsar Rentals dey make car booking easy and fast. Customers kin search vehicles by category, select rental dates, choose self-drive or driver service, make instant online payments, and track trip status.",
   keyFeatures: [

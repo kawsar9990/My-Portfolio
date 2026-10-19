@@ -4,12 +4,8 @@ export interface ProjectDetails {
   description: string;
   images: string[];
   technologies: string[];
-  duration: string;
-  team: string;
-  role: string;
   liveDemoLink: string;
-  frontendCodeLink: string;
-  backendCodeLink: string;
+  ProjectRepo: string;
   overview: string;
   keyFeatures: string[];
   challengesAndSolutions: string;

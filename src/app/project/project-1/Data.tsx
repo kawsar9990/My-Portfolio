@@ -23,12 +23,8 @@ export const kawsarShopData: ProjectDetails = {
     "Tailwind CSS",
     "Resend",
   ],
-  duration: "3 Month",
-  team: "Solo Project",
-  role: "Full Stack Developer",
   liveDemoLink: "https://kawsarshop-ecommerce-web.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/kawsarshop-ecommerce-project",
-  backendCodeLink: "https://github.com/kawsar9990/kawsarshop-ecommerce-backend",
+  ProjectRepo: "https://github.com/kawsar9990/kawsarshop-ecommerce-project",
   overview:
     "KawsarShop provides a modern, fast, and secure online shopping experience. It incorporates high-performance database querying, real-time stock management, and local payment gateways along with international options.",
   keyFeatures: [

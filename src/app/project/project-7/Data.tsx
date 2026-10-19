@@ -20,12 +20,8 @@ export const passShieldData: ProjectDetails = {
     "Redux",
     "Lucide React",
   ],
-  duration: "3 days",
-  team: "Solo Project",
-  role: "Frontend Developer",
   liveDemoLink: "https://kawsar-password-gen-app.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/password-generate-project",
-  backendCodeLink: "https://github.com/kawsar9990/password-generate-project",
+  ProjectRepo: "https://github.com/kawsar9990/password-generate-project",
   overview:
     "PassShield runs entirely in the browser using the native Web Crypto API for client-side cryptographic security. Users can generate strong passwords with customizable length, symbols, numbers, and case rules, analyze password entropy, and copy credentials instantly.",
   keyFeatures: [

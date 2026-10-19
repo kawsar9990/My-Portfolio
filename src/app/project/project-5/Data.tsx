@@ -19,12 +19,8 @@ export const artAiData: ProjectDetails = {
     "Tailwind CSS",
     "Framer Motion",
   ],
-  duration: "13 days",
-  team: "Solo Project",
-  role: "Mern Stack Developer",
   liveDemoLink: "https://artworks-selling-project.netlify.app",
-  frontendCodeLink: "https://github.com/kawsar9990/artworks-selling-project",
-  backendCodeLink: "https://github.com/kawsar9990/artworks-selling-project",
+  ProjectRepo: "https://github.com/kawsar9990/artworks-selling-project",
   overview:
     "art.ai combines AI art creation with print-on-demand services and commercial printer sales. Users can generate unique artwork using AI prompts, customize print dimensions on premium canvas, or purchase industrial and desktop photo printers directly.",
   keyFeatures: [

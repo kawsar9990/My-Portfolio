@@ -25,12 +25,8 @@ export const goKawsarData: ProjectDetails = {
     "Context API",
     "Tailwind CSS",
   ],
-  duration: "3 Month",
-  team: "Solo Project",
-  role: "Full Stack Developer",
-  liveDemoLink: "https://gokawsar.netlify.app/",
-  frontendCodeLink: "https://github.com/kawsar9990/kawsar-online-ticket-booking-frontend",
-  backendCodeLink: "https://github.com/kawsar9990/kawsar-online-ticket-booking-backend",
+  liveDemoLink: "https://gokawsar.netlify.app",
+  ProjectRepo: "https://github.com/kawsar9990/kawsar-online-ticket-booking-frontend",
   overview:
     "GoKawsar streamlines travel and event ticket purchasing in Bangladesh. Users can search routes, choose specific seats interactively, download digital PDF tickets, and receive instant booking verification via SMS.",
   keyFeatures: [
