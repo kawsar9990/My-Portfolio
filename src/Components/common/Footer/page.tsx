@@ -9,6 +9,9 @@ import {
   FaAngleRight,
   FaMapMarkerAlt
 } from "react-icons/fa";
+import { RiFiverrFill } from "react-icons/ri";
+import { FaSquareUpwork } from "react-icons/fa6";
+import { SiFreelancer } from "react-icons/si";
 
 const footerLinks = {
   quickLinks: [
@@ -172,7 +175,31 @@ export default function Footer() {
                   rel="noopener noreferrer" 
                   className={socialBtnClass}
                 >
-                  <FaInstagram className="h-3 w-3" />
+                  <FaInstagram className="h-3.5 w-3.5" />
+                </a>
+                <a 
+                  href="https://www.fiverr.com/kawsar_develope" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={socialBtnClass}
+                >
+                  <RiFiverrFill className="h-3.5 w-3.5" />
+                </a>
+                <a 
+                  href="https://www.upwork.com/freelancers/~01ea366a2190fd74bd" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={socialBtnClass}
+                >
+                  <FaSquareUpwork className="h-3.5 w-3.5" />
+                </a>
+                <a 
+                  href="https://www.freelancer.com.bd/u/kawsar9999" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={socialBtnClass}
+                >
+                  <SiFreelancer className="h-3.5 w-3.5" />
                 </a>
               </div>
             </div>

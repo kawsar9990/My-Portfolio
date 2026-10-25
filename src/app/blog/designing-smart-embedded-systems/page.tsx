@@ -62,45 +62,6 @@ void loop() {
 
       <article className="max-w-4xl mx-auto relative z-10">
       
-        <div className="flex items-center justify-between mb-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 px-4 py-2 text-[10px] sm:text-sm font-semibold text-slate-700 dark:text-slate-300 bg-white/80 dark:bg-slate-900/80 rounded-xl border border-slate-200/80 dark:border-slate-800 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-500/40 transition-all shadow-sm"
-          >
-            <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
-            Back to Articles
-          </Link>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setBookmarked(!bookmarked)}
-              className={`p-2.5 cursor-pointer rounded-xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md transition-all shadow-sm ${
-                bookmarked
-                  ? 'text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-800 bg-indigo-50/50 dark:bg-indigo-950/30'
-                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-              title="Bookmark Article"
-            >
-              <Bookmark className="w-3 h-3 sm:w-4 sm:h-4" />
-            </button>
-            <button
-              onClick={() => {
-                if (navigator.share) {
-                  navigator.share({
-                    title: 'Optimizing React & Next.js Performance',
-                    url: window.location.href,
-                  });
-                }
-              }}
-              className="p-2.5 cursor-pointer rounded-xl border border-slate-200/80 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all shadow-sm"
-              title="Share Article"
-            >
-              <Share2 className="w-3 h-3 sm:w-4 sm:h-4" />
-            </button>
-          </div>
-        </div>
-
-
 
         <div className="mb-4">
          <span className="inline-flex items-center gap-1.5 bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200/70 dark:border-indigo-800/50 text-[10px] sm:text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-xs">

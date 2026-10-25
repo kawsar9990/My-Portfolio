@@ -8,6 +8,7 @@ export interface Skill {
   customIcon: ReactNode;
   lightBg: string;
   darkBg: string;
+  proficiency?: number;
 }
 
 export interface Category {

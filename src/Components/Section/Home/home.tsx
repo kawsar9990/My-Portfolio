@@ -2,8 +2,12 @@
 
 import { BiLogoPostgresql } from "react-icons/bi"
 import { Typewriter } from "react-simple-typewriter"
-import { FaGithub, FaLinkedinIn, FaWhatsapp, FaTelegramPlane } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa"
 import { Network, Zap, Puzzle, ArrowUpRight } from "lucide-react"
+import { RiFiverrFill } from "react-icons/ri";
+import { FaSquareUpwork } from "react-icons/fa6";
+import { SiFreelancer } from "react-icons/si";
+
 
 interface TechIcon {
   id: string
@@ -229,7 +233,9 @@ return(
     {[
       { href: "https://github.com/kawsar9990", label: "GitHub", Icon: FaGithub },
       { href: "https://www.linkedin.com/in/kawsar-ahmed-2a466441b", label: "LinkedIn", Icon: FaLinkedinIn },
-      { href: "https://t.me/Atitwed_Boys", label: "Telegram", Icon: FaTelegramPlane },
+      { href: "https://www.fiverr.com/kawsar_develope", label: "Fiver", Icon: RiFiverrFill },
+      { href: "https://www.upwork.com/freelancers/~01ea366a2190fd74bd", label: "Upwork", Icon: FaSquareUpwork },
+      { href: "https://www.freelancer.com.bd/u/kawsar9999", label: "Freelancer.Com", Icon: SiFreelancer },
       { href: "https://wa.me/8801602084187", label: "WhatsApp", Icon: FaWhatsapp },
     ].map(({ href, label, Icon }) => (
       <a

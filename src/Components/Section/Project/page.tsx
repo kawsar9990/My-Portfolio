@@ -10,10 +10,12 @@ import { ProjectCategory } from "@/types/Project";
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState<ProjectCategory>("all");
 
-  const filteredProjects =
+  const filteredProjects = (
     activeTab === "all"
       ? projectsData
-      : projectsData.filter((project) => project.category === activeTab);
+      : projectsData.filter((project) => project.category === activeTab)
+  ).slice(0, 6);
+
 
 return (
 <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
@@ -98,6 +100,20 @@ return (
             </div>
           ))}
         </div>
+
+-
+       <div className="flex justify-center mt-12">
+          <Link
+            href="/project"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-sm bg-indigo-50 dark:bg-slate-800/80 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/80 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 dark:hover:text-white transition-all duration-300 shadow-sm hover:shadow-lg hover:shadow-indigo-500/20 group"
+          >
+            <span>Explore All Projects</span>
+            <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
+        </div>   
+
 
       </div>
     </section>

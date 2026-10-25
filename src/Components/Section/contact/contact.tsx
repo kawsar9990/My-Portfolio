@@ -148,6 +148,14 @@ export default function ContactSection() {
               </h3>
               <div className="flex gap-2.5">
                 <a
+                  href="https://web.facebook.com/programming.kawsar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={socialIconClass}
+                >
+                  <FaFacebookF />
+                </a>
+                <a
                   href="https://www.linkedin.com/in/kawsar-ahmed-2a466441b"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -162,14 +170,6 @@ export default function ContactSection() {
                   className={socialIconClass}
                 >
                   <FaGithub />
-                </a>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61594494171535"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={socialIconClass}
-                >
-                  <FaFacebookF />
                 </a>
               </div>
             </div>

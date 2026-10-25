@@ -2,7 +2,7 @@ import { Category, Skill, CategoryId } from '../types/Skill';
 import { BiLogoPostgresql } from "react-icons/bi"
 
 export const SKILL_CATEGORIES: Category[] = [
-  { id: 'highlights', label: 'Highlights & Core' },
+  { id: 'highlights', label: 'Core Expertise' },
   { id: 'frontend', label: 'Frontend' },
   { id: 'backend', label: 'Backend' },
   { id: 'devops', label: 'DevOps & Cloud' }
@@ -398,36 +398,39 @@ MUI: () => (
 
 export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
   highlights: [
-    { id: 'js', name: 'JavaScript (ES6+)', customIcon: <TechIcons.JS />, lightBg: 'bg-amber-50 hover:bg-amber-100', darkBg: 'dark:bg-[#201D13] dark:hover:bg-[#29261B]' },
-    { id: 'ts', name: 'TypeScript', customIcon: <TechIcons.TS />, lightBg: 'bg-blue-50 hover:bg-blue-100', darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]' },
-    { id: 'react', name: 'React.js', customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
-    { id: 'next', name: 'Next.js', customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
-    { id: 'node', name: 'Node.js', customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
+    { id: 'js', name: 'JavaScript (ES6+)', proficiency: 90, customIcon: <TechIcons.JS />, lightBg: 'bg-amber-50 hover:bg-amber-100', darkBg: 'dark:bg-[#201D13] dark:hover:bg-[#29261B]' },
+    { id: 'ts', name: 'TypeScript', proficiency: 90, customIcon: <TechIcons.TS />, lightBg: 'bg-blue-50 hover:bg-blue-100', darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]' },
+    { id: 'react', name: 'React.js', proficiency: 99, customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
+    { id: 'next', name: 'Next.js', proficiency: 99, customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
+    { id: 'node', name: 'Node.js', proficiency: 80, customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
   {
   id: 'tailwind',
   name: 'Tailwind CSS',
+  proficiency: 99,
   customIcon: <TechIcons.Tailwind />,
   lightBg: 'bg-cyan-50 hover:bg-cyan-100',
   darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#14303D]'
   },
-    { id: 'express', name: 'Express.js', customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
-    { id: 'mongo', name: 'MongoDB', customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
-    { id: 'pg', name: 'PostgreSQL', customIcon: <BiLogoPostgresql className="h-7 w-7 text-[#336791]" />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
+    { id: 'express', name: 'Express.js', proficiency: 88, customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
+    { id: 'mongo', name: 'MongoDB', proficiency: 90, customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
+    { id: 'pg', name: 'PostgreSQL', proficiency: 85, customIcon: <BiLogoPostgresql className="h-7 w-7 text-[#336791]" />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
 {
   id: 'mui',
   name: 'Material UI',
+  proficiency: 80,
   customIcon: <TechIcons.MUI />,
   lightBg: 'bg-blue-50 hover:bg-blue-100',
   darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]'
 },
   ],
   frontend: [
-    { id: 'html', name: 'HTML5', customIcon: <TechIcons.HTML />, lightBg: 'bg-orange-50 hover:bg-orange-100', darkBg: 'dark:bg-[#2B1B17] dark:hover:bg-[#36231E]' },
-    { id: 'css', name: 'CSS3', customIcon: <TechIcons.CSS />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#161C2C] dark:hover:bg-[#1E263B]' },
-    { id: 'tailwind', name: 'Tailwind CSS', customIcon: <TechIcons.Tailwind />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E242B] dark:hover:bg-[#143039]' },
+    { id: 'html', name: 'HTML5', proficiency: 100, customIcon: <TechIcons.HTML />, lightBg: 'bg-orange-50 hover:bg-orange-100', darkBg: 'dark:bg-[#2B1B17] dark:hover:bg-[#36231E]' },
+    { id: 'css', name: 'CSS3', proficiency: 100, customIcon: <TechIcons.CSS />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#161C2C] dark:hover:bg-[#1E263B]' },
+    { id: 'tailwind', name: 'Tailwind CSS', proficiency: 99, customIcon: <TechIcons.Tailwind />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E242B] dark:hover:bg-[#143039]' },
     {
   id: 'mui',
   name: 'Material UI',
+  proficiency: 80,
   customIcon: <TechIcons.MUI />,
   lightBg: 'bg-blue-50 hover:bg-blue-100',
   darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]'
@@ -435,6 +438,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
   {
   id: 'bootstrap',
   name: 'Bootstrap 5',
+  proficiency: 95,
   customIcon: <TechIcons.Bootstrap />,
   lightBg: 'bg-violet-50 hover:bg-violet-100',
   darkBg: 'dark:bg-[#20162D] dark:hover:bg-[#2A1D3A]'
@@ -442,36 +446,40 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'shadcn',
   name: 'Shadcn/UI',
+  proficiency: 50,
   customIcon: <TechIcons.Shadcn />,
   lightBg: 'bg-slate-50 hover:bg-slate-100',
   darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
 },
-    { id: 'react', name: 'React.js', customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
-    { id: 'next', name: 'Next.js', customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
-    { id: 'redux', name: 'Redux Toolkit', customIcon: <TechIcons.Redux />, lightBg: 'bg-purple-50 hover:bg-purple-100', darkBg: 'dark:bg-[#1E162B] dark:hover:bg-[#291E3B]' },
+    { id: 'react', name: 'React.js', proficiency: 99, customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
+    { id: 'next', name: 'Next.js', proficiency: 99, customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
+    { id: 'redux', name: 'Redux Toolkit', proficiency: 85, customIcon: <TechIcons.Redux />, lightBg: 'bg-purple-50 hover:bg-purple-100', darkBg: 'dark:bg-[#1E162B] dark:hover:bg-[#291E3B]' },
     {
   id: 'context-api',
   name: 'Context API',
+  proficiency: 85,
   customIcon: <TechIcons.ContextAPI />,
   lightBg: 'bg-blue-50 hover:bg-blue-100',
   darkBg: 'dark:bg-[#121E2F] dark:hover:bg-[#192A42]'
 },
   ],
   backend: [
-    { id: 'node', name: 'Node.js', customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
-    { id: 'express', name: 'Express.js', customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
+    { id: 'node', name: 'Node.js', proficiency: 80, customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
+    { id: 'express', name: 'Express.js', proficiency: 88, customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
 {
   id: 'rest',
   name: 'REST API',
+  proficiency: 80,
   customIcon: <TechIcons.RestApi />,
   lightBg: 'bg-blue-50 hover:bg-blue-100',
   darkBg: 'dark:bg-[#121E2F] dark:hover:bg-[#192A42]'
 },  
-    { id: 'mongo', name: 'MongoDB', customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
-    { id: 'pg', name: 'PostgreSQL', customIcon: <BiLogoPostgresql className="h-7 w-7 text-[#336791]" />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
+    { id: 'mongo', name: 'MongoDB', proficiency: 90, customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
+    { id: 'pg', name: 'PostgreSQL', proficiency: 85, customIcon: <BiLogoPostgresql className="h-7 w-7 text-[#336791]" />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
 {
   id: 'redis',
   name: 'Redis',
+  proficiency: 95,
   customIcon: <TechIcons.Redis />,
   lightBg: 'bg-red-50 hover:bg-red-100',
   darkBg: 'dark:bg-[#291416] dark:hover:bg-[#361A1D]'
@@ -479,6 +487,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'socketio',
   name: 'Socket.IO',
+  proficiency: 70,
   customIcon: <TechIcons.SocketIO />,
   lightBg: 'bg-slate-100 hover:bg-slate-200',
   darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
@@ -486,6 +495,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'jwt',
   name: 'JWT Authentication',
+  proficiency: 85,
   customIcon: <TechIcons.Jwt />,
   lightBg: 'bg-yellow-50 hover:bg-yellow-100',
   darkBg: 'dark:bg-[#2B2512] dark:hover:bg-[#383019]'
@@ -493,6 +503,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'fastify',
   name: 'Fastify',
+  proficiency: 80,
   customIcon: <TechIcons.Fastify />,
   lightBg: 'bg-slate-100 hover:bg-slate-200',
   darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
@@ -500,15 +511,19 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'nextauth',
   name: 'NextAuth.js',
+  proficiency: 80,
   customIcon: <TechIcons.NextAuth />,
   lightBg: 'bg-slate-50 hover:bg-slate-100',
   darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
 },
 ],
-  devops: [
+
+
+devops: [
   {
   id: 'docker',
   name: 'Docker',
+  proficiency: 50,
   customIcon: <TechIcons.Docker />,
   lightBg: 'bg-sky-50 hover:bg-sky-100',
   darkBg: 'dark:bg-[#12212E] dark:hover:bg-[#182B3C]'
@@ -516,6 +531,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'git',
   name: 'Git',
+  proficiency: 90,
   customIcon: <TechIcons.Git />,
   lightBg: 'bg-orange-50 hover:bg-orange-100',
   darkBg: 'dark:bg-[#291B16] dark:hover:bg-[#36241D]'
@@ -523,6 +539,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'github',
   name: 'GitHub',
+  proficiency: 90,
   customIcon: <TechIcons.GitHub />,
   lightBg: 'bg-slate-100 hover:bg-slate-200',
   darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
@@ -530,6 +547,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'render',
   name: 'Render',
+  proficiency: 95,
   customIcon: <TechIcons.Render />,
   lightBg: 'bg-emerald-50 hover:bg-emerald-100',
   darkBg: 'dark:bg-[#11241C] dark:hover:bg-[#173026]'
@@ -537,6 +555,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'cloudinary',
   name: 'Cloudinary',
+  proficiency: 100,
   customIcon: <TechIcons.Cloudinary />,
   lightBg: 'bg-blue-50 hover:bg-blue-100',
   darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]'
@@ -544,6 +563,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'linux',
   name: 'Linux',
+  proficiency: 5,
   customIcon: <TechIcons.Linux />,
   lightBg: 'bg-yellow-50 hover:bg-yellow-100',
   darkBg: 'dark:bg-[#242114] dark:hover:bg-[#302C1B]'
@@ -552,6 +572,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'netlify',
   name: 'Netlify',
+  proficiency: 100,
   customIcon: <TechIcons.Netlify />,
   lightBg: 'bg-teal-50 hover:bg-teal-100',
   darkBg: 'dark:bg-[#0F2426] dark:hover:bg-[#143033]'
@@ -559,6 +580,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'firebase',
   name: 'Firebase',
+  proficiency: 50,
   customIcon: <TechIcons.Firebase />,
   lightBg: 'bg-amber-50 hover:bg-amber-100',
   darkBg: 'dark:bg-[#241B12] dark:hover:bg-[#30241A]'
@@ -566,6 +588,7 @@ export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
 {
   id: 'supabase',
   name: 'Supabase',
+  proficiency: 50,
   customIcon: <TechIcons.Supabase />,
   lightBg: 'bg-emerald-50 hover:bg-emerald-100',
   darkBg: 'dark:bg-[#10231A] dark:hover:bg-[#173026]'

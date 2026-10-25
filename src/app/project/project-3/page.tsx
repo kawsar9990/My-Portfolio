@@ -25,19 +25,7 @@ export default function ProjectDetailsPage() {
         transition={{ duration: 0.5 }}
         className="max-w-4xl mx-auto space-y-6"
       >
-        
-      
-        <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-semibold text-xs sm:text-sm transition-colors group"
-          >
-            <FiArrowLeft className="text-base transition-transform group-hover:-translate-x-1" />
-            <span>Back to Portfolio</span>
-          </Link>
-        </div>
-
-       
+ 
         <div className="flex flex-col sm:flex-row gap-4 items-start">
           <div className="w-full sm:w-4/5 bg-white dark:bg-[#121624] border border-slate-200 dark:border-[#1e2a4a] rounded-xl p-1.5 shadow-md">
             <div className="relative w-full h-[200px] sm:h-[280px] md:h-[320px] rounded-lg overflow-hidden bg-slate-100 dark:bg-[#1a2138]">
