@@ -5,7 +5,7 @@ export interface ProjectDetails {
   images: string[];
   technologies: string[];
   liveDemoLink: string;
-  ProjectRepo: string;
+  ProjectRepo?: string;
   overview: string;
   keyFeatures: string[];
   challengesAndSolutions: string;

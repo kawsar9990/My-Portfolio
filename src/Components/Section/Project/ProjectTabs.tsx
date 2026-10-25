@@ -2,9 +2,9 @@ import React from "react";
 import { ProjectCategory } from "@/types/Project";
 
 export const projectCategories: { id: ProjectCategory; label: string }[] = [
-  { id: "all", label: "All" },
-  { id: "professional", label: "Professional" },
-  { id: "personal", label: "Personal" },
+  { id: "all", label: "All Project" },
+  { id: "full-stack", label: "Full Stack" },
+  { id: "frontend", label: "Frontend" },
 ];
 
 interface ProjectTabsProps {

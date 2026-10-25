@@ -73,9 +73,9 @@ export default function AllProjectsPage() {
        
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 w-full md:w-auto">
             {[
-              { id: "all", label: "All" },
-              { id: "professional", label: "Professional" },
-              { id: "personal", label: "Personal" },
+              { id: "all", label: "All Project" },
+              { id: "full-stack", label: "Full Stack" },
+              { id: "frontend", label: "Frontend" },
             ].map((tab) => {
               const isActive = activeTab === tab.id;
               return (
@@ -104,7 +104,7 @@ export default function AllProjectsPage() {
       <div className="relative w-full md:w-72">
             <input
               type="text"
-              placeholder="Search projects or tech..."
+              placeholder="Search Projects..."
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);

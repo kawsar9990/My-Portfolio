@@ -1,4 +1,4 @@
-export type ProjectCategory = "all" | "professional" | "personal";
+export type ProjectCategory = "all" | "full-stack" | "frontend";
 
 export interface Project {
   id: number;

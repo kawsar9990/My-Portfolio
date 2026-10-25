@@ -101,7 +101,6 @@ return (
           ))}
         </div>
 
--
        <div className="flex justify-center mt-12">
           <Link
             href="/project"

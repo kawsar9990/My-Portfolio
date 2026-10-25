@@ -99,15 +99,17 @@ export default function ProjectDetailsPage() {
               <span>Live Demo</span>
             </Link>
 
-            <Link
-              href={kawsarShopData.ProjectRepo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-indigo-200 font-semibold text-xs sm:text-sm rounded-xl transition-all border border-slate-200 dark:border-slate-700"
-            >
-              <FiGithub className="text-sm" />
-              <span>View Code</span>
-            </Link>
+            {kawsarShopData.ProjectRepo && (
+              <Link
+                href={kawsarShopData.ProjectRepo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-indigo-200 font-semibold text-xs sm:text-sm rounded-xl transition-all border border-slate-200 dark:border-slate-700"
+              >
+                <FiGithub className="text-sm" />
+                <span>View Code</span>
+              </Link>
+            )}
           </div>
         </div>
 
