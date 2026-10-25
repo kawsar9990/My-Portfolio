@@ -41,7 +41,7 @@ export default function Footer() {
       <div className="absolute top-0 left-1/4 w-[300px] h-[300px] bg-indigo-200/20 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-violet-200/20 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 xl:px-2 py-10 relative z-10">
         
       
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-8 border-b border-slate-200/80 dark:border-slate-800/80">

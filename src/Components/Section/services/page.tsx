@@ -52,11 +52,11 @@ export default function ServicesSection() {
                   {service.icon}
                 </div>
 
-                <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white uppercase tracking-wide mb-3">
+                <p className="text-[15px] sm:text-[17px] lg:text-[15px] xl:text-[17px] font-bold text-slate-900 dark:text-white uppercase tracking-wide mb-3">
                   {service.title}
-                </h3>
+                </p>
 
-                <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
+                <p className="text-slate-600 text-[15px] sm:text-[15px] lg:text-[11px] xl:text-[13px] dark:text-slate-300 text-xs sm:text-sm leading-relaxed">
                   {service.description}
                 </p>
 
