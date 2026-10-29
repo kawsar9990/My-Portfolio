@@ -6,7 +6,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { kawsarRentalsData } from "./Data";
 import {
-  FiArrowLeft,
   FiExternalLink,
   FiGithub,
   FiCheckCircle,

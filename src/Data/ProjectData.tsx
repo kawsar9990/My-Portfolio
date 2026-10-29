@@ -72,5 +72,14 @@ export const projectsData: Project[] = [
     technologies: ["React", "Next.Js", "Javascript", "Tailwind CSS"],
     category: "frontend",
     projectLink: "/project/project-8"
-  }
+  },
+  {
+    id: 9,
+    title: "WeatherX | Real Time & Fast Weather Forecasts",
+    description: "WeatherX is a fast and lightweight app that delivers real-time weather updates, live rain radar, and daily forecasts to help you plan your day with confidence.",
+    image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1793289159/weather-app-cover_ya9fpp.png",
+    technologies: ["Vue.Js", "Typescript", "Tailwind CSS", "pnpm"],
+    category: "frontend",
+    projectLink: "/project/project-9"
+  },
 ];

@@ -6,7 +6,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { artAiData } from "./Data";
 import {
-  FiArrowLeft,
   FiExternalLink,
   FiGithub,
   FiCheckCircle,

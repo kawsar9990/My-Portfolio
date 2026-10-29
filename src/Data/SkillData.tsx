@@ -1,5 +1,4 @@
 import { Category, Skill, CategoryId } from '../types/Skill';
-import { BiLogoPostgresql } from "react-icons/bi"
 
 export const SKILL_CATEGORIES: Category[] = [
   { id: 'highlights', label: 'Core Expertise' },
@@ -10,588 +9,140 @@ export const SKILL_CATEGORIES: Category[] = [
 
 export const TechIcons = {
 JS: () => (
-  <svg className="w-10 h-10 rounded" viewBox="0 0 128 128">
-     <path fill="#F7DF1E" d="M0 0h128v128H0z"/>
-     <path fill="#000" d="M67.3 103.9c2.3 3.8 5.4 6.7 11 6.7 4.5 0 7.4-2.2 7.4-5.3 0-3.7-2.9-5.1-7.8-7.3l-2.7-1.2c-7.8-3.3-13-7.5-13-16.3 0-8.8 6.8-15.5 17.3-15.5 7.6 0 12.8 2.6 16.5 9.1l-8.2 5.3c-1.8-3.1-3.9-4.4-8.1-4.4-3.6 0-5.8 1.8-5.8 4.2 0 3 1.9 4.2 6.6 6.3l2.7 1.2c9.2 3.9 14.2 8.1 14.2 16.8 0 9.7-7.6 16.1-18.9 16.1-10.4 0-16.7-5.3-20.2-11.7l9-4c.1 0 .5.7 1 1zm-36-2.2c2.1 3.5 4.7 5.9 8.8 5.9 4.2 0 6.8-1.7 6.8-8.2V65.8h11.2v34.3c0 12.5-7.3 18-17.7 18-9.4 0-15.3-5.1-18.4-11.3l9.3-5.1z"/>
-   </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-javascript-1-a)"><path fill="#F7DF1E" d="M0 0h600v600H0z"/><path fill="#000" d="m157.8 501.4 45.9-27.8c8.8 15.7 16.9 29 36.2 29 18.5 0 30.2-7.2 30.2-35.4V275.5h56.4V468c0 58.4-34.2 85-84.2 85-45 0-71.2-23.4-84.5-51.6m199.3-6 46-26.6c12 19.7 27.7 34.2 55.5 34.2 23.4 0 38.3-11.7 38.3-27.8 0-19.3-15.3-26.2-41-37.4l-14.2-6c-40.7-17.4-67.6-39.1-67.6-85 0-42.3 32.2-74.6 82.5-74.6 35.9 0 61.6 12.5 80.2 45.1l-44 28.2c-9.6-17.3-20-24.1-36.2-24.1-16.5 0-27 10.4-27 24.1 0 17 10.5 23.8 34.7 34.3l14 6c48 20.6 75 41.5 75 88.6 0 50.8-39.9 78.6-93.5 78.6-52.3 0-86.1-25-102.7-57.6"/></g><defs><clipPath id="devicon-javascript-1-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
 ),
 TS: () => (
- <svg className="w-10 h-10 rounded" viewBox="0 0 128 128">
-    <path fill="#3178C6" d="M0 0h128v128H0z"/>
-    <path fill="#FFF" d="M72.2 103.9c2.3 3.8 5.4 6.7 11 6.7 4.5 0 7.4-2.2 7.4-5.3 0-3.7-2.9-5.1-7.8-7.3l-2.7-1.2c-7.8-3.3-13-7.5-13-16.3 0-8.8 6.8-15.5 17.3-15.5 7.6 0 12.8 2.6 16.5 9.1l-8.2 5.3c-1.8-3.1-3.9-4.4-8.1-4.4-3.6 0-5.8 1.8-5.8 4.2 0 3 1.9 4.2 6.6 6.3l2.7 1.2c9.2 3.9 14.2 8.1 14.2 16.8 0 9.7-7.6 16.1-18.9 16.1-10.4 0-16.7-5.3-20.2-11.7l9-4zm-43.8-38h32.7v9.5H50v42.2H38.7V75.4H28.4v-9.5z"/>
-  </svg> 
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-typescript-icon-1-a)"><path fill="#3178C6" d="M46.9 0H553c26 0 46.9 21 46.9 46.9V553c0 26-21 46.9-46.9 46.9H47C20.9 600 0 579 0 553.1V47C0 20.9 21 0 46.9 0"/><path fill="#fff" d="M352.8 469.9v64.7q15.8 8 37.3 12.1 21.6 4 45.5 4 23.3 0 44.2-4.4t36.8-14.6a75 75 0 0 0 25-26.7q9.2-16.5 9.2-40.8 0-17.6-5.3-30.8a72 72 0 0 0-15.2-23.6q-9.9-10.3-23.8-18.5a255 255 0 0 0-31.2-15.5 395 395 0 0 1-23-10.2 116 116 0 0 1-17.1-10.1 44 44 0 0 1-11-11 23 23 0 0 1-3.8-13q0-6.7 3.4-12 3.5-5.4 9.8-9.2a52 52 0 0 1 15.3-6q9.2-2.1 20.3-2.1a129 129 0 0 1 35.2 5q9 2.4 17.7 6.3t16 8.9v-60.5q-15-5.7-32.4-8.4t-40.2-2.7q-23 0-43.7 5a111 111 0 0 0-36.3 15.4q-15.8 10.6-24.8 26.8a79 79 0 0 0-9.1 39q0 28.8 16.7 49.3T419 421q13.3 5.5 24.9 10.7 11.5 5.3 20 11 8.3 5.5 13.2 12.3a25 25 0 0 1 1.8 26.8 27 27 0 0 1-9.2 9.3 51 51 0 0 1-15.4 6.2 93 93 0 0 1-21.6 2.2 123 123 0 0 1-80-29.5m-108-161.1H328v-53.3H96v53.3h82.8V546h66z"/></g><defs><clipPath id="devicon-typescript-icon-1-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
 ),
 React: () => (
-    <svg className="w-10 h-10 text-[#61DAFB] animate-[spin_20s_linear_infinite]" viewBox="0 0 100 100" fill="currentColor">
-        <circle cx="50" cy="50" r="10"/>
-        <ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="currentColor" strokeWidth="7"/>
-        <ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="currentColor" strokeWidth="7" transform="rotate(60 50 50)"/>
-        <ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="currentColor" strokeWidth="7" transform="rotate(120 50 50)"/>
-    </svg>
-  ),
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#00D8FF" d="M493.3 206.1q-9.3-3.2-19.3-6l3-13.2c14.6-71 5-128.2-27.6-147-31.3-18-82.5.7-134.2 45.7q-7.5 6.6-15 13.7l-9.9-9.1c-54.1-48.1-108.5-68.4-141-49.5-31.3 18-40.6 71.8-27.4 139q1.8 9.8 4.4 20-11.5 3.2-22.2 7C40.6 228.6 0 263.4 0 299.4c0 37.2 43.6 74.5 109.7 97q7.9 2.8 16.2 5.2-2.7 11-4.7 21.4c-12.5 66-2.7 118.6 28.5 136.5 32.2 18.6 86.2-.5 138.9-46.5q6.2-5.4 12.5-11.5 8.1 7.8 16.2 14.8c51 43.8 101.4 61.6 132.5 43.5 32.2-18.6 42.7-75 29.1-143.6q-1.5-7.9-3.6-16l11.2-3.5C555.2 374 600 337.2 600 299.5c0-36.1-41.9-71-106.7-93.4m-14.9 166.4-10 3.1q-11.7-36.2-30.5-76a601 601 0 0 0 29.2-74.9q9.3 2.7 17.9 5.6c55.5 19.2 89.4 47.4 89.4 69.2 0 23.2-36.6 53.3-96 73m-24.6 48.8a217 217 0 0 1 2.8 79.2c-3.5 19.3-10.7 32.1-19.6 37.2-19 11-59.3-3.2-103-40.8q-7.5-6.5-15-13.7 25.4-27.9 50.3-63.9c29-2.6 56.4-6.8 81.2-12.5zM204.6 536c-18.5 6.5-33.2 6.7-42.1 1.5-19-10.9-26.8-53-16-109.5q1.7-9.8 4.3-20a603 603 0 0 0 80.8 11.7 624 624 0 0 0 51.6 63.7q-5.8 5.5-11.5 10.5a217 217 0 0 1-67.1 42M118 372.3a217 217 0 0 1-70-37.1c-14.9-12.8-22.4-25.4-22.4-35.7 0-21.9 32.6-49.7 87-68.7q9.8-3.4 20.6-6.5 11.3 37 29.2 75.8c-12 26.2-22 52.2-29.6 76.9q-7.5-2.2-14.8-4.7M147 175c-11.3-57.7-3.8-101.1 15-112 20.1-11.7 64.5 4.9 111.3 46.4l9 8.3a614 614 0 0 0-51 63.3 626 626 0 0 0-80.2 12.4q-2.3-9.3-4-18.4m258.8 63.9q-9-15.5-18.2-30 28.8 3.6 54.7 9.5A548 548 0 0 1 423 270a892 892 0 0 0-17.3-31.2M300.3 136a548 548 0 0 1 35.3 42.6 755 755 0 0 0-71 0 566 566 0 0 1 35.7-42.6M194 239a757 757 0 0 0-17 31 566 566 0 0 1-19-52q25.6-5.8 54.4-9.3Q203 223.5 194 239m19 153a545 545 0 0 1-55.4-8.9 576 576 0 0 1 19.5-53 754 754 0 0 0 35.8 62m87.9 72.7a576 576 0 0 1-36.1-43.2 895 895 0 0 0 71.3 0 545 545 0 0 1-35.2 43.2m122.3-135.5q12 27.5 20.2 52.8-26.2 6-56 9.5a896 896 0 0 0 35.8-62.3m-39.6 19q-14 24.4-28.8 46.5a772 772 0 0 1-109.2.2 727 727 0 0 1-55-94.9 720 720 0 0 1 54.6-94.7 726 726 0 0 1 109.4 0 772 772 0 0 1 54.8 94.3q-11.7 24.2-25.8 48.6m53-286.2c20 11.6 27.8 58.3 15.2 119.6l-2.7 12a614 614 0 0 0-80.2-12.8 602 602 0 0 0-50.8-63.3l14-12.6c44.3-38.6 85.7-53.8 104.6-43M300 245.9a53.6 53.6 0 1 1 0 107.2 53.6 53.6 0 0 1 0-107.2"/></svg>
+),
 Next: () => (
-    <svg className="w-10 h-10 text-black dark:text-white" viewBox="0 0 128 128" fill="currentColor">
-        <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm23.2 92.5L48.1 41.8v37.6H38V38.1h10.5l40 52.1V38.1h10.1v54.4h-11.4z"/>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-nextjs-icon-3-a)"><path fill="#000" d="M300 600a300 300 0 1 0 0-600 300 300 0 0 0 0 600"/><path fill="url(#devicon-nextjs-icon-4-b)" d="m498.4 525-268-345H180v239.9h40.4V231.3l246.3 318.2a301 301 0 0 0 31.7-24.4"/><path fill="url(#devicon-nextjs-icon-5-c)" d="M423.3 180h-40v240h40z"/></g><defs><linearGradient id="devicon-nextjs-icon-4-b" x1="17891.2" x2="28522.7" y1="21013.3" y2="34190.4"><stop stopColor="#fff"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-nextjs-icon-5-c" x1="2383.3" x2="2316.3" y1="180" y2="17804.8"><stop stopColor="#fff"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><clipPath id="devicon-nextjs-icon-3-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
 ),
 Tailwind: () => (
-  <svg className="w-10 h-10 text-[#38BDF8]" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.336 6.182 14.975 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C7.666 17.818 9.027 19.2 12.001 19.2c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.336 13.382 8.975 12 6.001 12z"/>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="url(#devicon-tailwind-icon-1-a)" d="M300 120q-120 0-150 120 45-60 105-45c22.8 5.7 39.1 22.3 57.2 40.6C341.6 265.4 375.6 300 450 300q120 0 150-120-45 60-105 45c-22.8-5.7-39.1-22.3-57.2-40.6C408.4 154.6 374.4 120 300 120M150 300Q30 300 0 420q45-60 105-45c22.8 5.7 39.1 22.3 57.2 40.6C191.6 445.4 225.6 480 300 480q120 0 150-120-45 60-105 45c-22.8-5.7-39.1-22.3-57.2-40.6C258.4 334.6 224.4 300 150 300"/><defs><linearGradient id="devicon-tailwind-icon-1-a" x1="-1666.7" x2="50153.2" y1="11640" y2="41518.1" gradientUnits="userSpaceOnUse"><stop stopColor="#2298BD"/><stop offset="1" stopColor="#0ED7B5"/></linearGradient></defs></svg>
 ),
 Node: () => (
-    <svg className="w-10 h-10 text-[#5FA04E]" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 1l10.4 6v12L12 23 1.6 19V7L12 1zm0 2.3L3.6 8v8L12 20.7 20.4 16V8L12 3.3zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/>
-      </svg>
- ),
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-nodejs-8-a)"><path fill="#539E43" d="M296.7 483.7q-3 0-5.7-1.5l-18-10.7c-2.7-1.5-1.3-2-.5-2.3a32 32 0 0 0 8.1-3.7q.7-.3 1.4.2l13.8 8.2q.9.4 1.6 0l54.1-31.3q.9-.5.9-1.5v-62.5q0-1-.9-1.5l-54-31.2q-1-.4-1.7 0l-54.1 31.2q-.8.6-.8 1.5V441q0 1 .8 1.5l14.8 8.6c8 4 13-.7 13-5.5V384q.1-1.4 1.6-1.6h7c.7 0 1.6.7 1.6 1.6v61.7c0 10.7-5.9 17-16 17-3.2 0-5.6 0-12.5-3.4l-14.3-8.1c-3.5-2-5.7-5.9-5.7-10v-62.5c0-4 2.2-7.8 5.7-9.9l54.1-31.3c3.4-1.9 8-1.9 11.4 0l54.2 31.3c3.5 2 5.7 5.9 5.7 10v62.5c0 4-2.2 7.8-5.7 9.9l-54.2 31.3q-2.7 1.2-5.7 1.2m16.7-43c-23.7 0-28.6-10.8-28.6-20q.1-1.5 1.6-1.7h7q1.5 0 1.6 1.4c1 7.2 4.2 10.7 18.6 10.7 11.4 0 16.2-2.6 16.2-8.7 0-3.5-1.3-6.1-19-7.9-14.9-1.5-24-4.7-24-16.5 0-11 9.1-17.5 24.6-17.5 17.4 0 25.9 6 27 19q0 .6-.4 1.2t-1.1.5h-7q-1.2 0-1.6-1.2c-1.6-7.4-5.8-9.9-17-9.9-12.4 0-13.9 4.4-13.9 7.6 0 4 1.8 5.2 18.6 7.3 16.7 2.2 24.6 5.3 24.6 17-.2 12-10 18.7-27.2 18.7"/><path fill="#333" d="M128.8 239.2c0-2.5-1.3-4.8-3.5-6l-57.5-33q-1.5-.9-3.1-1h-.5q-1.7 0-3.2 1l-57.5 33a7 7 0 0 0-3.5 6l.1 89q0 2 1.8 3a3 3 0 0 0 3.4 0l34.2-19.6a7 7 0 0 0 3.5-6V264c0-2.4 1.3-4.8 3.5-6l14.5-8.4q1.7-1 3.6-1t3.3 1l14.6 8.4a7 7 0 0 1 3.5 6v41.6c0 2.5 1.3 4.8 3.5 6l34.2 19.5q1.7 1 3.5 0 1.7-.9 1.8-3zm276.4-122.5c-1-.5-2.4-.5-3.3 0q-1.7 1.1-1.8 3v88.1q0 1.4-1.2 2.2-1.3.6-2.5 0l-14.3-8.3a7 7 0 0 0-7 0L317.6 235a7 7 0 0 0-3.5 6v66.3c0 2.4 1.4 4.7 3.5 6l57.5 33.1a7 7 0 0 0 7 0l57.5-33.2a7 7 0 0 0 3.5-6V142a7 7 0 0 0-3.5-6zM400 285.4q0 1-.9 1.5l-19.6 11.4a2 2 0 0 1-1.8 0L358 286.9q-.8-.6-.8-1.5v-22.8q0-1 .8-1.5l19.7-11.4a2 2 0 0 1 1.8 0l19.6 11.4q.9.6.9 1.5zm196.6-23.3a7 7 0 0 0 3.4-6V240a7 7 0 0 0-3.4-6l-57-33a7 7 0 0 0-7 0l-57.5 33.2a7 7 0 0 0-3.5 6v66.2c0 2.5 1.3 4.8 3.5 6l57 32.6a7 7 0 0 0 6.9 0l34.6-19.3c1-.5 1.7-1.8 1.7-3s-.7-2.4-1.7-3l-57.8-33.2q-1.7-1.1-1.8-3v-20.7c0-1.2.7-2.5 1.8-3l18-10.3q1.8-1 3.5 0l18 10.3q1.8 1.1 1.8 3V279q0 2.1 1.8 3 1.7 1 3.5 0z"/><path fill="#539E43" d="M535.2 259q.7-.4 1.3 0l11 6.4q.7.3.7 1.2v12.7q0 .9-.7 1.2l-11 6.4q-.7.4-1.3 0l-11-6.4q-.7-.3-.7-1.2v-12.7q0-.9.7-1.2z"/><path fill="url(#devicon-nodejs-9-b)" d="M225 201.2a7 7 0 0 0-7 0l-57 33a7 7 0 0 0-3.4 6v66a7 7 0 0 0 3.4 6l57 32.9a7 7 0 0 0 7 0l57.1-33a7 7 0 0 0 3.4-6v-66a7 7 0 0 0-3.4-6z"/><g mask="url(#devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-nodejs-10-devicon-nodejs-2-devicon-10-devicon-2-devicon-2072-devicon-2064-devicon-2072-devicon-2064-node-c)"><path fill="url(#devicon-nodejs-11-c)" d="m282.2 234.2-57.3-33-1.8-.7-64.3 110.1q.8 1 2 1.7l57.3 33q2.5 1.4 5.3.6l60.3-110.4q-.7-.8-1.5-1.3"/></g><g fillRule="evenodd" clipRule="evenodd" mask="url(#devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-nodejs-12-devicon-nodejs-4-devicon-12-devicon-4-devicon-2074-devicon-2066-devicon-2074-devicon-2066-node-e)"><path fill="url(#devicon-nodejs-13-d)" d="M282.4 312.1q2.5-1.6 3.4-4.3l-63-107.4a7 7 0 0 0-4.9.8L161 234l61.5 112q1.3-.2 2.6-.8z"/><path fill="url(#devicon-nodejs-14-e)" d="m282.4 312.1-57.3 33q-1.2.6-2.5.8l1 2 63.5-36.7v-.8l-1.6-2.7a6 6 0 0 1-3.1 4.4"/><path fill="url(#devicon-nodejs-15-f)" d="m282.4 312.1-57.3 33q-1.2.6-2.5.8l1 2 63.5-36.7v-.8l-1.6-2.7a6 6 0 0 1-3.1 4.4"/></g></g><defs><linearGradient id="devicon-nodejs-9-b" x1="8878.4" x2="2619.8" y1="2748.6" y2="12582.4" gradientUnits="userSpaceOnUse"><stop stopColor="#41873F"/><stop offset=".3" stopColor="#418B3D"/><stop offset=".6" stopColor="#419637"/><stop offset=".9" stopColor="#3FA92D"/><stop offset="1" stopColor="#3FAE2A"/></linearGradient><linearGradient id="devicon-nodejs-11-c" x1="5564.5" x2="21238.3" y1="8236.7" y2="-278.9" gradientUnits="userSpaceOnUse"><stop offset=".1" stopColor="#41873F"/><stop offset=".4" stopColor="#54A044"/><stop offset=".7" stopColor="#66B848"/><stop offset=".9" stopColor="#6CC04A"/></linearGradient><linearGradient id="devicon-nodejs-13-d" x1="-386.6" x2="12825.4" y1="7489" y2="7489" gradientUnits="userSpaceOnUse"><stop offset=".1" stopColor="#6CC04A"/><stop offset=".3" stopColor="#66B848"/><stop offset=".6" stopColor="#54A044"/><stop offset=".9" stopColor="#41873F"/></linearGradient><linearGradient id="devicon-nodejs-14-e" x1="-6482.4" x2="6729.7" y1="2332.8" y2="2332.8" gradientUnits="userSpaceOnUse"><stop offset=".1" stopColor="#6CC04A"/><stop offset=".3" stopColor="#66B848"/><stop offset=".6" stopColor="#54A044"/><stop offset=".9" stopColor="#41873F"/></linearGradient><linearGradient id="devicon-nodejs-15-f" x1="8654.5" x2="5307.4" y1="-8194.3" y2="9344.6" gradientUnits="userSpaceOnUse"><stop stopColor="#41873F"/><stop offset=".3" stopColor="#418B3D"/><stop offset=".6" stopColor="#419637"/><stop offset=".9" stopColor="#3FA92D"/><stop offset="1" stopColor="#3FAE2A"/></linearGradient><clipPath id="devicon-nodejs-8-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
+),
 Express: () => (
-    <svg className="w-10 h-10 text-slate-800 dark:text-slate-200" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M24 18.25h-3.88l-3.23-5.2-3.24 5.2H9.77l5.12-8.08-4.85-7.42h3.87l2.95 4.79 2.96-4.79h3.88l-4.85 7.42L24 18.25zM0 18.25V5.75h8.73v3.13H3.64v1.75h4.63v3.08H3.64v1.41h5.09v3.13H0z"/>
-      </svg>
-  ),
+<svg className="w-10 h-10 text-slate-800 dark:text-slate-200" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M24 18.25h-3.88l-3.23-5.2-3.24 5.2H9.77l5.12-8.08-4.85-7.42h3.87l2.95 4.79 2.96-4.79h3.88l-4.85 7.42L24 18.25zM0 18.25V5.75h8.73v3.13H3.64v1.75h4.63v3.08H3.64v1.41h5.09v3.13H0z"/>
+</svg>
+),
 MongoDB: () => (
-    <svg className="w-10 h-10 text-[#13AA52]" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 0s-5.5 8.1-5.5 13.3c0 3.8 2.5 7.7 5.5 10.7 3-3 5.5-6.9 5.5-10.7C17.5 8.1 12 0 12 0zm0 21c-1.8-2.2-3.5-5.2-3.5-7.7 0-3.3 2.6-7.5 3.5-9.1.9 1.6 3.5 5.8 3.5 9.1 0 2.5-1.7 5.5-3.5 7.7z"/>
-      </svg>
-  ),
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#01EC64" d="M352.1 66.9A1065 1065 0 0 1 300.8.4q-.7-.7-1.6 0C294.8 6.7 273 37 247.9 66.9c-216.2 275.6 34 461.7 34 461.7l2.1 1.4c1.9 28.7 6.6 70 6.6 70h18.6s4.7-41 6.5-70l2.1-1.7c.3.3 250.5-185.8 34.3-461.4M300 524.4s-11.2-9.6-14.2-14.5v-.5l13.5-300.1c0-1 1.4-1 1.4 0L314 509.4v.5c-3 4.9-14.2 14.5-14.2 14.5"/></svg>
+),
 HTML: () => (
 <svg className="w-10 h-10 text-orange-600" viewBox="0 0 24 24" fill="currentColor">
 <path d="M3 2l1.8 20L12 24l7.2-2L21 2H3zm13.2 5H8l.2 2h7.8l-.6 7-3.4 1-3.4-1-.2-3h2.4l.1 1.2 1.1.3 1.1-.3.1-2.2H6L5.4 5h11z"/>
 </svg>
 ),
 CSS: () => (
-<svg className="w-10 h-10 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
-<path d="M3 2l1.8 20L12 24l7.2-2L21 2H3zm13.5 4l-.3 2H9.1l.2 2h6.7l-.6 7-3.4 1-3.4-1-.2-3h2.3l.1 1.2 1.2.3 1.2-.3.1-2.2H7.1L6.5 6h10z"/>
-</svg>
-),
-Netlify: () => (
-  <svg
-    className="w-10 h-10"
-    viewBox="0 0 24 24"
-    fill="none"
-  >
-    <rect x="4" y="4" width="4" height="4" fill="#00C7B7" />
-    <rect x="16" y="4" width="4" height="4" fill="#00C7B7" />
-    <rect x="4" y="16" width="4" height="4" fill="#00C7B7" />
-    <rect x="16" y="16" width="4" height="4" fill="#00C7B7" />
-    <path
-      d="M8 8L16 16"
-      stroke="#00C7B7"
-      strokeWidth="2"
-    />
-    <path
-      d="M16 8L8 16"
-      stroke="#00C7B7"
-      strokeWidth="2"
-    />
-  </svg>
-),
-Redux: () => (
-<svg className="w-10 h-10 text-purple-500" viewBox="0 0 24 24" fill="currentColor">
-<circle cx="12" cy="5" r="2"/>
-<circle cx="6" cy="18" r="2"/>
-<circle cx="18" cy="18" r="2"/>
-<path d="M12 7c3.5 1 6 4 6 9M12 7c-3.5 1-6 4-6 9" stroke="currentColor" strokeWidth="2" fill="none"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#264DE4" d="m299.7 600-173.6-48.2L87.5 118h425l-38.7 433.8z"/><path fill="#2965F1" d="m440.7 524.1 33-370.7H300V563z"/><path fill="#EBEBEB" d="m176.1 314.3 4.8 53.2H300v-53.2zm-9.5-107.7 4.8 53.2H300v-53.2zM300 452.5h-.2l-59.3-16-3.8-42.4h-53.4l7.4 83.6 109 30.3.3-.1z"/><path fill="#000" d="M187.5 0H252v27h-37.5v27H252v26.9h-64.5zm77.3 0h64.5v23.4h-37.5v4.7h37.5v54h-64.5V57.3h37.5v-4.7h-37.5zm77.4 0h64.4v23.4h-37.5v4.7h37.5v54h-64.4V57.3h37.5v-4.7h-37.5z"/><path fill="#fff" d="m423.5 314.3 9.6-107.7H299.8v53.2h75l-4.8 54.5h-70.2v53.2h65.5l-6.1 69-59.4 16V508L409 477.7l.8-9 12.5-140z"/></svg>
 ),
 Supabase: () => (
-  <svg
-    className="w-10 h-10"
-    viewBox="0 0 24 24"
-    fill="none"
-  >
-    <path
-      d="M14.2 3H8.4c-.4 0-.8.2-1 .5L3.8 19.2c-.3.8.2 1.8 1.1 1.8h4.5c.4 0 .8-.2 1-.6L20.2 4.8C20.8 4 20.2 3 19.2 3h-5z"
-      fill="#3ECF8E"
-    />
-    <path
-      d="M13.8 3h5.4c1 0 1.6 1 .9 1.8l-9.5 14.6V8.2c0-2.9 1.4-5.2 3.2-5.2z"
-      fill="#249361"
-    />
-  </svg>
-),
-Jwt: () => (
-  <svg
-    className="w-10 h-10 text-amber-500"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <circle cx="12" cy="4" r="2.5" />
-    <circle cx="12" cy="20" r="2.5" />
-    <circle cx="4" cy="12" r="2.5" />
-    <circle cx="20" cy="12" r="2.5" />
-    <path
-      d="M12 6.5v11M6.5 12h11"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="url(#devicon-supabase-icon-2-a)" d="M349.3 590a26.2 26.2 0 0 1-46.8-15.9l-5.4-360.5h242.4a52.5 52.5 0 0 1 41.1 85.1z"/><path fill="url(#devicon-supabase-icon-3-b)" fillOpacity=".2" d="M349.3 590a26.2 26.2 0 0 1-46.8-15.9l-5.4-360.5h242.4a52.5 52.5 0 0 1 41.1 85.1z"/><path fill="#3ECF8E" d="M250.7 10a26.2 26.2 0 0 1 46.8 15.9l2.4 360.5H60.5c-44 0-68.4-50.7-41.1-85.1z"/><defs><linearGradient id="devicon-supabase-icon-2-a" x1="6450.5" x2="20349.7" y1="8206.6" y2="14035.9" gradientUnits="userSpaceOnUse"><stop stopColor="#249361"/><stop offset="1" stopColor="#3ECF8E"/></linearGradient><linearGradient id="devicon-supabase-icon-3-b" x1="884.4" x2="9807" y1="-4870.5" y2="11925.8" gradientUnits="userSpaceOnUse"><stop/><stop offset="1" stopOpacity="0"/></linearGradient></defs></svg>
 ),
 Docker: () => (
-  <svg className="w-10 h-10" viewBox="0 0 128 128">
-    <path
-      fill="#2396ED"
-      d="M124.3 54.3c-4.3-2.9-14.1-4-21.5-2.5-1-7.1-5.6-13.3-12.7-18l-3.5-2.1-2.3 3.4c-4.4 6.7-5.3 17.8-1.3 25.1-1.8 1-5.5 2.3-10.2 2.3H2.2c0 35.3 22.7 51.7 41.7 51.7 41.2 0 71.8-18.9 85.7-53.8 5.5.1 17.4.1 20.4-11.2 1.1-4.4.4-8.6-.7-11.7z"
-    />
-    <rect x="10" y="44" width="14" height="14" fill="#2396ED" />
-    <rect x="26" y="44" width="14" height="14" fill="#2396ED" />
-    <rect x="42" y="44" width="14" height="14" fill="#2396ED" />
-    <rect x="58" y="44" width="14" height="14" fill="#2396ED" />
-    <rect x="26" y="28" width="14" height="14" fill="#2396ED" />
-    <rect x="42" y="28" width="14" height="14" fill="#2396ED" />
-    <rect x="58" y="28" width="14" height="14" fill="#2396ED" />
-    <rect x="42" y="12" width="14" height="14" fill="#2396ED" />
-    <rect x="58" y="12" width="14" height="14" fill="#2396ED" />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#2396ED" d="M587.6 248.7c-13.5-9.3-44.5-12.9-68.7-8.2q-4.3-35-38.2-62l-13-9.5-9 13.5a111 111 0 0 0-15.2 65.6 79 79 0 0 0 11.8 35.8 94 94 0 0 1-45.6 10.5H2.7l-1.1 4.7c-4 23.5-4 96.7 42.2 153q52.6 64.2 154.8 64.4c147.5 0 256.7-70.9 308-199.2 20.2.6 63.6 0 85.5-44l5.6-12.3 2.3-4.6zM328.1 83.5h-62v58.6h62zm0 70.3h-62v58.6h62zm-73.2 0h-62v58.6h62zm-73.2 0h-61.9v58.6h62zm-73.2 70.3H46.6v58.6h62zm73.2 0h-61.9v58.6h62zm73.2 0h-62v58.6h62zm73.2 0h-62v58.6h62zm73.2 0h-62v58.6h62z"/></svg>
 ),
 SocketIO: () => (
-  <svg
-    className="w-10 h-10 text-zinc-900 dark:text-white"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="2" />
-    <path
-      d="M13 4L7 13h4l-1 7 7-10h-4l1-6z"
-      fill="currentColor"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-socketio-1-a)"><path fill="#010101" d="M224 9.8c77.7-20 163.5-8.3 232 34a301 301 0 0 1 143.9 249.4 301 301 0 0 1-134.7 257.1c-94.5 63.6-225.3 66-321.8 5.6A301 301 0 0 1 2.3 265C14.2 144.8 107 38.8 224 9.8"/><path fill="#fff" d="M212.1 58.9C358.8.2 538.7 108.6 554 265.9c23.6 141.5-93.8 285.3-237.2 289.4-136.4 13.7-268.1-102-272-238.9C34.5 205.6 107.6 95.6 212 59"/><path fill="#010101" d="M226.9 284.8c65.7-53.7 130-109.3 197.2-161.4C389 177.5 352.6 230.9 317.4 285q-45.3.2-90.5-.3m55.6 30q45.4-.1 90.8.4C307 368.6 243 424.6 175.8 476.6c35.2-54.2 71.4-107.7 106.7-161.9"/></g><defs><clipPath id="devicon-socketio-1-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
 ),
 Fastify: () => (
-  <svg
-    className="w-10 h-10 text-black dark:text-white"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M13 2L5 14h5l-1 8 10-14h-6l1-6z" />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#000" d="m581.1 162.2 18.9-48.9-.8-3-186.9 49.2c20-28.8 13.1-51.9 13.1-51.9s-59.6 38.1-104.8 37.1c-45-1-59.6-13-128.8 9S103 243.5 83 258 0 320 0 320l.1.8 56.8-18s-15.6 14.6-48.7 59.1l-1.5-1.4v.3s26.6 40.6 52.7 33.1a52 52 0 0 0 8.8-3.6 105 105 0 0 0 39.3 13.1S97.3 391.5 88.8 378l7-4.6-1 .8 21.5 8-2.4-20.4.3-.1 21.2 7.8-2.7-18.5 8.1-4 22.1-83.7 91.5-62.4-7.2 18.3c-18.6 45.6-53.4 56.4-53.4 56.4l-14.6 5.5c-10.8 12.8-15.3 16-19 58.8 8.7-2.1 17-2.7 24.5-.6 39.1 10.5 52.7 57.6 42.2 70.7-2.7 3.2-9 8.8-16.9 15.3h-15.9l-.2 13-1.6 1.2h-16.1L176 452l-4.3 3.2c-15.1.3-34.3-13-34.3-13 0 12.1 10 30.7 10 30.7l1.8-.9-1.6 1.1s40.6 27.1 66.2 17c22.8-8.8 81.6-55.3 132.4-77.2L500 372.4l20.3-52.6L403 350.7v-47.2l137.5-36.2 20.2-52.5L403 256.3v-47.2z"/></svg>
+),
+Vue : () => (
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#41B883" d="M480 41.3h120L300 558.8 0 41.3h229.5l70.5 120 69-120z"/><path fill="#41B883" d="m0 41.3 300 517.5L600 41.3H480L300 351.8 118.5 41.3z"/><path fill="#35495E" d="m118.5 41.3 181.5 312 180-312H369l-69 120-70.5-120z"/></svg>
 ),
 Linux: () => (
-  <svg
-    className="w-10 h-10 text-yellow-500"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <rect x="3" y="4" width="18" height="16" rx="2" />
-    <path
-      d="M7 9l3 3-3 3"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      fill="none"
-    />
-    <path
-      d="M13 15h4"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
-),
-NextAuth: () => (
-  <svg
-    className="w-10 h-10 text-slate-700 dark:text-white"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M12 2L4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z" />
-    <path
-      d="M9.5 12l1.5 1.5 3.5-3.5"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      fill="none"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-linux-tux-22-a)"><g filter="url(#devicon-linux-tux-23-b)"><path fill="#000" fillOpacity=".2" d="M551.9 532.5C551.9 569.7 439 600 300 600S48.1 569.9 48.1 532.5C48.1 495.3 161 465 300 465s251.7 30.3 251.9 67.5"/></g><path fill="#000" d="M162 460c-24.3-35.1-29-149.2 27.8-219.5 28.2-33.6 35.4-57 37.6-88.7C229 115.8 202 8.5 303.5.5c103-8.3 97.2 93.2 96.6 147-.3 45.2 33.3 71 56.5 106.4 42.7 65 39.2 176.7-8 237.3-59.9 75.7-111 42.9-145 45.6-63.8 3.8-66 37.6-141.5-76.9"/><path fill="url(#devicon-linux-tux-24-c)" d="M410.4 260.6c17.7 16.3 63.5 89.3-9 135-25.6 15.9 22.8 76.5 46 47.2 41.1-52.7 15-137-9.9-167-16.5-21.3-42-29.6-27.1-15.2"/><path fill="#000" stroke="#000" d="M405.5 250.8c29 23.6 82 106.2 4.7 160.1-25.4 16.7 22.4 69.7 49.4 42.7 93.4-94-2.4-202-35.4-239.2-29.6-32.5-55.7 7.4-18.7 36.4Z"/><path fill="url(#devicon-linux-tux-25-d)" d="M363.6 51.8c-1 27-30.7 50.4-66.4 52.6-35.6 2.1-63.5-18.3-62.5-45.3S265.4 8.7 301 6.6c35.6-2 63.5 18.3 62.6 45.2"/><path fill="url(#devicon-linux-tux-26-e)" d="M278.4 116c1 17.5-7.3 32.2-18.7 32.8s-21.5-13-22.5-30.5 7.3-32.2 18.7-32.8 21.5 13 22.5 30.5"/><path fill="url(#devicon-linux-tux-27-f)" d="M299 117.3c.4 20.3 13.6 36.4 29.3 36s28.2-17 27.8-37.5c-.4-20.3-13.6-36.4-29.3-36S298.4 97 299 117.3"/><path fill="#000" d="M312 121.9c-.2 11.2 5.3 20.2 12.6 20.2 7 0 13.2-9 13.4-20 .2-11.2-5.3-20.3-12.6-20.3s-13.2 9-13.4 20m-45.4.2c1 9.3-2.6 17.2-7.7 18-5.1.6-10-6.3-11-15.6-1-9.2 2.5-17 7.6-17.9 5.1-.6 10 6.3 11 15.6"/><path fill="url(#devicon-linux-tux-28-g)" d="M315 115.6c-.6 6.3 2.3 11.4 6.4 11.8s8.1-4.5 8.7-10.6c.6-6.3-2.4-11.5-6.5-11.8s-8 4.5-8.6 10.6"/><path fill="url(#devicon-linux-tux-29-h)" d="M262.2 117.2c.6 5-1.6 9.6-4.7 10s-6.1-3.6-6.7-8.9c-.6-5 1.6-9.6 4.7-10 3.2-.4 6.1 3.7 6.7 8.9"/><path fill="url(#devicon-linux-tux-30-i)" d="M200.2 310.4c14-31.7 43.7-87.4 44.3-130.5 0-34.2 102.5-42.5 110.8-8.2a569 569 0 0 0 42.5 110.1c13.4 24.6 52.1 103.1 10.8 171.6-37.2 60.6-150 108.6-210.1-8.2-20.5-40.6-16.8-90.8 1.7-134.8"/><path fill="url(#devicon-linux-tux-31-j)" d="M187.7 286.8c-12 22.6-36.8 82 23.8 114.5 65 34.6 64.9 105.6-13.4 71.8-71.6-30.5-40-154-19.9-183.6 13-20.6 32.7-46 9.5-2.7"/><path fill="#000" stroke="#000" strokeWidth="1.3" d="M197.9 261.2c-19.1 31-64.8 104.3-3.6 142.4 82.3 50.6 59 101-16 55.5-106-63.3-12.9-191.2 29.4-240 48.4-54.7 9.3 10-9.8 42Z"/><path fill="url(#devicon-linux-tux-32-k)" d="M383.2 322.4c0 34.6-33.2 79.5-90.3 79a79 79 0 0 1-83.8-79c0-34.7 39-62.8 87-62.8 48.2.2 87.1 28.1 87.1 62.8"/><path fill="url(#devicon-linux-tux-33-l)" d="M352.1 213.6c-.5 35.8-24 44.2-53.5 44.2s-51-5.3-53.5-44.2c0-24.4 24-38.6 53.5-38.6 29.5-.2 53.5 14 53.5 38.6"/><path fill="url(#devicon-linux-tux-34-m)" d="M173.7 268.7c19.3-29.4 60-74.4 7.7 6.3-42.5 66.5-15.8 109.2-2 121 39.7 35.4 38.2 59.2 6.9 40.5-67.1-40-53.2-107.2-12.6-167.8"/><path fill="url(#devicon-linux-tux-35-n)" d="M452.9 280.7c-16.7-34.5-69.9-121.8 2.5-20.3 66 91.9 19.7 155.8 11.5 162.1-8.3 6.3-36 19.1-28-3.1 8.3-22.3 49.2-64.4 14-138.7"/><path fill="url(#devicon-linux-tux-36-o)" stroke="#E68C3F" strokeWidth="6.3" d="M159.1 552.2c-44-23.4-108 4.5-84.8-58.8 4.7-14.4-6.9-36 .6-50 8.9-17.1 28-13.4 39.4-24.8 11.2-11.8 18.3-32.3 39.3-29.1s34.8 28.7 49.4 60.2c10.8 22.4 49 54 46.4 79.3-3.1 38.5-47 45.8-90.3 23.2Z"/><path fill="url(#devicon-linux-tux-37-p)" d="M480 403.4c-6.7 12.6-34.6 32.9-53.3 27.6-18.9-5.1-27.5-33.9-23.8-55.7 3.5-24.4 23.8-25.8 49.4-13.6 27.5 13.6 35.8 25 27.7 41.7"/><path fill="url(#devicon-linux-tux-38-q)" stroke="#E68C3F" strokeWidth="6.3" d="M464.7 541.4c32.3-39.2 104-31.1 55.7-84.8-10.3-11.6-7.1-36.4-19.7-47-14.8-13-31-2.4-46-9.1-15-7.3-30.7-21.3-49-11.4s-20.3 36-22 70.2c-1.7 24.6-24 65.7-12 88.4 17.2 35 62.3 30.3 93-6.3Z"/><path fill="url(#devicon-linux-tux-39-r)" d="M450.7 489c50-73.8 12.8-73.2.2-78.9-12.6-5.9-25.8-17.5-40.5-9.4-14.8 8.2-15.6 29.5-16 57.4-.5 20.1-17.3 53.8-7.2 72.4 12.2 21.9 41.7-9.8 63.5-41.5"/><path fill="url(#devicon-linux-tux-40-s)" d="M148.9 499.7c-74.8-48.4-39.8-65-28.5-72.7 13.5-9.8 13.7-28.7 30.5-27 16.7 1.9 26.5 22.5 37.7 48.1 8.3 18.3 37 42.7 34.9 63.8-2.8 24.7-42.3 8.4-74.6-12.2"/><path fill="#000" d="M475.7 402.8c-5.9 10.3-29.9 26.4-45.8 22-16.4-4-23.8-27-20.5-44.4 3-19.7 20.5-20.6 42.5-10.8 23.4 10.6 30.7 19.7 23.8 33.2"/><path fill="url(#devicon-linux-tux-41-t)" d="M459.6 397.1c-3.8 7.1-19.5 18.3-30.5 15.4s-16.6-18.9-14.8-30.9c1.6-13.6 13.4-14.4 28.3-7.7 16.2 7.5 21.3 13.8 17 23.2"/><path fill="url(#devicon-linux-tux-42-u)" stroke="#E68C3F" strokeWidth="3.8" d="M256.1 140.4c7.9-7.3 27-29.5 63.2-6.3 6.7 4.3 12.2 4.7 25 10.2 25.7 10.6 13.5 36.2-14 44.9-11.8 3.7-22.4 18-43.7 16.7-18.3-1-23-13-34.2-19.5-19.9-11.2-22.8-26.4-12-34.4z"/><path stroke="#E68C3F" strokeWidth="2.5" d="M344.7 161c-10.9.6-34.3 24-58.9 24s-39.3-22.8-43-22.8"/><path fill="url(#devicon-linux-tux-43-v)" d="M268.3 138.4c4-3.5 16.4-13.2 32.7-3.3l12.2 7c10.4 6.1 5.3 15-7.3 20.5-5.7 2.4-15.1 7.5-22.2 7-7.9-.7-13.2-5.8-18.3-9.2-9.7-6.3-9-11.6-4.6-15.7 3.4-3.1 7.1-6.1 7.5-6.3"/></g><defs><linearGradient id="devicon-linux-tux-24-c" x1="4025.5" x2="5317.3" y1="22994.8" y2="8512.1" gradientUnits="userSpaceOnUse"><stop stopColor="#FFEED7"/><stop offset="1" stopColor="#BDBFC2"/></linearGradient><linearGradient id="devicon-linux-tux-25-d" x1="7249.2" x2="6632.8" y1="242.2" y2="8918.3" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".8"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-26-e" x1="2378" x2="1998.4" y1="5679.8" y2="720.1" gradientUnits="userSpaceOnUse"><stop stopColor="#FFEED7"/><stop offset="1" stopColor="#BDBFC2"/></linearGradient><linearGradient id="devicon-linux-tux-27-f" x1="3149.2" x2="3149" y1="6372" y2="1096.3" gradientUnits="userSpaceOnUse"><stop stopColor="#FFEED7"/><stop offset="1" stopColor="#BDBFC2"/></linearGradient><linearGradient id="devicon-linux-tux-28-g" x1="1139.6" x2="879.6" y1="174.6" y2="2197.4" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-29-h" x1="779.9" x2="1059.8" y1="212" y2="1850.2" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-30-i" x1="12304.4" x2="12304.4" y1="33114.5" y2="15057.7" gradientUnits="userSpaceOnUse"><stop stopColor="#FFEED7"/><stop offset="1" stopColor="#BDBFC2"/></linearGradient><linearGradient id="devicon-linux-tux-31-j" x1="5774.7" x2="1165.9" y1="22149.7" y2="6438" gradientUnits="userSpaceOnUse"><stop stopColor="#FFEED7"/><stop offset="1" stopColor="#BDBFC2"/></linearGradient><linearGradient id="devicon-linux-tux-32-k" x1="8888.1" x2="8934.3" y1="2136.3" y2="13690.6" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".8"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-33-l" x1="5589.2" x2="5640.4" y1="3267.1" y2="7861.3" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-34-m" x1="3625.3" x2="3625.3" y1="720.6" y2="17580.3" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-35-n" x1="4002.6" x2="3996.3" y1="710.6" y2="15944.1" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-36-o" x1="9702.4" x2="7202.1" y1="8990" y2="17669.4" gradientUnits="userSpaceOnUse"><stop stopColor="#FFA63F"/><stop offset="1" stopColor="#FF0"/></linearGradient><linearGradient id="devicon-linux-tux-37-p" x1="4640.5" x2="4283.4" y1="11458.5" y2="-4664.2" gradientUnits="userSpaceOnUse"><stop stopColor="#FFEED7"/><stop offset="1" stopColor="#BDBFC2"/></linearGradient><linearGradient id="devicon-linux-tux-38-q" x1="5522.6" x2="12330.4" y1="6709" y2="16353.9" gradientUnits="userSpaceOnUse"><stop stopColor="#FFA63F"/><stop offset="1" stopColor="#FF0"/></linearGradient><linearGradient id="devicon-linux-tux-39-r" x1="5870.4" x2="3543.8" y1="-2009.6" y2="9380.1" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-40-s" x1="5893.9" x2="6353.8" y1="594.6" y2="13373.4" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-41-t" x1="2463" x2="3001.8" y1="565.4" y2="4389.3" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="devicon-linux-tux-42-u" x1="6414.1" x2="6459" y1="1571.5" y2="8295.4" gradientUnits="userSpaceOnUse"><stop stopColor="#FFA63F"/><stop offset="1" stopColor="#FF0"/></linearGradient><linearGradient id="devicon-linux-tux-43-v" x1="3322.7" x2="3310.5" y1="243.3" y2="3798.7" gradientUnits="userSpaceOnUse"><stop stopColor="#fff" stopOpacity=".7"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><clipPath id="devicon-linux-tux-22-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath><filter id="devicon-linux-tux-23-b" width="529.7" height="161" x="35.1" y="452" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_1_8396" stdDeviation="6.5"/></filter></defs></svg>
 ),
 Cloudinary: () => (
-  <svg
-    className="w-10 h-10"
-    viewBox="0 0 24 24"
-    fill="none"
-  >
-    <path
-      d="M7.5 18a4.5 4.5 0 010-9c.3 0 .6 0 .9.1A5.5 5.5 0 0119 11a3.5 3.5 0 010 7H7.5z"
-      fill="#3448C5"
-    />
-    <circle cx="10" cy="11" r="2" fill="#00AEEF" />
-  </svg>
-),
-Render: () => (
-  <svg
-    className="w-10 h-10 text-[#46E3B7]"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <circle cx="8" cy="8" r="4" />
-    <path d="M12 4h8v8c0 4.4-3.6 8-8 8h-4v-4h4a4 4 0 004-4V8h-4V4z" />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#3448C5" d="M176 280q.7-.1 1 .4l55.3 55.3a1.6 1.6 0 0 1-1.1 2.7H217q-1.5.2-1.6 1.7v124.2c0 8 3.1 15.4 8.7 21l8.2 8.3a1.6 1.6 0 0 1-1.1 2.8H166a30 30 0 0 1-29.9-29.9V340.1q-.1-1.6-1.6-1.7h-14a1.6 1.6 0 0 1-1.1-2.7l55.3-55.3q.5-.5 1.1-.5m122 32q.8-.1 1.2.4l55.3 55a1.6 1.6 0 0 1-1.2 2.9H339q-1.6.1-1.7 1.6v92.4c0 7.9 3.1 15.4 8.7 21l8.3 8.3a1.6 1.6 0 0 1-1.2 2.8h-65a30 30 0 0 1-29.8-29.9V372q-.1-1.5-1.6-1.6h-14.1a1.6 1.6 0 0 1-1.1-2.8l55.2-55.2q.5-.5 1.1-.5M420 343.5q.6 0 1.1.5l55.3 55.2a1.6 1.6 0 0 1-1.2 2.8h-14.1q-1.6.2-1.7 1.7v60.5c0 8 3.2 15.4 8.7 21l8.3 8.3a1.6 1.6 0 0 1-1.2 2.8h-65.1a30 30 0 0 1-29.8-29.9v-62.7q-.2-1.6-1.7-1.7H365a1.6 1.6 0 0 1-1.1-2.8L419 344q.4-.5 1.2-.5m-123.3-240c86.8.7 163.4 57 189.8 139.8A130 130 0 0 1 600 371.5c0 53.7-33.6 98.3-87.7 116.8l-2 .7-2.5.8v-40c34.4-14.6 54.6-43.3 54.6-78.3a92 92 0 0 0-88.5-91.7h-16.6l-3.6-14.3A162.5 162.5 0 0 0 297 141.3a160 160 0 0 0-144.3 89.6l-5.5 11.4-10.5 1a110.8 110.8 0 0 0-48 203.7l1.8 1v42.3h-.3l-3.7-1.7a148.5 148.5 0 0 1 35.8-281.1A197 197 0 0 1 297 103.7"/></svg>
 ),
 Shadcn: () => (
-  <svg
-    className="w-10 h-10 text-black dark:text-white"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M18 3L6 21h4l12-18h-4z" />
-    <path d="M6 3h4L2 15h4L14 3H6z" />
-  </svg>
+<svg className="w-10 h-10 text-black dark:text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3L6 21h4l12-18h-4z" /><path d="M6 3h4L2 15h4L14 3H6z" /></svg>
 ),
 Bootstrap: () => (
-  <svg
-    className="w-10 h-10"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      fill="#7952B3"
-      d="M4 3.5A2.5 2.5 0 0 1 6.5 1h11A2.5 2.5 0 0 1 20 3.5v17a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 20.5v-17z"
-    />
-    <path
-      fill="#fff"
-      d="M9 7h4.2c2.2 0 3.8 1.1 3.8 3 0 1.3-.7 2.2-1.9 2.6 1.5.3 2.4 1.4 2.4 3 0 2.2-1.8 3.4-4.4 3.4H9V7zm3.8 4.6c1 0 1.7-.5 1.7-1.4s-.6-1.3-1.7-1.3h-1.3v2.7h1.3zm.3 5c1.3 0 2-.5 2-1.6s-.8-1.6-2-1.6h-1.6v3.2h1.6z"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#7E13F8" d="M124.6 61c-34.2 0-59.5 30-58.4 62.5 1 31.2-.3 71.6-10.5 104.6s-27.5 54-55.7 56.7v30.4c28.2 2.7 45.5 23.6 55.7 56.7 10.2 33 11.6 73.4 10.5 104.6C65 509 90.4 539 124.6 539h350.8c34.3 0 59.6-30 58.5-62.5-1.1-31.2.3-71.6 10.5-104.6s27.4-54 55.6-56.7v-30.4c-28.2-2.7-45.4-23.6-55.6-56.7-10.2-33-11.6-73.4-10.5-104.6 1-32.5-24.2-62.5-58.5-62.5zm282.2 294.2c0 44.8-33.4 72-88.8 72h-94.3c-5.6 0-10.1-4.6-10.1-10.3V183.1a10 10 0 0 1 10.1-10.2h93.8c46.2 0 76.5 25 76.5 63.4 0 27-20.4 51.1-46.4 55.3v1.4c35.4 4 59.2 28.4 59.2 62.2m-99-150H254V281h45.3c35 0 54.3-14.1 54.3-39.3 0-23.6-16.6-36.7-45.9-36.7m-53.8 106v83.7h55.7c36.5 0 55.8-14.7 55.8-42.1S345.5 311 307.3 311z"/></svg>
 ),
 Git: () => (
-  <svg
-    className="w-10 h-10 text-orange-600"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M23.56 10.93L13.07.44a1.5 1.5 0 0 0-2.12 0l-2.18 2.18 2.77 2.77a1.79 1.79 0 0 1 2.27 2.28l2.67 2.67a1.79 1.79 0 1 1-1.08 1.01l-2.49-2.49v6.54a1.79 1.79 0 1 1-1.47 0V9.81a1.79 1.79 0 0 1-.97-2.35L7.72 4.7.44 11.98a1.5 1.5 0 0 0 0 2.12l10.49 10.49a1.5 1.5 0 0 0 2.12 0l10.51-10.51a1.5 1.5 0 0 0 0-2.15z"/>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-git-icon-1-a)"><path fill="#DE4C36" d="m588.7 273.3-262-262c-15-15-39.5-15-54.6 0l-54.4 54.4 69 69a45.9 45.9 0 0 1 58 58.5l66.6 66.5a46 46 0 1 1-27.5 26l-62-62v163.1q6.5 3.3 12 8.7a46 46 0 1 1-49.9-10V220.8a46 46 0 0 1-25-60.3l-68-68L11.3 272a38.6 38.6 0 0 0 0 54.6l262 262c15 15 39.5 15 54.6 0l260.8-260.8c15-15 15-39.5 0-54.6"/></g><defs><clipPath id="devicon-git-icon-1-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
 ),
 GitHub: () => (
-  <svg
-    className="w-10 h-10 text-black dark:text-white"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 008 10.94c.58.1.79-.25.79-.56v-2.17c-3.25.71-3.94-1.57-3.94-1.57-.53-1.35-1.3-1.71-1.3-1.71-1.06-.73.08-.72.08-.72 1.18.08 1.8 1.21 1.8 1.21 1.04 1.79 2.73 1.27 3.4.97.11-.76.41-1.28.74-1.57-2.59-.29-5.31-1.3-5.31-5.77 0-1.27.45-2.3 1.2-3.11-.12-.3-.52-1.5.11-3.12 0 0 .98-.31 3.2 1.19A11.1 11.1 0 0112 6.1c.98 0 1.97.13 2.9.38 2.22-1.5 3.19-1.19 3.19-1.19.64 1.62.24 2.82.12 3.12.75.81 1.2 1.84 1.2 3.11 0 4.48-2.73 5.48-5.33 5.77.42.37.8 1.09.8 2.2v3.26c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
-  </svg>
-),
-
-RestApi: () => (
-  <svg
-    className="w-10 h-10 text-blue-500"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M7 3a2 2 0 100 4 2 2 0 000-4zm10 14a2 2 0 100 4 2 2 0 000-4zM7 17a2 2 0 100 4 2 2 0 000-4z" />
-    <path
-      d="M9 5h4a4 4 0 014 4v5"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-    <path
-      d="M9 19h6"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-  </svg>
-),
-ContextAPI: () => (
-  <svg
-    className="w-10 h-10 text-blue-500"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <circle cx="12" cy="12" r="2.5" />
-    <circle cx="6" cy="7" r="2" />
-    <circle cx="18" cy="7" r="2" />
-    <circle cx="6" cy="17" r="2" />
-    <circle cx="18" cy="17" r="2" />
-
-    <path
-      d="M7.5 8.5L10.5 11"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      fill="none"
-    />
-    <path
-      d="M16.5 8.5L13.5 11"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      fill="none"
-    />
-    <path
-      d="M7.5 15.5L10.5 13"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      fill="none"
-    />
-    <path
-      d="M16.5 15.5L13.5 13"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      fill="none"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#161614" d="M300 7.4a300 300 0 0 0-94.8 584.7c15 2.8 20.5-6.5 20.5-14.5l-.4-55.8c-83.5 18.1-101.1-35.4-101.1-35.4-13.7-34.7-33.3-43.9-33.3-43.9-27.3-18.6 2-18.2 2-18.2 30.1 2 46 30.9 46 30.9 26.8 45.8 70.2 32.6 87.3 25a64 64 0 0 1 19-40.2c-66.6-7.6-136.6-33.3-136.6-148.3a116 116 0 0 1 30.9-80.5c-3.1-7.5-13.4-38 2.9-79.4 0 0 25.2-8 82.5 30.8a288 288 0 0 1 150.3 0c57.2-38.8 82.4-30.8 82.4-30.8 16.3 41.3 6 71.9 3 79.4a116 116 0 0 1 30.8 80.5c0 115.3-70.2 140.6-137 148 10.8 9.4 20.4 27.6 20.4 55.6 0 40.2-.4 72.5-.4 82.3 0 8 5.4 17.4 20.6 14.4A300 300 0 0 0 300 7.4M112.4 434.8c-.7 1.5-3 1.9-5.2.9s-3.4-3-2.7-4.5c.7-1.6 3-2 5.2-1s3.4 3 2.7 4.6m14.7 13.1c-1.4 1.4-4.2.7-6.1-1.4-2-2-2.3-4.8-.9-6.2 1.5-1.3 4.2-.7 6.2 1.4s2.3 4.9.8 6.2m10.1 16.9c-1.8 1.3-4.8 0-6.7-2.6-1.8-2.7-1.8-5.9 0-7.2 2-1.2 4.9 0 6.8 2.6 1.8 2.7 1.8 5.9 0 7.2m17.2 19.5c-1.7 1.8-5.2 1.3-7.7-1.2-2.7-2.4-3.4-5.8-1.8-7.6 1.7-1.8 5.2-1.3 7.8 1.1s3.4 5.9 1.7 7.7m22 6.6c-.6 2.3-4 3.4-7.4 2.4s-5.6-3.8-5-6.2c.8-2.3 4.2-3.4 7.6-2.4s5.6 3.8 4.9 6.2m25.3 2.8c0 2.4-2.8 4.5-6.4 4.5-3.6.1-6.5-1.9-6.5-4.3 0-2.5 2.8-4.5 6.4-4.6s6.5 2 6.5 4.4m24.7-1c.4 2.4-2 5-5.6 5.6s-6.7-.9-7.1-3.3c-.5-2.4 2-5 5.5-5.6 3.6-.6 6.8.9 7.2 3.3"/></svg>
 ),
 Firebase: () => (
-  <svg
-    className="w-10 h-10"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path
-      fill="#FFCA28"
-      d="M5.8 18.8L7.3 2.5c.1-.6.6-.8 1-.3l4.1 7.7-6.6 8.9z"
-    />
-    <path
-      fill="#FFA000"
-      d="M18.2 18.8L16.7 6.2c-.1-.5-.5-.6-.8-.2L5.8 18.8l6.2 3.5 6.2-3.5z"
-    />
-    <path
-      fill="#F57F17"
-      d="M12 9.9L9.8 5.8c-.2-.4-.6-.4-.8 0L5.8 18.8 12 9.9z"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#FF9100" d="M210.8 582.8A239 239 0 0 0 400 578a338 338 0 0 1-105.7-66.4 181 181 0 0 1-83.6 71.2"/><path fill="#FFC400" d="M294.4 511.7a337 337 0 0 1-107.8-269.8 180 180 0 0 0-94.1 1 239 239 0 0 0 118.3 339.9 181 181 0 0 0 83.6-71.1"/><path fill="#FF9100" d="M294.4 511.7A180.3 180.3 0 0 0 186.6 242l-.5 9.9a337 337 0 0 0 108.3 259.8"/><path fill="#DD2C00" d="M312.6 0a338 338 0 0 0-126 242 180.3 180.3 0 0 1 107.8 269.7A337 337 0 0 0 400 578a239 239 0 0 0 138.6-208.5c2.1-60.4-21-114.2-53.8-159.6C450.2 161.9 312.6 0 312.6 0"/></svg>
 ),
 Redis: () => (
-  <svg className="w-10 h-10" viewBox="0 0 24 24">
-    <path
-      fill="#DC382D"
-      d="M12 3L3 7.5 12 12l9-4.5L12 3z"
-    />
-    <path
-      fill="#C6302B"
-      d="M3 12l9 4.5 9-4.5v4.5L12 21 3 16.5V12z"
-    />
-    <circle cx="12" cy="12" r="1.5" fill="white" />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#FF4438" d="M567.8 328.6c-41.5 52.3-86.3 112.1-176 112.1-80 0-110-70.6-112-128 17.5 37.1 51.8 67.1 105.4 65.8C488 375 558.7 282 558.7 197.5 558.7 96.2 483 23.2 352 23.2c-93.8 0-210 35.7-286.4 92.1-.8 58.1 31.5 133.6 43.2 125.3C175 193 227.5 162.4 278.4 147 203 231.1 22.2 426.3 0 460.6c2.5 31.6 41.5 116.2 60.6 116.2 5.8 0 10.8-3.3 16.6-9.1a2512 2512 0 0 0 138.5-169.1c5.6 77.6 43.7 172.4 150.4 172.4 95.4 0 190-68.9 233.2-224.1 5-19.1-18.2-34-31.5-18.2M459 203.3c0 49-48.1 73-92.1 73-23.5 0-41.6-6.1-55.9-14.2 26.3-39.8 52.3-80.6 80.3-124.3 49.3 8.4 67.7 35.8 67.7 65.5"/></svg>
 ),
 MUI: () => (
-  <svg
-    className="w-10 h-10"
-    viewBox="0 0 36 32"
-    fill="none"
-  >
-    <path
-      d="M0 24.75V7.25L9 12.875V30.375L0 24.75Z"
-      fill="#007FFF"
-    />
-    <path
-      d="M9 30.375V12.875L18 18.5V36L9 30.375Z"
-      fill="#007FFF"
-    />
-    <path
-      d="M18 36V18.5L27 12.875V30.375L18 36Z"
-      fill="#007FFF"
-    />
-    <path
-      d="M27 30.375V12.875L36 7.25V24.75L27 30.375Z"
-      fill="#007FFF"
-    />
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#007FFF" d="M505.7 394.8c5.2-3 8.4-8.4 8.4-14.4l.3-96.4c0-6 3.2-11.5 8.3-14.4l52.3-30a16.7 16.7 0 0 1 25 14.4v175.3c0 6-3.2 11.5-8.4 14.5L394.3 557c-5.1 3-11.4 3-16.6 0L223 468.6c-5.2-3-8.4-8.5-8.4-14.5v-88.4q0-.2.2-.1l.2-.1v-.1l.1-.2 127.5-73.3q.2-.1 0-.2-.2 0-.2-.2l.3-86.7a16.7 16.7 0 0 0-25-14.5L222.8 245c-5.1 3-11.5 3-16.6 0L111 190.2a16.7 16.7 0 0 0-25 14.4v156.7a16.7 16.7 0 0 1-25 14.5L8.5 345.6c-5.2-3-8.4-8.5-8.4-14.5L.5 57.3a16.7 16.7 0 0 1 25-14.4l180.7 103.8c5.1 3 11.5 3 16.6 0L403.5 42.9a16.7 16.7 0 0 1 25 14.4v274c0 6-3.2 11.4-8.4 14.4l-94.6 54.5a16.7 16.7 0 0 0 0 29l52.2 29.6c5.2 3 11.5 3 16.6 0zm11-245.7a16.7 16.7 0 0 0 25.2 14.3l50-30c5-3 8.1-8.4 8.1-14.3V58a16.7 16.7 0 0 0-25.2-14.3l-50 30c-5 3-8.1 8.4-8.1 14.3z"/></svg>
 ),
+POSTGRESQL: () => (
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#000" d="M589.4 359.4a30 30 0 0 0-24.5-19.7q-8.3-1.3-19.5 1a176 176 0 0 1-30.2 4c27-45.5 49-97.5 61.6-146.3 20.4-79.1 9.5-115.1-3.3-131.4-33.7-43.1-83-66.3-142.3-67-31.7-.4-59.5 5.9-74 10.4q-20.3-3.6-43.3-4-43-.6-75.4 18.6c-12-4-31-9.7-53.2-13.4-52-8.5-94-1.9-124.7 19.8C23.4 57.7 6.2 103.3 9.4 167c1 20.2 12.3 81.7 30.1 140A484 484 0 0 0 72 390c16 30.3 33.1 48.2 52.3 54.6a52 52 0 0 0 51-11q3.8 4.6 10.7 9.2 9.2 5.7 20.3 8.5c25.8 6.4 50 4.8 70.7-4.2q0 5.5.3 10.2l.4 14.2c1.3 30.5 3.3 54.2 9.5 70.8l1.2 3.7c3.1 9.4 8.2 25.1 21.3 37.4a63 63 0 0 0 44.8 16.7q11.4-.2 20.9-2.3c22.4-4.8 47.8-12.1 66.2-38.3 17.4-24.8 25.8-62 27.3-120.8l.6-4.7.4-3.1 4 .3 1.1.1a162 162 0 0 0 67.8-11.7c13.5-6.3 56.8-29.2 46.6-60"/><path fill="#336791" d="M550.5 365.4c-67.8 14-72.5-9-72.5-9 71.6-106.1 101.5-240.9 75.7-273.9-70.4-90-192.3-47.4-194.4-46.3l-.6.1a242 242 0 0 0-45.2-4.7c-30.7-.5-54 8-71.6 21.4 0 0-217.5-89.6-207.4 112.7 2.2 43 61.7 325.6 132.7 240.2 26-31.2 51-57.6 51-57.6a66 66 0 0 0 43 11l1.2-1q-.5 5.7.5 12.1c-18.3 20.5-12.9 24-49.5 31.6-37 7.6-15.2 21.2-1 24.7 17.2 4.3 57 10.4 83.9-27.2l-1.1 4.3c7.2 5.7 12.2 37.3 11.3 66-.8 28.6-1.4 48.3 4.3 63.6s11.3 50 59.3 39.6c40.2-8.6 61-30.9 63.9-68 2-26.5 6.7-22.6 7-46.3l3.7-11.1c4.3-35.9.7-47.5 25.4-42l6 .4c18.3.9 42-2.9 56-9.4 30.2-14 48-37.3 18.4-31.2"/><path fill="#fff" d="M254.6 185c-6-.9-11.6-.1-14.4 2a5 5 0 0 0-2.2 3.5c-.4 2.5 1.4 5.3 2.5 6.8 3 4 7.5 6.8 12 7.4l1.9.2c7.4 0 14.1-5.8 14.7-10 .7-5.4-7-9-14.5-10m202.4.2c-.6-4.2-8-5.3-15.1-4.4-7 1-13.9 4.2-13.3 8.4.5 3.2 6.3 8.8 13.3 8.8q1 0 1.7-.2a17 17 0 0 0 9.7-5.2c2.5-2.6 3.9-5.5 3.6-7.4"/><path fill="#fff" d="M573 363.8q-4-11.7-24.7-7.4c-41 8.4-55.7 2.6-60.5-1a564 564 0 0 0 72.2-162c6.7-26 10.4-50.2 10.7-69.8q.5-32.5-10.9-47c-30.5-39.1-75.3-60-129.6-60.6-37.3-.4-68.8 9.1-75 11.8a187 187 0 0 0-42-5.4q-42.2-.7-72.3 19.9c-8.7-3.3-31.2-11-58.7-15.4C134.6 19.2 96.8 25 69.8 44c-32.1 22.8-47 63.6-44.1 121.2 1 19.4 12 79 29.4 136 23 75.1 47.9 117.7 74 126.4q4.7 1.7 10.6 1.8c9.6 0 21.3-4.4 33.5-19 20.3-24.4 39.2-44.8 46.2-52.3a74 74 0 0 0 33.2 9v.9l-5.8 7.2c-8 10.2-9.7 12.3-35.5 17.6-7.4 1.5-26.9 5.6-27.2 19.3-.3 14.9 23 21.2 25.8 21.8q13.9 3.5 26.7 3.5c20.8 0 39-6.8 53.6-20-.5 53.3 1.8 105.8 8.2 121.8 5.2 13.1 18 45.1 58.5 45.1q8.8 0 19.6-2.2c42.2-9 60.5-27.7 67.6-68.8 3.8-22 10.3-74.5 13.4-102.7 6.5 2 14.8 3 23.8 3 18.7 0 40.4-4 54-10.3 15.2-7 42.7-24.5 37.7-39.6M472.5 173.6c-.1 8.3-1.3 15.9-2.5 23.7a234 234 0 0 0-3 27.9c-.3 10.3 1 21.1 2.2 31.5 2.6 21 5.1 42.6-4.9 64a83 83 0 0 1-4.4-9.2q-2-4.5-7.7-14.6c-14.6-26.1-48.8-87.3-31.3-112.3 5.2-7.5 18.4-15.1 51.6-11M432.3 32.8c48.6 1 87 19.3 114.3 54 20.9 26.7-2.1 148.2-68.7 253l-2-2.6-.8-1c17.2-28.5 13.8-56.6 10.8-81.5-1.2-10.2-2.4-19.9-2-29 .2-9.6 1.5-17.8 2.7-25.8 1.5-9.8 3-20 2.6-32q.6-1.9.3-4.5c-1-11.5-14.2-46-41-77a186 186 0 0 0-65-49 220 220 0 0 1 48.8-4.6m-272 367c-13.5 16.1-22.8 13-25.8 12-19.9-6.7-43-48.7-63.3-115.4-17.6-57.7-28-115.7-28.8-132C40 113 52.4 77.1 79.5 58c44.2-31.4 117-12.6 146.1-3.1l-1.2 1.2c-48 48.4-46.8 131.1-46.7 136.2q0 2.9.4 8.5c.8 14 2.3 39.8-1.8 69.1a87 87 0 0 0 29 78.8c-8.2 8.8-26 28.3-45 51.1m51.2-68.4a71 71 0 0 1-18.5-59.2c4.3-31 2.7-58 1.8-72.5q0-3-.3-5.2c7-6.2 39.5-23.6 62.6-18.3q15.8 3.5 19.7 22c13.9 64 1.8 90.7-7.8 112.2q-3 6.5-5.5 12.9l-1.2 3.3q-5 12.7-8 23.8a60 60 0 0 1-42.8-19m2.4 86.4a37 37 0 0 1-11.2-4.9c2-1 5.7-2.2 12-3.5 30.3-6.3 35-10.7 45.3-23.7q3.3-4.4 8.7-10.5c5.5-6.1 8-5.1 12.6-3.2 3.7 1.5 7.3 6.1 8.7 11.2.7 2.4 1.5 7-1 10.6-21.5 30-52.7 29.6-75 24m159 148c-37.1 8-50.3-11-59-32.7-5.5-14-8.3-77.2-6.3-146.9q0-1.4-.4-2.7l-1-4.9a34 34 0 0 0-18.5-22.1 26 26 0 0 0-17-2q2.6-10 7.3-22l1.3-3.4q2.1-5.6 5-11.8c10.1-22.5 24-53.2 9-122.7-5.7-26-24.5-38.7-53-35.7a122 122 0 0 0-45 15c2.1-26.2 10.3-75.1 41-106.1 19.4-19.5 45.2-29.2 76.5-28.6 61.9 1 101.6 32.7 124 59.2a188 188 0 0 1 33.8 58q-47-4.6-63.4 18.5c-23.5 33.7 12.8 98.9 30.3 130.2 3.2 5.8 6 10.7 6.9 12.8 5.6 13.8 13 23 18.4 29.8l4.5 5.8c-9.5 2.7-26.6 9-25 40.7-1.3 15.8-10.2 90-14.7 116.3-6 34.7-18.8 47.6-54.6 55.3m155.3-177.6c-9.7 4.5-26 7.9-41.4 8.6-17 .8-25.7-2-27.8-3.6-1-19.7 6.4-21.8 14.2-24l3.5-1 2.4 1.7q20.7 13.5 72.6 3l.4-.2a93 93 0 0 1-24 15.5"/></svg>
+),
+Render : () => (
+  <svg fill="#000000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Render</title><path d="M18.263.007c-3.121-.147-5.744 2.109-6.192 5.082-.018.138-.045.272-.067.405-.696 3.703-3.936 6.507-7.827 6.507-1.388 0-2.691-.356-3.825-.979a.2024.2024 0 0 0-.302.178V24H12v-8.999c0-1.656 1.338-3 2.987-3h2.988c3.382 0 6.103-2.817 5.97-6.244-.12-3.084-2.61-5.603-5.682-5.75"/></svg>
+),
+Netlify : () => (
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><g clipPath="url(#devicon-netlify-icon-1-a)"><path fill="#05BDBA" d="M162.1 476.9h-5.6l-28.3-28.3v-5.7l43.2-43.2h30l4 4v30zM128.2 157v-5.6l28.3-28.3h5.6l43.3 43.2v30l-4 4h-30z"/><path fill="#014847" d="M377.1 385.7H336l-3.5-3.4V286c0-17.2-6.7-30.4-27.3-30.9q-16.2-.3-35.8.5l-2 2v124.6l-3.4 3.5h-41.2l-3.4-3.5V217.7l3.4-3.4h92.6c36 0 65.2 29.1 65.2 65.1v102.9z"/><path fill="#05BDBA" d="M168 324H3.4L0 320.7v-41.2l3.4-3.5H168l3.4 3.5v41.2zm428.6 0H432l-3.4-3.4v-41.2l3.4-3.5h164.6l3.4 3.5v41.2zM276.3 162.9V39.5l3.4-3.5H321l3.5 3.5v123.4l-3.5 3.4h-41.2zm0 397.6V437.1l3.4-3.4H321l3.5 3.4v123.4L321 564h-41.2z"/></g><defs><clipPath id="devicon-netlify-icon-1-a"><path fill="#fff" d="M0 0h600v600H0z"/></clipPath></defs></svg>
+),
+Vercel : () => (
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 600 600"><path fill="#000" className="dark:fill-white" d="m300 40.2 300 519.6H0z"/></svg>
+)
 }
 
 
 export const SKILLS_DATA: Record<CategoryId, Skill[]> = {
   highlights: [
-    { id: 'js', name: 'JavaScript (ES6+)', proficiency: 90, customIcon: <TechIcons.JS />, lightBg: 'bg-amber-50 hover:bg-amber-100', darkBg: 'dark:bg-[#201D13] dark:hover:bg-[#29261B]' },
-    { id: 'ts', name: 'TypeScript', proficiency: 90, customIcon: <TechIcons.TS />, lightBg: 'bg-blue-50 hover:bg-blue-100', darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]' },
-    { id: 'react', name: 'React.js', proficiency: 99, customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
-    { id: 'next', name: 'Next.js', proficiency: 99, customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
-    { id: 'node', name: 'Node.js', proficiency: 80, customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
-  {
-  id: 'tailwind',
-  name: 'Tailwind CSS',
-  proficiency: 99,
-  customIcon: <TechIcons.Tailwind />,
-  lightBg: 'bg-cyan-50 hover:bg-cyan-100',
-  darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#14303D]'
-  },
-    { id: 'express', name: 'Express.js', proficiency: 88, customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
-    { id: 'mongo', name: 'MongoDB', proficiency: 90, customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
-    { id: 'pg', name: 'PostgreSQL', proficiency: 85, customIcon: <BiLogoPostgresql className="h-7 w-7 text-[#336791]" />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
-{
-  id: 'mui',
-  name: 'Material UI',
-  proficiency: 80,
-  customIcon: <TechIcons.MUI />,
-  lightBg: 'bg-blue-50 hover:bg-blue-100',
-  darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]'
-},
+    { id: 'js', name: 'JavaScript (ES6+)', customIcon: <TechIcons.JS />, lightBg: 'bg-amber-50 hover:bg-amber-100', darkBg: 'dark:bg-[#201D13] dark:hover:bg-[#29261B]' },
+    { id: 'ts', name: 'TypeScript',  customIcon: <TechIcons.TS />, lightBg: 'bg-blue-50 hover:bg-blue-100', darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]' },
+    { id: 'react', name: 'React.js', customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
+    { id: 'next', name: 'Next.js', customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
+    { id: 'tailwind',name: 'Tailwind CSS',customIcon: <TechIcons.Tailwind />,lightBg: 'bg-cyan-50 hover:bg-cyan-100',darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#14303D]'},
+    { id: 'node', name: 'Node.js', customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
+    { id: 'express', name: 'Express.js', customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
+    { id: 'mongo', name: 'MongoDB', customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
+    { id: 'pg', name: 'PostgreSQL',  customIcon: <TechIcons.POSTGRESQL />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
+    { id: 'supabase',name: 'Supabase',customIcon: <TechIcons.Supabase />,lightBg: 'bg-emerald-50 hover:bg-emerald-100',darkBg: 'dark:bg-[#10231A] dark:hover:bg-[#173026]'}
   ],
   frontend: [
-    { id: 'html', name: 'HTML5', proficiency: 100, customIcon: <TechIcons.HTML />, lightBg: 'bg-orange-50 hover:bg-orange-100', darkBg: 'dark:bg-[#2B1B17] dark:hover:bg-[#36231E]' },
-    { id: 'css', name: 'CSS3', proficiency: 100, customIcon: <TechIcons.CSS />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#161C2C] dark:hover:bg-[#1E263B]' },
-    { id: 'tailwind', name: 'Tailwind CSS', proficiency: 99, customIcon: <TechIcons.Tailwind />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E242B] dark:hover:bg-[#143039]' },
-    {
-  id: 'mui',
-  name: 'Material UI',
-  proficiency: 80,
-  customIcon: <TechIcons.MUI />,
-  lightBg: 'bg-blue-50 hover:bg-blue-100',
-  darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]'
-  },
-  {
-  id: 'bootstrap',
-  name: 'Bootstrap 5',
-  proficiency: 95,
-  customIcon: <TechIcons.Bootstrap />,
-  lightBg: 'bg-violet-50 hover:bg-violet-100',
-  darkBg: 'dark:bg-[#20162D] dark:hover:bg-[#2A1D3A]'
-},
-{
-  id: 'shadcn',
-  name: 'Shadcn/UI',
-  proficiency: 50,
-  customIcon: <TechIcons.Shadcn />,
-  lightBg: 'bg-slate-50 hover:bg-slate-100',
-  darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
-},
-    { id: 'react', name: 'React.js', proficiency: 99, customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
-    { id: 'next', name: 'Next.js', proficiency: 99, customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
-    { id: 'redux', name: 'Redux Toolkit', proficiency: 85, customIcon: <TechIcons.Redux />, lightBg: 'bg-purple-50 hover:bg-purple-100', darkBg: 'dark:bg-[#1E162B] dark:hover:bg-[#291E3B]' },
-    {
-  id: 'context-api',
-  name: 'Context API',
-  proficiency: 85,
-  customIcon: <TechIcons.ContextAPI />,
-  lightBg: 'bg-blue-50 hover:bg-blue-100',
-  darkBg: 'dark:bg-[#121E2F] dark:hover:bg-[#192A42]'
-},
+    { id: 'html', name: 'HTML5', customIcon: <TechIcons.HTML />, lightBg: 'bg-orange-50 hover:bg-orange-100', darkBg: 'dark:bg-[#2B1B17] dark:hover:bg-[#36231E]' },
+    { id: 'css', name: 'CSS3',  customIcon: <TechIcons.CSS />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#161C2C] dark:hover:bg-[#1E263B]' },
+    { id: 'mui', name: 'Material UI', customIcon: <TechIcons.MUI />, lightBg: 'bg-blue-50 hover:bg-blue-100', darkBg: 'dark:bg-[#121B2A] dark:hover:bg-[#182436]' },
+    { id: 'bootstrap', name: 'Bootstrap 5', customIcon: <TechIcons.Bootstrap />, lightBg: 'bg-violet-50 hover:bg-violet-100', darkBg: 'dark:bg-[#20162D] dark:hover:bg-[#2A1D3A]' },
+    { id: 'shadcn', name: 'Shadcn/UI', customIcon: <TechIcons.Shadcn />, lightBg: 'bg-slate-50 hover:bg-slate-100', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]' },
+    { id: 'tailwind', name: 'Tailwind CSS', customIcon: <TechIcons.Tailwind />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E242B] dark:hover:bg-[#143039]' },
+    { id: 'react', name: 'React.js', customIcon: <TechIcons.React />, lightBg: 'bg-cyan-50 hover:bg-cyan-100', darkBg: 'dark:bg-[#0F2229] dark:hover:bg-[#142C35]' },
+    { id: 'next', name: 'Next.js', customIcon: <TechIcons.Next />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1C1F26] dark:hover:bg-[#252932]' },
+    { id: 'vuejs', name: 'Vue.js', customIcon: <TechIcons.Vue />, lightBg: 'bg-green-50 hover:bg-green-100', darkBg: 'dark:bg-[#10241C] dark:hover:bg-[#163328]' }
   ],
   backend: [
-    { id: 'node', name: 'Node.js', proficiency: 80, customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
-    { id: 'express', name: 'Express.js', proficiency: 88, customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' },
-{
-  id: 'rest',
-  name: 'REST API',
-  proficiency: 80,
-  customIcon: <TechIcons.RestApi />,
-  lightBg: 'bg-blue-50 hover:bg-blue-100',
-  darkBg: 'dark:bg-[#121E2F] dark:hover:bg-[#192A42]'
-},  
-    { id: 'mongo', name: 'MongoDB', proficiency: 90, customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
-    { id: 'pg', name: 'PostgreSQL', proficiency: 85, customIcon: <BiLogoPostgresql className="h-7 w-7 text-[#336791]" />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
-{
-  id: 'redis',
-  name: 'Redis',
-  proficiency: 95,
-  customIcon: <TechIcons.Redis />,
-  lightBg: 'bg-red-50 hover:bg-red-100',
-  darkBg: 'dark:bg-[#291416] dark:hover:bg-[#361A1D]'
-},  
-{
-  id: 'socketio',
-  name: 'Socket.IO',
-  proficiency: 70,
-  customIcon: <TechIcons.SocketIO />,
-  lightBg: 'bg-slate-100 hover:bg-slate-200',
-  darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
-},
-{
-  id: 'jwt',
-  name: 'JWT Authentication',
-  proficiency: 85,
-  customIcon: <TechIcons.Jwt />,
-  lightBg: 'bg-yellow-50 hover:bg-yellow-100',
-  darkBg: 'dark:bg-[#2B2512] dark:hover:bg-[#383019]'
-},
-{
-  id: 'fastify',
-  name: 'Fastify',
-  proficiency: 80,
-  customIcon: <TechIcons.Fastify />,
-  lightBg: 'bg-slate-100 hover:bg-slate-200',
-  darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
-},
-{
-  id: 'nextauth',
-  name: 'NextAuth.js',
-  proficiency: 80,
-  customIcon: <TechIcons.NextAuth />,
-  lightBg: 'bg-slate-50 hover:bg-slate-100',
-  darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
-},
+    { id: 'node', name: 'Node.js', customIcon: <TechIcons.Node />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#12221A] dark:hover:bg-[#192E23]' },
+    { id: 'express', name: 'Express.js',  customIcon: <TechIcons.Express />, lightBg: 'bg-gray-100 hover:bg-gray-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#272A35]' }, 
+    { id: 'fastify',name: 'Fastify',customIcon: <TechIcons.Fastify />,lightBg: 'bg-slate-100 hover:bg-slate-200',darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'},
+    { id: 'mongo', name: 'MongoDB', customIcon: <TechIcons.MongoDB />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#0E241B] dark:hover:bg-[#143125]' },
+    { id: 'pg', name: 'PostgreSQL',  customIcon: <TechIcons.POSTGRESQL />, lightBg: 'bg-indigo-50 hover:bg-indigo-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
+    { id: 'redis', name: 'Redis', customIcon: <TechIcons.Redis />, lightBg: 'bg-red-50 hover:bg-red-100', darkBg: 'dark:bg-[#291416] dark:hover:bg-[#361A1D]' },
+    { id: 'socketio', name: 'Socket.IO', customIcon: <TechIcons.SocketIO />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]' },
+    { id: 'firebase', name: 'Firebase', customIcon: <TechIcons.Firebase />, lightBg: 'bg-amber-50 hover:bg-amber-100', darkBg: 'dark:bg-[#241B12] dark:hover:bg-[#30241A]'},
+    { id: 'supabase', name: 'Supabase', customIcon: <TechIcons.Supabase />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#10231A] dark:hover:bg-[#173026]'}
 ],
 
-
 devops: [
-  {
-  id: 'docker',
-  name: 'Docker',
-  proficiency: 50,
-  customIcon: <TechIcons.Docker />,
-  lightBg: 'bg-sky-50 hover:bg-sky-100',
-  darkBg: 'dark:bg-[#12212E] dark:hover:bg-[#182B3C]'
-},
-{
-  id: 'git',
-  name: 'Git',
-  proficiency: 90,
-  customIcon: <TechIcons.Git />,
-  lightBg: 'bg-orange-50 hover:bg-orange-100',
-  darkBg: 'dark:bg-[#291B16] dark:hover:bg-[#36241D]'
-},
-{
-  id: 'github',
-  name: 'GitHub',
-  proficiency: 90,
-  customIcon: <TechIcons.GitHub />,
-  lightBg: 'bg-slate-100 hover:bg-slate-200',
-  darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]'
-},
-{
-  id: 'render',
-  name: 'Render',
-  proficiency: 95,
-  customIcon: <TechIcons.Render />,
-  lightBg: 'bg-emerald-50 hover:bg-emerald-100',
-  darkBg: 'dark:bg-[#11241C] dark:hover:bg-[#173026]'
-},
-{
-  id: 'cloudinary',
-  name: 'Cloudinary',
-  proficiency: 100,
-  customIcon: <TechIcons.Cloudinary />,
-  lightBg: 'bg-blue-50 hover:bg-blue-100',
-  darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]'
-},
-{
-  id: 'linux',
-  name: 'Linux',
-  proficiency: 5,
-  customIcon: <TechIcons.Linux />,
-  lightBg: 'bg-yellow-50 hover:bg-yellow-100',
-  darkBg: 'dark:bg-[#242114] dark:hover:bg-[#302C1B]'
-},
-{ id: 'vercel', name: 'Vercel', customIcon: <div className="w-10 h-10 text-black dark:text-white text-2xl flex items-center justify-center">▲</div>, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]' },
-{
-  id: 'netlify',
-  name: 'Netlify',
-  proficiency: 100,
-  customIcon: <TechIcons.Netlify />,
-  lightBg: 'bg-teal-50 hover:bg-teal-100',
-  darkBg: 'dark:bg-[#0F2426] dark:hover:bg-[#143033]'
-},
-{
-  id: 'firebase',
-  name: 'Firebase',
-  proficiency: 50,
-  customIcon: <TechIcons.Firebase />,
-  lightBg: 'bg-amber-50 hover:bg-amber-100',
-  darkBg: 'dark:bg-[#241B12] dark:hover:bg-[#30241A]'
-},
-{
-  id: 'supabase',
-  name: 'Supabase',
-  proficiency: 50,
-  customIcon: <TechIcons.Supabase />,
-  lightBg: 'bg-emerald-50 hover:bg-emerald-100',
-  darkBg: 'dark:bg-[#10231A] dark:hover:bg-[#173026]'
-}
-]
+    { id: 'docker', name: 'Docker', customIcon: <TechIcons.Docker />, lightBg: 'bg-sky-50 hover:bg-sky-100', darkBg: 'dark:bg-[#12212E] dark:hover:bg-[#182B3C]' },
+    { id: 'git', name: 'Git', customIcon: <TechIcons.Git />, lightBg: 'bg-orange-50 hover:bg-orange-100', darkBg: 'dark:bg-[#291B16] dark:hover:bg-[#36241D]' },
+    { id: 'github', name: 'GitHub', customIcon: <TechIcons.GitHub />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]' },
+    { id: 'cloudinary', name: 'Cloudinary', customIcon: <TechIcons.Cloudinary />, lightBg: 'bg-blue-50 hover:bg-blue-100', darkBg: 'dark:bg-[#131B2E] dark:hover:bg-[#1A243D]' },
+    { id: 'linux', name: 'Linux', customIcon: <TechIcons.Linux />, lightBg: 'bg-yellow-50 hover:bg-yellow-100', darkBg: 'dark:bg-[#242114] dark:hover:bg-[#302C1B]' },
+    { id: 'render', name: 'Render', customIcon: <TechIcons.Render />, lightBg: 'bg-emerald-50 hover:bg-emerald-100', darkBg: 'dark:bg-[#11241C] dark:hover:bg-[#173026]' },
+    { id: 'netlify', name: 'Netlify', customIcon: <TechIcons.Netlify />, lightBg: 'bg-teal-50 hover:bg-teal-100', darkBg: 'dark:bg-[#102422] dark:hover:bg-[#173330]' },
+    { id: 'vercel', name: 'Vercel', customIcon: <TechIcons.Vercel />, lightBg: 'bg-slate-100 hover:bg-slate-200', darkBg: 'dark:bg-[#1E2028] dark:hover:bg-[#282B36]' },
+  ]
 };
