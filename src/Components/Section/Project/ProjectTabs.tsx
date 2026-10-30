@@ -23,14 +23,13 @@ export const ProjectTabs: React.FC<ProjectTabsProps> = ({ activeTab, setActiveTa
             onClick={() => setActiveTab(tab.id)}
             className={`
               px-3 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-[13px] font-bold
-              transition-all duration-300 ease-in-out cursor-pointer
-              focus:outline-none
-               ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-xl shadow-indigo-500/30 scale-105'
-                    : 'bg-indigo-50 dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-900/40 hover:bg-indigo-100 dark:hover:bg-slate-800'
-                }
-              `}
+              transition-colors duration-200 cursor-pointer focus:outline-none
+              ${
+                isActive
+                  ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/20'
+                  : 'bg-indigo-50 dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-900/40 hover:bg-indigo-100 dark:hover:bg-slate-800'
+              }
+            `}
           >
             {tab.label}
           </button>

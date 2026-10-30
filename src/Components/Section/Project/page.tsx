@@ -18,14 +18,14 @@ export default function ProjectsSection() {
 
 
 return (
-<section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
-    
-      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
+      
+
+      <div className="absolute top-1/4 right-0 w-[300px] h-[300px] bg-indigo-200/20 dark:bg-indigo-900/10 rounded-full blur-2xl pointer-events-none will-change-[filter]" />
+      <div className="absolute bottom-10 left-0 w-[300px] h-[300px] bg-violet-200/20 dark:bg-violet-950/10 rounded-full blur-2xl pointer-events-none will-change-[filter]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         
-    
         <div className="flex flex-col items-center text-center mb-8 md:mb-8">
           <span className="text-xs sm:text-sm font-semibold tracking-widest text-indigo-600 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-950/60 px-4 py-1.5 rounded-full mb-3 border border-indigo-200 dark:border-indigo-800">
             My Recent Work
@@ -36,31 +36,29 @@ return (
           <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full mt-3" />
         </div>
 
-      
         <ProjectTabs activeTab={activeTab} setActiveTab={setActiveTab} />   
 
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-white/80 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+              className="group relative bg-white/90 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-indigo-300 dark:hover:border-indigo-500/40 transition-all duration-300 flex flex-col justify-between transform-gpu"
+              style={{ willChange: 'transform' }}
             >
               <div>
                 
-                <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-900">
+       
+                <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-900 transform-gpu">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-fill transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                   />
-         
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent opacity-60 group-hover:opacity-30 transition-opacity" />
                 </div>
 
-             
                 <div className="p-5">
                   <h3 className="text-lg font-bold mb-2 text-slate-900 dark:text-white line-clamp-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200">
                     {project.title}
@@ -69,7 +67,6 @@ return (
                     {project.description}
                   </p>
 
-        
                   <div className="flex flex-wrap gap-1.5 mb-2">
                     {project.technologies.map((tech, index) => (
                       <span
@@ -83,7 +80,6 @@ return (
                 </div>
               </div>
 
-   
               <div className="px-5 pb-5 pt-2 mt-auto">
                 <Link
                   href={project.projectLink}
@@ -112,7 +108,6 @@ return (
             </svg>
           </Link>
         </div>   
-
 
       </div>
     </section>

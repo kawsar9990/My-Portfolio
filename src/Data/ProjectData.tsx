@@ -8,7 +8,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791688547/kawsarshop-thumbnail_jgwswu.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
     category: "full-stack",
-    projectLink: "/project/project-1",
+    projectLink: "/project/kawsarshop-ecommerce-project",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791689290/kawsar-restaurant-thumbnail_xufarq.png",
     technologies: ["React", "Tailwind CSS", "Javascript", "Redux Toolkit"],
     category: "full-stack",
-    projectLink: "/project/project-2",
+    projectLink: "/project/kawsar-restaurant-project",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791689770/gokawsar-thumbnail_tki6yl.png",
     technologies: ["Next.js", "React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "PostgreSQL", "Redis", "Socket.io"],
     category: "full-stack",
-    projectLink: "/project/project-3",
+    projectLink: "/project/gokawsar-online-ticket-project",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690223/kmstreamx-thumbnail_n5d8vx.png",
     technologies: ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Redis", "Fastify", "Socket.io"],
     category: "full-stack",
-    projectLink: "/project/project-4",
+    projectLink: "/project/kmstreamx-online-livestream-platfrom",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791690568/art-ai-thumbnail_kkhjxf.png",
     technologies: ["Next.js", "React", "Redux Toolkit", "Bootstrap 5", "Javascript"],
     category: "frontend",
-    projectLink: "/project/project-5",
+    projectLink: "/project/art-ai-generation-project",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791691282/car-rental-thumbnail_ahm0um.png",
     technologies: ["React", "Taliwind CSS", "Redux Toolkit", "Javascript", "React Router"],
     category: "frontend",
-    projectLink: "/project/project-6",
+    projectLink: "/project/car-rental-platfrom",
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791691493/password-generator-v4-terminal_u4lv3r.png",
     technologies: ["React", "Javascript", "Tailwind CSS"],
     category: "frontend",
-    projectLink: "/project/project-7",
+    projectLink: "/project/password-generator-project",
   },
   {
     id: 8,
@@ -71,7 +71,7 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1791691680/oggy-thumbnail_hdjdsq.png",
     technologies: ["React", "Next.Js", "Javascript", "Tailwind CSS"],
     category: "frontend",
-    projectLink: "/project/project-8"
+    projectLink: "/project/oggy-ai-assistant-project"
   },
   {
     id: 9,
@@ -80,6 +80,6 @@ export const projectsData: Project[] = [
     image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1793289159/weather-app-cover_ya9fpp.png",
     technologies: ["Vue.Js", "Typescript", "Tailwind CSS", "pnpm"],
     category: "frontend",
-    projectLink: "/project/project-9"
+    projectLink: "/project/weatherx-app"
   },
 ];
