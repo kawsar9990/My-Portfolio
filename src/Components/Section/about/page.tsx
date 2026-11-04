@@ -22,9 +22,9 @@ export default function About() {
         </div>
 
        
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 lg:gap-12 items-stretch">
+       <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-5 lg:gap-12 items-stretch">
           
-       <div className="md:col-span-6 lg:col-span-5 flex flex-col justify-center h-full">
+       <div className="md:col-span-5 lg:col-span-5 flex flex-col justify-center h-full">
             <div className="relative w-full h-full max-w-[320px] sm:max-w-[380px] md:max-w-none mx-auto group flex flex-col">
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-800 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500" />
               
@@ -42,7 +42,7 @@ export default function About() {
           </div>
 
         
-          <div className="md:col-span-6 lg:col-span-7 flex flex-col justify-between space-y-2 md:space-y-2.5 lg:space-y-4 text-left">
+          <div className="md:col-span-7 lg:col-span-7 flex flex-col justify-between space-y-2 md:space-y-2.5 lg:space-y-4 text-left">
             <div>
               <h3 className="text-base sm:text-lg md:text-lg lg:text-3xl font-bold text-gray-900 dark:text-white leading-snug mb-1.5 md:mb-2">
                 Building Scalable Systems & <span className="text-indigo-600 dark:text-indigo-400">Elegant Code</span> to Solve Complex Challenges
