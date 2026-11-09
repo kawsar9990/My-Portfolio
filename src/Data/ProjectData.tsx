@@ -64,4 +64,13 @@ export const projectsData: Project[] = [
     category: "frontend",
     projectLink: "/project/weatherx-app"
   },
-];
+    {
+    id: 8,
+    title: "RemoveX | Open Source Background Remover",
+    description: "RemoveX is a fast and modern image background removal tool that uses a dedicated package to remove backgrounds effortlessly, delivering clean results through a simple, smooth, and user-friendly experience.",
+    image: "https://res.cloudinary.com/dkmzakgx2/image/upload/v1794207750/removex-project-thumbnail_f4zxvs.png",
+    technologies: ["React", "Next.js", "Typescript", "Shadcn Ui", "Tailwind CSS"],
+    category: "frontend",
+    projectLink: "/project/removex-pro"
+  },
+]

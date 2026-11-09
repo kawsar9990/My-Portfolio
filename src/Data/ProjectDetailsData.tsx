@@ -279,5 +279,42 @@ export const projectsDetailsData: Record<string, ProjectDetails> = {
   ],
   challengesAndSolutions:
     "Managing seamless state synchronization between dynamic search inputs and real-time API queries without triggering rate limits was a challenge. Solved by implementing debounced search handlers and optimized cache management with Pinia. Ensuring high UI performance during rapid location switching was achieved using Vue 3 reactivity and lightweight SVG animations.",
+},
+
+
+"removex-pro" : {
+  id: "removex-pro",
+  title: "RemoveX | Open Source Background Remover",
+  description:
+    "RemoveX is a fast and modern image background removal tool that uses a dedicated package to remove backgrounds effortlessly, delivering clean results through a simple, smooth, and user-friendly experience.",
+  images: [
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1794207071/f332fc39-5898-4e25-a636-62a6db473cf7.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1794207192/c7c41ac4-8149-4948-afaa-91d1bd065e8e.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1794207092/c493e40f-989f-4ac3-a3f0-33c3cab724c6.png",
+    "https://res.cloudinary.com/dkmzakgx2/image/upload/v1794207085/539f7aaf-e56f-40c5-80f9-753957d59e5d.png",
+  ],
+  technologies: [
+    "React",
+    "Shadcn Ui",
+    "Next Js",
+    "Typescript",
+    "Tailwind CSS"
+  ],
+  liveDemoLink: "https://removex-pro.netlify.app",
+  ProjectRepo: "https://github.com/kawsar9990/RemoveX-Pro",
+  overview:
+    "RemoveX is a modern AI-powered background removal tool that delivers high-quality results with a fast, seamless, and user-friendly experience. Featuring direct Cloudinary uploads and an optimized processing workflow, it ensures efficient image handling with a clean, responsive interface.",
+  keyFeatures: [
+    "AI-powered image background removal with high-quality output.",
+    "Direct image uploads to Cloudinary for faster cloud-based storage and delivery.",
+    "Optimized image processing workflow for reliable background removal.",
+    "Clean, modern, and fully responsive user interface.",
+    "Smooth transitions and interactive UI elements with a premium glassmorphism-inspired design.",
+    "Efficient image handling with optimized upload and processing workflows.",
+    "Built with a modern development environment using pnpm for package management.",
+    "User-friendly experience designed for simplicity, speed, and productivity."
+  ],
+  challengesAndSolutions:
+    "Optimizing the initial image processing time was a key challenge. Since background removal uses a custom processing workflow rather than a conventional package, the first load may take slightly longer due to browser initialization and package loading. Direct Cloudinary uploads and optimized processing help make subsequent uploads faster, although temporary UI slowdowns may occur during intensive image processing.",
 }
 }
