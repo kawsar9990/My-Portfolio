@@ -11,9 +11,9 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
   className = "rounded-2xl h-[250px] sm:h-[400px]",
 }) => {
   return (
-    <div className='dark:bg-[#141C2B] pb-10 px-5'>
-        <div 
-      className={`w-full overflow-hidden rounded-2xl ${className}`}
+   <div className='bg-slate-50 dark:bg-[#141C2B] pb-10 px-5'>
+    <div 
+      className={`max-w-6xl mx-auto relative z-10 overflow-hidden rounded-2xl ${className}`}
     >
       <iframe
         title="Google Map Location"
@@ -27,7 +27,7 @@ const GoogleMap: React.FC<GoogleMapProps> = ({
         className="w-full h-full rounded-2xl"
       ></iframe>
     </div>
-    </div>
+    </div> 
   );
 };
 

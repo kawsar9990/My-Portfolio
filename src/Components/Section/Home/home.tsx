@@ -124,19 +124,17 @@ const techStackList: TechIcon[] = [
   },
 ]
 
-
 export default function HeroSection() {
   return (
-    <div className="relative flex w-full items-center justify-center overflow-hidden bg-slate-50 px-4 sm:px-6 pt-24 md:pt-28 pb-12 text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-slate-100 md:px-8 lg:px-16 lg:pb-16">
-      
+    <div className="relative flex w-full items-center justify-center overflow-hidden bg-slate-50 px-4 sm:px-6 pt-24 md:pt-28 pb-16 md:pb-20 lg:pb-24 text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-slate-100 md:px-8 lg:px-12">
     
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:linear-gradient(to_bottom,white_60%,transparent_100%)]" />
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-[400px] w-[400px] md:h-[500px] md:w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-600/15 blur-[120px] dark:bg-purple-500/10" />
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-transparent dark:to-[#141C2B]" />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-8 md:gap-6 lg:gap-12 md:grid-cols-12">
-        
-      
+    
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-b from-transparent via-slate-50/60 to-slate-50 dark:via-slate-950/60 dark:to-[#141C2B]" />
+
+      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-8 md:gap-6 lg:gap-12 md:grid-cols-12">
         <div className="text-center md:text-left md:col-span-7 space-y-4 md:space-y-5 lg:space-y-6">
           <div className="inline-flex items-center gap-2 rounded-md border border-indigo-300 bg-indigo-50 px-3 py-1 text-[11px] md:text-xs font-mono uppercase tracking-wider text-indigo-800 dark:border-indigo-500/30 dark:bg-indigo-950/40 dark:text-indigo-300">
             <span className="relative flex h-2 w-2">
@@ -179,7 +177,6 @@ export default function HeroSection() {
             Crafting secure, high-performance web solutions with scalable architecture, elegant design, and complex problem-solving at heart.
           </p>
 
-   
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 md:gap-2.5">
             {[
               { label: "Scalable Architecture", Icon: Network },
@@ -196,7 +193,6 @@ export default function HeroSection() {
             ))}
           </div>
 
-   
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-1 md:pt-2">
             <a
               href="#projects"
@@ -217,7 +213,6 @@ export default function HeroSection() {
             </a>
           </div>
 
-        
           <div className="pt-1 md:pt-2 flex items-center justify-center md:justify-start gap-2.5 md:gap-3">
             {[
               { href: "https://github.com/kawsar9990", label: "GitHub", Icon: FaGithub },
@@ -241,10 +236,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-
         <div className="md:col-span-5 flex flex-col items-center gap-4 md:gap-5 lg:gap-6 mt-4 md:mt-0">
-          
-
           <div className="w-full max-w-xs sm:max-w-sm overflow-hidden rounded-xl border border-white/10 bg-slate-900/95 shadow-xl shadow-purple-500/15">
             <div className="flex items-center gap-2 border-b border-white/10 px-3.5 py-2">
               <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
@@ -273,7 +265,6 @@ export default function HeroSection() {
             </pre>
           </div>
 
-  
           <div className="flex max-w-xs sm:max-w-md flex-wrap items-center justify-center gap-2 md:gap-2.5">
             {techStackList.map((tech, index) => (
               <div
@@ -288,7 +279,6 @@ export default function HeroSection() {
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </div>

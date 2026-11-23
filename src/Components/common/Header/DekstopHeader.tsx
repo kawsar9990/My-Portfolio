@@ -66,7 +66,7 @@ return (
     : "border-b border-transparent bg-slate-50 shadow-none dark:bg-[#0e131d]"
 }`}
     >
-<div className="px-10 flex items-center justify-between py-4">
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
    
 <Link href="/" className="flex items-center gap-3 group">
   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-900 text-white dark:bg-white dark:text-black font-bold text-xl shadow-md transition-transform group-hover:scale-105">

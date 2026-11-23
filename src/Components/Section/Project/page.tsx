@@ -19,11 +19,6 @@ export default function ProjectsSection() {
 
 return (
     <section className="relative w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
-      
-
-      <div className="absolute top-1/4 right-0 w-[300px] h-[300px] bg-indigo-200/20 dark:bg-indigo-900/10 rounded-full blur-2xl pointer-events-none will-change-[filter]" />
-      <div className="absolute bottom-10 left-0 w-[300px] h-[300px] bg-violet-200/20 dark:bg-violet-950/10 rounded-full blur-2xl pointer-events-none will-change-[filter]" />
-
       <div className="max-w-6xl mx-auto relative z-10">
         
         <div className="flex flex-col items-center text-center mb-8 md:mb-8">

@@ -39,18 +39,11 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-slate-50 dark:bg-[#141C2B] text-slate-700 dark:text-slate-400 text-xs border-t border-slate-200 dark:border-slate-800/80 transition-colors duration-500 mt-auto font-sans relative overflow-hidden">
-      
-      <div className="absolute top-0 left-1/4 w-[300px] h-[300px] bg-indigo-200/20 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-violet-200/20 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
 
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 relative z-10">
-        
-       
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-6 pb-6 border-b border-slate-200/80 dark:border-slate-800/80">
-          
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-6 pb-6 border-b border-slate-200/80 dark:border-slate-800/80">      
           <div className="sm:col-span-2 md:col-span-4 space-y-3">
+            
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center bg-gradient-to-br from-indigo-600 to-violet-600 text-white rounded-xl text-lg font-bold shadow-md shadow-indigo-500/20">
                 K
@@ -166,9 +159,11 @@ export default function Footer() {
         </div>
         
 
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500 dark:text-slate-400">
-          <p>© {new Date().getFullYear()} Kawsar Ahmed. All Rights Reserved.</p>
-          <div className="flex items-center gap-1.5 font-medium">
+        <div className="pt-4 grid grid-cols-1 sm:grid-cols-12 gap-2 items-center text-[11px] text-slate-500 dark:text-slate-400">
+          <p className="sm:col-span-6 md:col-span-9 text-center sm:text-left">
+            © {new Date().getFullYear()} Kawsar Ahmed. All Rights Reserved.
+          </p>
+          <div className="sm:col-span-6 md:col-span-3 flex items-center justify-center sm:justify-start gap-1.5 font-medium">
             <span>Powered by</span>
             <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Next.js & Tailwind CSS</span>
           </div>

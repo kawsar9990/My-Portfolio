@@ -13,8 +13,6 @@ export default function TechnicalExpertise() {
 
   return (
     <section className="relative w-full py-16 md:py-10 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#141C2B] font-sans antialiased overflow-hidden transition-colors duration-500">
-      <div className="absolute top-10 left-0 w-[400px] h-[400px] bg-indigo-200/30 dark:bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-violet-200/30 dark:bg-violet-950/10 rounded-full blur-3xl pointer-events-none" />
       <div className="max-w-6xl mx-auto relative z-10">
         
         <div className="flex flex-col items-center text-center mb-10 md:mb-14">
